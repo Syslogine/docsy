@@ -21,7 +21,7 @@
     "serve": "npm run _serve"
   },
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "postcss-cli": "^5.0.1"
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0"
   }
 }
