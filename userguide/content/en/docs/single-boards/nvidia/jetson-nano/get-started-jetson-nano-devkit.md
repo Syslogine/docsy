@@ -59,7 +59,6 @@ The stated power output capability of a USB power supply can be seen on its labe
 
 Actual power delivery capabilities of USB power supplies do vary. Please see the [Jetson Nano Developer Kit User Guide](https://developer.nvidia.com/embedded/downloads#?search=Jetson%20Nano%20Developer%20Kit%20User%20Guide) for additional information.
 
-<img class="center" src="/images/charger.png">
 
 ## Write Image to the microSD Card
 To prepare your microSD card, you’ll need a computer with Internet connection and the ability to read and write SD cards, either via a built-in SD card slot or adapter.
