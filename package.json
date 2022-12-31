@@ -1,7 +1,7 @@
 {
   "name": "docsy",
   "version": "0.6.0",
-  "repository": "github:google/docsy",
+  "repository": "github:syslogine/docsy",
   "scripts": {
     "_cd:docs": "cd userguide &&",
     "build:preview": "npm run cd:docs build:preview",
@@ -25,6 +25,8 @@
     "bootstrap": "4.6.2"
   },
   "devDependencies": {
-    "hugo-extended": "^0.107.0"
+    "hugo-extended": "0.109.0",
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0"
   }
 }
