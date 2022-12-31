@@ -5,9 +5,7 @@ linktitle: Operating Systems
 
 
 
-<div class="pagesvg">
-	<img src="/images/02_Isometric.svg">
-</div>
+
 
 
 # Operating Systems

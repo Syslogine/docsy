@@ -15,7 +15,7 @@ linkTitle: Get Started
 ## Introduction
 The [NVIDIA® Jetson Nano™ Developer Kit](https://developer.nvidia.com/embedded/buy/jetson-nano-devkit) is a small AI computer for makers, learners, and developers. After following along with this brief guide, you’ll be ready to start building practical AI applications, cool AI robots, and more.
 
-<img class="center" src="https://developer.nvidia.com/sites/default/files/akamai/embedded/images/jetsonNano/gettingStarted/jetson-nano-dev-kit-top-r6-HR-B01.png">
+
 
 1.	microSD card slot for main storage
 2.	40-pin expansion header
