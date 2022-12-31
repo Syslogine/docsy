@@ -52,8 +52,8 @@ params:
   archived_version: false
   version: 0.6.0
   url_latest_version: https://example.com
-  github_repo: https://github.com/google/docsy
-  github_project_repo: https://github.com/google/docsy
+  github_repo: https://github.com/syslogine/docsy
+  github_project_repo: https://github.com/Syslogine/docsy
   github_subdir: userguide
   time_format_blog: Monday, January 02, 2006
   time_format_default: January 2, 2006
