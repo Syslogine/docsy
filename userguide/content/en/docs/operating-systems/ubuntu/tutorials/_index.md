@@ -1,9 +1,9 @@
 ---
 linktitle: Tutorials
+title: Ubuntu tutorials
+tags: ['Ubuntu', 'tutorials']
 weight: 1
 ---
-
-# Ubuntu tutorials
 
 hello shitty worly
 

@@ -1,18 +1,17 @@
 ---
-linktitle: "Install GCC Compiler"
+linktitle: Install GCC Compiler
+title: How to Install GCC Compiler on Ubuntu 18.04
+tags: ['how to', 'install', 'GCC', 'Compiler', 'ubuntu', '18.04']
 weight: 2
 ---
-
-
-## How to Install GCC Compiler on Ubuntu 18.04
 
 
 The GNU Compiler Collection (GCC) is a collection of compilers and libraries for C, C++, Objective-C, Fortran, Ada, Go , and D programming languages. Many open-source projects, including the GNU tools and the Linux kernel, are compiled with GCC.<br>
 This tutorial covers the steps required to install the GCC compiler on Ubuntu 18.04. We will show you how to install the distro stable version and the latest version of GCC.
 The same instructions apply for Ubuntu 16.04 and any Ubuntu-based distribution, including Kubuntu, Linux Mint and Elementary OS.
-### Prerequisites
+## Prerequisites
 Te able to add new repositories and install packages on your Ubuntu system, you must be logged in as root or user with sudo privileges .
-### Installing GCC on Ubuntu
+## Installing GCC on Ubuntu
 The default Ubuntu repositories contain a meta-package named build-essential that contains the GCC compiler and a lot of libraries and other utilities required for compiling software.
 
 Perform the steps below to install the GCC Compiler Ubuntu 18.04:

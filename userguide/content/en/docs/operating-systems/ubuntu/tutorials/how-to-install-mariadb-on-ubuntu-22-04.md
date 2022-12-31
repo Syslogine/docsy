@@ -1,7 +1,7 @@
 ---
 linkTitle: MariaDB on 22.04
 title: How To Install MariaDB on Ubuntu 22.04
-tags: ['How', 'To', 'Install', 'MariaDB', 'on', 'Ubuntu', '22.04']
+tags: ['how to', 'install', 'mariaDB', 'ubuntu', '22.04']
 ---
 
 ## Introduction

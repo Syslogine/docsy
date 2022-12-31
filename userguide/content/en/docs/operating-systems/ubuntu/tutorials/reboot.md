@@ -1,9 +1,9 @@
 ---
 linktitle: "shutdown/reboot"
+title: How to shutdown or reboot
 weight: 2
+tags: ['how to', 'shutdown', 'reboot', 'ubuntu', 'server', 'desktop']
 ---
-
-# How to shutdown or reboot
 
 How to shutdown or reboot your Ubuntu machine from the command line?
 

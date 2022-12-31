@@ -1,9 +1,10 @@
 ---
-linktitle: "Wipe disks with dd"
+linktitle: Wipe disks with dd
+title: Wipe your SD/SSD disks with dd
+tags: ['Wipe', 'sd', 'ssd', 'disks', 'dd']
 weight: 2
 ---
 
-## Wipe your SD/SSD disks with dd
 soo i found this on the internet and i thought its very useful to make sure your micro SD card is nulled so we can make a fresh clean install on the SD and be sure there no left overs on the card
 
 So i know there are more ways to do this but this is what i found and also use

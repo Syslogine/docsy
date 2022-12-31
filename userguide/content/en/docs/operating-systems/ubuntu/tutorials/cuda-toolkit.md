@@ -1,9 +1,10 @@
 ---
 linktitle: "Install CUDA Toolkit"
+title: How to install CUDA toolkit from Ubuntu Repository
 weight: 2
+tags: ['how to', 'install', 'cuda', 'toolkit', 'ubuntu', 'repository']
 ---
 
-## How to install CUDA toolkit from Ubuntu Repository
 
 
 Although you might not end up witht he latest CUDA toolkit version, the easiest way to install CUDA on Ubuntu 20.04 is to perform the installation from Ubuntu's standard repositories.
