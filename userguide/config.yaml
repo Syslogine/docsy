@@ -1,5 +1,5 @@
 baseURL: /
-title: Docsy Example
+title: Syslogine Cloud
 enableRobotsTXT: true
 theme: [docsy]
 enableGitInfo: true
@@ -33,8 +33,8 @@ services:
 
 languages:
   en:
-    title: Docsy
-    description: Docsy does docs
+    title: Syslogine Docs
+    description: Small library with useful tips, tutorials and tools collected from the internet and hosted in one location.
     languageName: English
     weight: 1
 
