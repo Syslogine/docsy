@@ -1,7 +1,11 @@
 ---
 linktitle: MariaDB on 20.04
 title: How To Install MariaDB on Ubuntu 20.04
+tags: ['How', 'To', 'Install', 'MariaDB', 'on', 'Ubuntu', '20.04']
 ---
+
+
+
 
 ## Introduction
 [MariaDB](https://mariadb.org/) is an open-source relational database management system, commonly used as an alternative for MySQL as the database portion of the popular [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04) (Linux, Apache, MySQL, PHP/Python/Perl) stack. It is intended to be a drop-in replacement for MySQL.
