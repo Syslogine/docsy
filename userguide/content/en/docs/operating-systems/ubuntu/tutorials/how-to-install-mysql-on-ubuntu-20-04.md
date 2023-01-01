@@ -36,7 +36,7 @@ For fresh installations of MySQL, you’ll want to run the DBMS’s included sec
 As of July 2022, an error will occur when you run the `mysql_secure_installation` script without some further configuration. The reason is that this script will attempt to set a password for the installation’s **root** MySQL account but, by default on Ubuntu installations, this account is not configured to connect using a password.
 
 Prior to July 2022, this script would silently fail after attempting to set the **root** account password and continue on with the rest of the prompts. However, as of this writing the script will return the following error after you enter and confirm a password:
-```output
+```
  ... Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost' as the authentication method used doesn't store authentication data in the MySQL server. Please consider using ALTER USER instead if you want to change authentication parameters.
 
 New password:
@@ -77,7 +77,7 @@ sudo mysql_secure_installation
 This will take you through a series of prompts where you can make some changes to your MySQL installation’s security options. The first prompt will ask whether you’d like to set up the Validate Password Plugin, which can be used to test the password strength of new MySQL users before deeming them valid.
 
 If you elect to set up the Validate Password Plugin, any MySQL user you create that authenticates with a password will be required to have a password that satisfies the policy you select. The strongest policy level — which you can select by entering `2` — will require passwords to be at least eight characters long and include a mix of uppercase, lowercase, numeric, and special characters:
-```output
+```
 Securing the MySQL server deployment.
 
 Connecting to MySQL using a blank password.
@@ -99,7 +99,7 @@ Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:
  2
 ```
 Regardless of whether you choose to set up the Validate Password Plugin, the next prompt will be to set a password for the MySQL **root** user. Enter and then confirm a secure password of your choice:
-```output
+```
 Please set the password for root here.
 
 
@@ -110,7 +110,7 @@ Re-enter new password:
 Note that even though you’ve set a password for the **root** MySQL user, this user is not currently configured to authenticate with a password when connecting to the MySQL shell.
 
 If you used the Validate Password Plugin, you’ll receive feedback on the strength of your new password. Then the script will ask if you want to continue with the password you just entered or if you want to enter a new one. Assuming you’re satisfied with the strength of the password you just entered, enter `Y` to continue the script:
-```output
+```
 Estimated strength of the password: 100
 Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : Y
 ```
@@ -156,6 +156,7 @@ If you aren’t sure, you can always create a user that authenticates with `cach
 ALTER USER 'sammy'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 {{< /alert >}}
+
 After creating your new user, you can grant them the appropriate privileges. The general syntax for granting user privileges is as follows:
 ```bash
 GRANT PRIVILEGE ON database.table TO 'username'@'host';
@@ -201,7 +202,7 @@ Regardless of how you installed it, MySQL should have started running automatica
 systemctl status mysql.service
 ```
 You’ll see output similar to the following:
-```output
+```
 ● mysql.service - MySQL Community Server
      Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
      Active: active (running) since Tue 2020-04-21 12:56:48 UTC; 6min ago
@@ -219,7 +220,7 @@ For an additional check, you can try connecting to the database using the `mysql
 sudo mysqladmin -p -u sammy version
 ```
 You should see output similar to this:
-```output
+```
 mysqladmin  Ver 8.0.19-0ubuntu5 for Linux on x86_64 ((Ubuntu))
 Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
 
