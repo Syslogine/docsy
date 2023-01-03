@@ -1,7 +1,6 @@
 ---
-title: "My amazing new section"
+title: "Games"
 weight: 1
 type: docs
-description: >
-    A special section with a docs layout.
+description: A special section with a docs layout.
 ---
