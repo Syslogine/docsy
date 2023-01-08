@@ -1,6 +1,7 @@
 ---
 linktitle: "Ubuntu"
 weight: 5
+categories: ["Ubuntu"]
 ---
 
 

@@ -2,6 +2,7 @@
 linktitle: Wipe disks with dd
 title: Wipe your SD/SSD disks with dd
 tags: ['Wipe', 'sd', 'ssd', 'disks', 'dd']
+categories: ["Ubuntu"]
 weight: 2
 ---
 

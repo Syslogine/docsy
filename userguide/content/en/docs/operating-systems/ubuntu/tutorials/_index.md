@@ -2,6 +2,7 @@
 linktitle: Tutorials
 title: Ubuntu tutorials
 tags: ['Ubuntu', 'tutorials']
+categories: ["Ubuntu"]
 weight: 1
 ---
 

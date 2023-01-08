@@ -2,6 +2,7 @@
 linktitle: MariaDB on 20.04
 title: How To Install MariaDB on Ubuntu 20.04
 tags: ['how to', 'install', 'mariadb', 'ubuntu', '20.04']
+categories: ["Ubuntu"]
 ---
 
 ## Introduction
@@ -16,6 +17,13 @@ sudo apt update
 sudo apt install mariadb-server
 sudo mysql_secure_installation
 ```
+
+```bash
+sudo apt update &&\
+sudo apt install mariadb-server -y &&\
+sudo mysql_secure_installation -y
+```
+
 This tutorial will explain how to install MariaDB on an Ubuntu 20.04 server and verify that it is running and has a safe initial configuration.
 
 ## Prerequisites

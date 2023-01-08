@@ -2,6 +2,9 @@
 linkTitle: Create Sudo user on 20.04
 title: How To Create A New Sudo Enabled User on Ubuntu 20.04
 tags: ['how to', 'create', 'sudo', 'user', 'ubuntu', '20.04']
+categories: ["Ubuntu"]
+description: >
+  This tutorials will explain how to create a sudo user on Ubuntu 20.04
 ---
 
 

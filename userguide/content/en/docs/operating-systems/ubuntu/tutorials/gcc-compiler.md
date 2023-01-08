@@ -2,7 +2,10 @@
 linktitle: Install GCC Compiler
 title: How to Install GCC Compiler on Ubuntu 18.04
 tags: ['how to', 'install', 'GCC', 'Compiler', 'ubuntu', '18.04']
+categories: ["Ubuntu"]
 weight: 2
+description: >
+  Installing GCC Compiler on a Ubuntu machine with just two commands.
 ---
 
 

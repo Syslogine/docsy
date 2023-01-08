@@ -1,14 +1,12 @@
-
 ---
+title: Operating Systems
 linktitle: Operating Systems
+tags: ["centos", "debian", "kali linux", "linux", "red hat", "ubuntu", "windows"]
+categories: ["Operating Systems"]
+description: >
+  List of operating systems we have collected data of.
 ---
 
-
-
-
-
-
-# Operating Systems
 This page has the list of some operating systems that we have created tutorials for.
 
 

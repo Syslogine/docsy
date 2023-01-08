@@ -2,6 +2,9 @@
 linkTitle: Create Sudo user on 22.04
 title: How To Create A New Sudo Enabled User on Ubuntu 22.04
 tags: ['how to', 'create', 'sudo', 'user', 'ubuntu', '22.04']
+categories: ["Ubuntu"]
+description: >
+  This tutorial will explain how to create a sudo user on Ubuntu 220.04
 ---
 
 ## Introduction

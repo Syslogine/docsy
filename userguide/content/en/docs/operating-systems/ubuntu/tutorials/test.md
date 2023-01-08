@@ -2,6 +2,7 @@
 linktitle: "Tips and Tricks"
 title: Useful tips and tricks for Ubuntu
 tags: ['ubuntu','tips','tricks']
+categories: ["Ubuntu"]
 weight: 1
 ---
 

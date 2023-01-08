@@ -2,5 +2,7 @@
 title: "Games"
 weight: 1
 type: docs
-description: A special section with a docs layout.
+categories: ["Games"]
+description: >
+  This categorie contains list of game stuff
 ---

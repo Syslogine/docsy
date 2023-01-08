@@ -1,6 +1,7 @@
 ---
 linktitle: Downloads
 weight: 3
+categories: ["Ubuntu"]
 ---
 
 # Main downloads list
