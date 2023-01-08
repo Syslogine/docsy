@@ -21,7 +21,7 @@ sudo mysql_secure_installation
 ```bash
 sudo apt update &&\
 sudo apt install mariadb-server -y &&\
-sudo mysql_secure_installation -y
+sudo mysql_secure_installation
 ```
 
 This tutorial will explain how to install MariaDB on an Ubuntu 20.04 server and verify that it is running and has a safe initial configuration.
