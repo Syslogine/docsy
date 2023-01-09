@@ -3,6 +3,8 @@ linktitle: MariaDB on 20.04
 title: How To Install MariaDB on Ubuntu 20.04
 tags: ['how to', 'install', 'mariadb', 'ubuntu', '20.04']
 categories: ["Ubuntu"]
+description: >
+  This tutorial will show you how to install a MariaDB on Ubuntu 20.04
 ---
 
 ## Introduction

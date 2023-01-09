@@ -1,34 +1,33 @@
 ---
 linktitle: Cutsom install mariaDB
 title: Cutsom install mariaDB
-tags: ['how to', 'install', 'mariadb', 'ubuntu', '20.04']
+tags: ['how to', 'install', 'mariadb', 'ubuntu', '20.04', "22.04"]
 categories: ["Ubuntu"]
 description: >
-  Cutsom install mariaDB
+  Cutsom install for mariaDB on Ubuntu server or desktop
 ---
 
 
-my way of install a mariadb on you ubunti mchine
+my way of installing a MariaDB server on you Ubuntu sevrer or dekstop
 
 
-let's check if we have soem updates before we begin
+let's check if we have some updates before we begin with installing MariaDB
 ```bash
 sudo apt update
 ```
 
-now we going to install the latest version of mariadb
+Now that we know our system is up to date can we begin with installing of MariaDB
 ```bash
 sudo apt install mariadb-server
 ```
 
 
-
-Enable the mariadb systemdctl
+After the install of MariaDB we can enableing the systemctl with just typing
 ```bash
 sudo systemctl enable mariadb
 ```
 
-now we going to start the mariadb if it's not already
+Just to be sure mariadb is running we can just start the server with
 ```bash 
 sudo systemctl start mariadb
 ```
@@ -36,19 +35,21 @@ sudo systemctl start mariadb
 
 {{% alert title="Note" %}}
 
-You can use the commands 
+Common command for your mariadb server..
 
-*	start
+*	Use `start` for starting the server
 	```bash
 	sudo systemctl start mariadb
 	```
-
-*	restart
+*	Use `stop` For stopping the server
+	```bash
+	sudo systemctl stop mariadb
+	```
+*	Use `restart` For restarting the server
 	```bash
 	sudo systemctl restart mariadb
 	```
-
-*	status
+*	Use `status` For checking te status of server
 	```bash
 	sudo systemctl status mariadb
 	```
@@ -58,11 +59,12 @@ You can use the commands
 
 Next
 
-Now we goign to configure the mariadb
+Now we going to configure the mariadb server and securing it by the following steps
 ```bash
 sudo mysql_secure_installation
 ```
 
+BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 
 
 
