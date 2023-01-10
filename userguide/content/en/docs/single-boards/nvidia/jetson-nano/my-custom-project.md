@@ -35,54 +35,123 @@ List of dependencies i need for creatiing my project.
 5.	Choose `computer name`, `username`, `create password` and then keep the **`Require my password to login`**
 6.	Select the max size of the usb as the MicroSD is temporary use
 7.	Select the `MAXN - (Default)` and click continue to start install
+8.	After install login with new created account as steps above
+9.	After first login it will pop a annoying `Keyboard Shortcuts` window.... Close this
+10.	And close the other welcome window...
 
 
-## Wipe SSD
-1.	Plugin the SSD in
-2.	Open Disks
+## Wipe SSD and Moving MicroSD to SSD
+### Without Video
+1.	Mount the SSD in your Jetson Nano
+2.	Open `Disks`
 3.	Select the SSD Disk and Press `Ctrl` + `F`
-	*	`Erase`: **`Don't overwrite existing data (Quick)`** or **`Overwrite existing data with zeroes (slow)`**
-	*	`Partitioning`: **`Compatitble with modern systems and hard disks > 2TB (GPT)`**
+	*	**`Erase`**: `Don't overwrite existing data (Quick)` or `Overwrite existing data with zeroes (slow)`
+	*	**`Partitioning`**: `Compatitble with modern systems and hard disks > 2TB (GPT)`
 4.	Click `Format...`
 5.	Again click on `Format` and wait..... Depends on what u selected (Quick) or (Slow)
-
-
-
-
-
-
-## Moving MicroSD to SSD
-### Without Video
-1.	Login with your new created account as steps above
-2.	After first login it will pop a annoying `Keyboard Shortcuts` window.... Close this
-3.	And close the other welcome window...
-4.	Open `Terminal` and type:
+6.	Now Click on the `+` Create Patrtition
+7.	I have set the Partition size to 110GB for SWAP (We will use this later this page)
+8.	Click Next
+	*	**`Volume Name`**: Create one
+	*	**`Type`**: `Internal disk for use with Linux systems only (Ext4)`
+9.	Click on `Create`
+10.	Finnaly mount the SSD
+11.	After the SSD is mounted open `Terminal` and type:
 	```bash
-	sudo apt update
+	sudo apt update && apt install nano -y
 	```
-5.	Now download the files from JetsonHacks
+12.	Now download the files from JetsonHacks
 	```bash
 	git clone https://github.com/jetsonhacks/bootFromUSB
 	```
-6.	Enter the bootFromUSB folder
+13.	Enter the bootFromUSB folder
 	```bash
 	cd bootFromUSB
 	```
+14.	We need to have the SSD GUID so
+	```bash
+	./partUUID.sh
+	```
+
+	This will output ssomething like this
+
+	```
+	PARTUUID of Partition: /dev/sda1
+	a40b6c71-ca35-79d3-8an0-d6v66749e060
+
+	Sample snippet for /boot/extlinux/extlinux.conf entry:
+	APPEND ${cbootargs} root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060 rootwait rootfstype=ext4
+	```
+
+	We only need this part to remember so note this on a text file or open a new ternimal en keep this one open..
+	```
+	root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060
+	```
+15. Now let's move the files from MicroSD to SSD
+	```bash
+	./copyRootToUSB.sh -p /dev/sda1
+	```
+
+	And yes im very aware of that we have now upgraded the Jetson Nano, Reason is why upgrade on slow MicroSD when we can do this ona faster SSD ;)
+
+16.	Now we need to change one part in our SSD
+	```bash
+	cd /media
+	```
+17.	When we use the command `ls` will see a our current user for me is it `syslogine`
+	```bash
+	ls
+	```
+	```
+	syslogine
+	```
+	So we enter the folder
+	```bash
+	cd syslogine
+	```
+18.	again when we do the `ls` command we can see our new created SSD for me it is `myproject`
+	```bash
+	ls
+	```
+
+	```
+	myproject
+	```
+	So we enter the folder
+	```bash
+	cd myproject
+	```
+19.	After were in the right SSD folder go to 
+	```bash
+	cd boot/extlinux
+	```
+20.	edit `extlinux.conf`
+	```bash
+	sudo nano extlinux.conf
+	```
+21.	Replace
+	```
+	root=/dev/mmcblk0p1
+	```
+	with your SSD one, the one we early noted some where or still have that terminal open
+	```
+	root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060
+	```
+	Save and close Nano with `Ctrl` + `X` and then `Y` then `Enter`
+
+22.	Finnaly... Lets shutdown Jetson Nano
+	```bash
+	sudo poweroff
+	```
+23.	After your Jetson Nano is powered off remove the MicroSD card and power on the device again
 
 
-
-
-
-
-### With Video
-1.	I guess better just to follow his YouTube guide
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/53rRMr1IpWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-	And this will help aswell: [bootFromUSB](https://github.com/jetsonhacks/bootFromUSB)
-
-
-
-
+### Updating Jetson Nano
+1.	After powering up again everything should be fine and you proberly see the login screen again, So login 
+2.	We can finnaly update our device with
+	```bash
+	sudo apt update && sudo apt upgrade -y
+	```
 
 
 
