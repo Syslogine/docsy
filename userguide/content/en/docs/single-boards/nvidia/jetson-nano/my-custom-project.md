@@ -1,6 +1,7 @@
 ---
 title: My Custom AI project
 
+tags: ["ubuntu","jetson","nano","project","ai","awesome","custom"]
 ---
 
 List of dependencies i need for creatiing my project.
@@ -40,6 +41,27 @@ List of dependencies i need for creatiing my project.
 10.	And close the other welcome window...
 
 
+## Updating Jetson Nano
+1.	Now we need to update our packages list so open `terminal` and type
+	```bash
+	sudo apt update
+	```
+2.	Now we need to upgrade the packages
+	```bash
+	sudo apt upgrade -y
+	```
+3.	After this is done.. just reboot your device
+	```bash
+	sudo reboot now
+	```
+4.	Once again after login open `terminal` as we need to clean a bit so type
+	```bash
+	sudo apt autoremove -y && sudo apt clean
+	```
+
+
+
+
 ## Wipe SSD and Moving MicroSD to SSD
 ### Without Video
 1.	Mount the SSD in your Jetson Nano
@@ -56,11 +78,15 @@ List of dependencies i need for creatiing my project.
 	*	**`Type`**: `Internal disk for use with Linux systems only (Ext4)`
 9.	Click on `Create`
 10.	Finnaly mount the SSD
-11.	After the SSD is mounted open `Terminal` and type:
+11.	After the SSD is mounted open `Terminal` as we need to update and upgrade our packages
 	```bash
-	sudo apt update && apt install nano -y
+	sudo apt update && sudo apt upgrade -y
 	```
-12.	Now download the files from JetsonHacks
+12.	We also need to install `nano` as this is not installed by default and we use this later on
+	```bash
+	sudo apt install nano
+	```
+12.	Now we download the repository `bootFromUSB` from [JetsonHacks](https://github.com/jetsonhacks)
 	```bash
 	git clone https://github.com/jetsonhacks/bootFromUSB
 	```
@@ -68,7 +94,7 @@ List of dependencies i need for creatiing my project.
 	```bash
 	cd bootFromUSB
 	```
-14.	We need to have the SSD GUID so
+14.	We need to have the SSD UUID so
 	```bash
 	./partUUID.sh
 	```
@@ -145,13 +171,6 @@ List of dependencies i need for creatiing my project.
 	```
 23.	After your Jetson Nano is powered off remove the MicroSD card and power on the device again
 
-
-### Updating Jetson Nano
-1.	After powering up again everything should be fine and you proberly see the login screen again, So login 
-2.	We can finnaly update our device with
-	```bash
-	sudo apt update && sudo apt upgrade -y
-	```
 
 
 
