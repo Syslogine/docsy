@@ -68,10 +68,7 @@ BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 
 
 
-### Hello you...
-```bash
-mysql -u root -p
-```
+### examples for `localhost`, `%`, `specific`
 
 *	Only `localhost` is allowd to connect... 
 	```mysql
@@ -88,23 +85,23 @@ mysql -u root -p
 	CREATE USER 'local_user'@'192.168.1.1' IDENTIFIED BY 'password';
 	```
 
-## Hi hi
-1.	
+## Giving user grant all privileges
+1.	Let's login with our `root` use in MariaDB
 	```bash
 	mysql -u root -p
 	```
 
-2.	
+2.	Replace `syslogine` with your own enw created used and replace `localhost` if want.
 	```mysql
-	GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+	GRANT ALL PRIVILEGES ON *.* TO 'syslogine'@'localhost' WITH GRANT OPTION;
 	```
 
-3.
+3.	Lets save it.
 	```mysql
 	FLUSH PRIVILEGES;
 	```
 
-4.	
+4.	Yes now we can exit the `mysql`
 	```mysql
 	exit
 	```
