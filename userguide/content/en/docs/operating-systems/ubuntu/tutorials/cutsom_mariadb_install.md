@@ -88,6 +88,9 @@ mysql -u root -p
 	CREATE USER 'local_user'@'192.168.1.1' IDENTIFIED BY 'password';
 	```
 
+```mysql
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+```
 
 
 LOLLLLLLLLLLLL
