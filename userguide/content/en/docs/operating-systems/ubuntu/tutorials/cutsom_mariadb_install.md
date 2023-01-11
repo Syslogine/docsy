@@ -67,6 +67,8 @@ sudo mysql_secure_installation
 BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 
 
+
+### Hello you...
 ```bash
 mysql -u root -p
 ```
