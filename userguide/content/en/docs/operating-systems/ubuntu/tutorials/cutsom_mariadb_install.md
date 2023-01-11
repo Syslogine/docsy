@@ -67,10 +67,25 @@ sudo mysql_secure_installation
 BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 
 
-
-```mysql
-CREATE USER ‘local_user’@’localhost’ IDENTIFIED BY ‘password’;
+```bash
+mysql -u root -p
 ```
+
+*	This is needed to create a user, password and 
+	```mysql
+	CREATE USER 'local_user'@'localhost' IDENTIFIED BY 'password';
+	```
+
+* Hello shitty world
+	```mysql
+	CREATE USER 'local_user'@'%' IDENTIFIED BY 'password';
+	```
+
+* My world is freaking awesome right.
+	```mysql
+	CREATE USER 'local_user'@'192.168.1.1' IDENTIFIED BY 'password';
+	```
+
 
 
 LOLLLLLLLLLLLL
