@@ -2,6 +2,7 @@
 title: My Custom AI project
 
 tags: ["ubuntu","jetson","nano","project","ai","awesome","custom"]
+categories: ["jetson nano"]
 ---
 
 List of dependencies i need for creatiing my project.
@@ -42,7 +43,7 @@ List of dependencies i need for creatiing my project.
 
 
 ## Updating Jetson Nano
-1.	Now we need to update our packages list so open `terminal` and type
+1.	Now we need to update our packages list, so open `terminal` and type
 	```bash
 	sudo apt update
 	```
@@ -60,10 +61,7 @@ List of dependencies i need for creatiing my project.
 	```
 
 
-
-
 ## Wipe SSD and Moving MicroSD to SSD
-### Without Video
 1.	Mount the SSD in your Jetson Nano
 2.	Open `Disks`
 3.	Select the SSD Disk and Press `Ctrl` + `F`
@@ -78,11 +76,7 @@ List of dependencies i need for creatiing my project.
 	*	**`Type`**: `Internal disk for use with Linux systems only (Ext4)`
 9.	Click on `Create`
 10.	Finnaly mount the SSD
-11.	After the SSD is mounted open `Terminal` as we need to update and upgrade our packages
-	```bash
-	sudo apt update && sudo apt upgrade -y
-	```
-12.	We also need to install `nano` as this is not installed by default and we use this later on
+11.	After the SSD is mounted open `Terminal` again as we need `nano` for later use.
 	```bash
 	sudo apt install nano
 	```
@@ -108,18 +102,13 @@ List of dependencies i need for creatiing my project.
 	Sample snippet for /boot/extlinux/extlinux.conf entry:
 	APPEND ${cbootargs} root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060 rootwait rootfstype=ext4
 	```
+	
+	{{< alert color="warning" title="We only need to remember this part" >}}root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060{{< /alert >}}
 
-	We only need this part to remember so note this on a text file or open a new ternimal en keep this one open..
-	```
-	root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060
-	```
 15. Now let's move the files from MicroSD to SSD
 	```bash
 	./copyRootToUSB.sh -p /dev/sda1
 	```
-
-	And yes im very aware of that we have now upgraded the Jetson Nano, Reason is why upgrade on slow MicroSD when we can do this ona faster SSD ;)
-
 16.	Now we need to change one part in our SSD
 	```bash
 	cd /media
@@ -139,7 +128,6 @@ List of dependencies i need for creatiing my project.
 	```bash
 	ls
 	```
-
 	```
 	myproject
 	```
@@ -169,20 +157,48 @@ List of dependencies i need for creatiing my project.
 	```bash
 	sudo poweroff
 	```
-23.	After your Jetson Nano is powered off remove the MicroSD card and power on the device again
+23.	After your Jetson Nano is powered off remove the MicroSD card and power on the device again now it should be powering up with the SSD instead of the MicroSD
+
+you can also just watch this video from JetonHacks
+<iframe width="560" height="315" src="https://www.youtube.com/embed/53rRMr1IpWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+## Install Jetson stats
+1.	Install `pip3` because this is not installed by default
+	```bash
+	sudo apt-get install python3-pip
+	```
+2.	Now we can install jetson stats with the pip3
+	```bash
+	sudo -H pip3 install -U jetson-stats
+	```
+3.	To run jetson stats we only need to type
+	```bash
+	jtop
+	```
+More info about this visit there Github page: [Jetson stats](https://github.com/rbonghi/jetson_stats)
+
+
+
+
+###
+todo list
+make jetson stats fan run with boot
 
 
 
 
 
-#####
+
+##
 
 ```bash
 mkdir project && cd project
 ```
 
 
-#### Installation of libusb
+## Installation of libusb
 
 Get the latest version of `libusb`
 ```bash
