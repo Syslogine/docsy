@@ -68,4 +68,9 @@ BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 
 
 
+```mysql
+CREATE USER ‘local_user’@’localhost’ IDENTIFIED BY ‘password’;
+```
+
+
 LOLLLLLLLLLLLL
