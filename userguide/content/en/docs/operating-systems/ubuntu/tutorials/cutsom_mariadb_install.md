@@ -78,25 +78,36 @@ mysql -u root -p
 	CREATE USER 'local_user'@'localhost' IDENTIFIED BY 'password';
 	```
 
-* Now you can login from any IP to your
+* Now you can login from `any` IP to your
 	```mysql
 	CREATE USER 'local_user'@'%' IDENTIFIED BY 'password';
 	```
 
-* This will allow you only to login from specific IP
+* This will allow you only to login from `specific` IP
 	```mysql
 	CREATE USER 'local_user'@'192.168.1.1' IDENTIFIED BY 'password';
 	```
 
 ## Hi hi
+1.	
+	```bash
+	mysql -u root -p
+	```
 
-```mysql
-GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
-```
+2.	
+	```mysql
+	GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+	```
 
-```mysql
-FLUSH PRIVILEGES;
-```
+3.
+	```mysql
+	FLUSH PRIVILEGES;
+	```
+
+4.	
+	```mysql
+	exit
+	```
 
 
 LOLLLLLLLLLLLL
