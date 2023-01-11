@@ -73,17 +73,17 @@ BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 mysql -u root -p
 ```
 
-*	This is needed to create a user, password and 
+*	Only `localhost` is allowd to connect... 
 	```mysql
 	CREATE USER 'local_user'@'localhost' IDENTIFIED BY 'password';
 	```
 
-* Hello shitty world
+* Now you can login from any IP to your
 	```mysql
 	CREATE USER 'local_user'@'%' IDENTIFIED BY 'password';
 	```
 
-* My world is freaking awesome right.
+* This will allow you only to login from specific IP
 	```mysql
 	CREATE USER 'local_user'@'192.168.1.1' IDENTIFIED BY 'password';
 	```
