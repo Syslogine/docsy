@@ -1,6 +1,8 @@
 ---
-title: My Custom AI project
-
+title: My Custom Nvidia Jeson Nano AI project
+linktitle: Custom AI Project
+description: >
+ Yes you read this right i try to create my own small AI project with help of other tutorials i can find and them update them.
 tags: ["ubuntu","jetson","nano","project","ai","awesome","custom"]
 categories: ["jetson nano"]
 ---
