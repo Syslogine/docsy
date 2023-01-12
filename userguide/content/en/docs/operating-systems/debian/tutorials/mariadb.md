@@ -36,11 +36,42 @@ description: >
     ```bash
     apt autoremove -y && apt clean
     ```
-6.  `clear` page or `restart`.. Again both not needed ;)
+
+
+## Create sudo user
+### video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jUqDdp90P-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+### txt
+1.  Lets login into `root` user
     ```bash
-    clear
+    su -
     ```
-    or
+    Enter `root` passwd
+
+2.  We need to edit the `sudoers` file
     ```bash
-    reboot now
+    visudo
     ```
+
+3.  Replace `unknown` with your own username
+    ```txt
+    unknown ALL=(ALL) NOPASSWD:ALL
+    ```
+    To exit nano press: `Ctrl` + `X` and then it will ask if wan to save it so press `Y` adn then `Enter`
+
+4.  Now we can exit the `root` user account
+    ```bash
+    exit
+    ```
+
+5.  Now its time to test if our useraccount has rood priviliges.
+    ```bash
+    sudo apt update
+    ```
+    Now enter your `useraccount` password.
+
+
+
+
