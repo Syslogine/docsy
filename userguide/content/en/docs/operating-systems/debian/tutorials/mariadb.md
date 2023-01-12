@@ -9,10 +9,10 @@ description: >
 ---
 
 
-## Debian update, install some packages
+## Update, Install packages
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dXiodf31YSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br>
 
-### Text
 1.  First we need to login into `root` account
     ```bash
     su -
@@ -39,8 +39,8 @@ description: >
 
 ## Create sudo user
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/jUqDdp90P-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br>
 
-### Text
 1.  Lets login into `root` user
     ```bash
     su -
@@ -72,23 +72,20 @@ description: >
 
 ## Installing and configuring MariaDB
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/pnZAxSXGDhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br>
 
-### Text
 1.  Now we can install `mariadb-server`
     ```bash
     sudo apt install mariadb-server
     ```
-
 2.  Check status of mariadb
     ```bash
     sudo systemctl status mariadb
     ```
-
 3.  Now that we know MariaDB server is active and running we need to secure it a little.
     ```bash
     sudo mysql_secure_installation
     ```
-
     1.  Enter current password for root (enter for none): `enter`
     2.  Switch to unix_socket authentication [Y/n]: `n`
     3.  Change the root password? [Y/n]: `y`
@@ -103,3 +100,37 @@ description: >
     sudo systemctl restart mariadb
     ```
 
+## Create mysql user
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/bYsvrI1dwdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br>
+
+1.  Lets login into MariaDB `root` account and create a user
+    ```bash
+    mysql -u root -p
+    ```
+    enter your `mariadb root` password.
+
+2.  Lets create a user
+    *   Replace `syslogine` with your wanted username
+    *   Replace `localhost` with `%` or `IP` if want other conenction
+    *   Replace `password`
+    ```mysql
+    CREATE USER 'syslogine'@'localhost' IDENTIFIED BY 'password';
+    ```
+
+3.  Give the new created permissions
+    *   Replace `syslogine` with new created user
+    *   Replace `localhost` with `%` or `IP` if want other conenction
+    ```mysql
+    GRANT ALL PRIVILEGES ON *.* TO 'syslogine'@'localhost' WITH GRANT OPTION;
+    ```
+4.  Now flush it.
+    ```mysql
+    FLUSH PRIVILEGES;
+    ```
+5.  Now we exit mysql with
+    ```mysql
+    exit
+    ```
+
+Done...
