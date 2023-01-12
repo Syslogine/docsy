@@ -1,5 +1,8 @@
 ---
 linktitle: Create FiveM
+title: How To create a FiveM server really fast with QB-CORE
+description: >
+ Super fast way to create a FiveM server on a debian and use QB-Core as framework.
 
 ---
 
