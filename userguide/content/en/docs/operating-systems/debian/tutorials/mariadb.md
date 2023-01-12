@@ -143,7 +143,10 @@ description: >
     
 
     When done can close nano with: `Ctrl` + `x` then press `Y` now `enter`
-
+7.  Restart MariaDB
+    ```bash
+    sudo systemctl restart mariadb
+    ```
 
 ## Conclusion
 We have giving our system user sudo and you should have now a working MariaDB server running with a user u can conenct to from any IP
