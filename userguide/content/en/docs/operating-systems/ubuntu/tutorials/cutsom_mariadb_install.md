@@ -8,34 +8,37 @@ description: >
 ---
 
 
-my way of installing a MariaDB server on you Ubuntu sevrer or dekstop
 
 
-let's check if we have some updates before we begin with installing MariaDB
-```bash
-sudo apt update
-```
-
-Now that we know our system is up to date can we begin with installing of MariaDB
-```bash
-sudo apt install mariadb-server
-```
+# Custom tutorial for MariaDB on Ubuntu.
 
 
-After the install of MariaDB we can enableing the systemctl with just typing
-```bash
-sudo systemctl enable mariadb
-```
+## Step 1
+1.	Before we begin we need to update our apt packages with
+	```bash
+	sudo apt updates
+	```
+2.	After we updates our packages we can install `mariadb-server`
+	```bash
+	sudo apt install mariadb-server
+	```
+3.	Now MariaDB server is installed we can check if it's running
+	```bash
+	sudo systemctl status mariadb
+	```
 
-Just to be sure mariadb is running we can just start the server with
-```bash 
-sudo systemctl start mariadb
-```
+## Step 2
+1.	Now we need to secure our MariaDB so type
+	```bash
+	sudo mysql_secure_installation
+	```
+2.	It will start with asking for root password for mariadb, just press `enter`
 
 
-{{% alert title="Note" %}}
 
-Common command for your mariadb server..
+
+
+{{% alert title="Common commands" %}}
 
 *	Use `start` for starting the server
 	```bash
@@ -105,6 +108,12 @@ BE NOTED THIS WILL BE FIXED SOME TIME... BUT NOW NOW
 	```mysql
 	exit
 	```
+
+
+## Edit MariaDB `50-server.cnf`
+```bash
+cd /etc/mysql
+
 
 
 LOLLLLLLLLLLLL
