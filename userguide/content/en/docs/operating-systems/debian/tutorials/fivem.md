@@ -3,22 +3,24 @@ linktitle: Create FiveM
 
 ---
 
-## Linux
-{{% alert theme="info" %}}Note that the Linux version of FXServer is only provided as a courtesy port due to issues regarding Linux distribution compatibility and availability of diagnostic tools for native C++ code.
-If you're experiencing any issues, you're more likely to see them fixed if you use the Windows version.
-{{% /alert %}}
+## This easy
+Wauw this is fast.
 
 ### Prerequisites
 1. Install `xz-utils` and `git` packages. 
 	```bash
 	sudo apt update &&\
-	sudo apt install xz-utils git -y
+	sudo apt install xz-utils git wget -y
 	```
 
 ### Installation
 1. Create a new folder this will be used for the server binaries.
 	```bash
-	 mkdir -p ~/FXServer/server
+	 mkdir -p ~/fivem
+	```
+2.	Lets enter enetr new created folder.
+	```bash
+	cd ~/fivem
 	```
 2. 	Visit [Linux server build listing][linux-artifacts] and right click on `master` branch build and copy the link url then replace that link with `<url>`
 	```bash
@@ -26,35 +28,12 @@ If you're experiencing any issues, you're more likely to see them fixed if you u
 	```
 3. Extract the build to the directory that was previously created, using:
 	```bash
-	cd ~/FXServer/server && tar xf fx.tar.xz
+	tar xf fx.tar.xz
 	```
-
-
-
-4. Clone [cfx-server-data][server-data] in a new folder outside of your server binaries folder.<br>
-   For example: `git clone https://github.com/citizenfx/cfx-server-data.git ~/FXServer/server-data`
-5. Make a **server.cfg** file in your `server-data` folder (copy the [example server.cfg](#servercfg) file below into that file).
-6. Set the license key in your `server.cfg` using `sv_licenseKey "licenseKeyGoesHere"`.
-7. Run the server from the `server-data` folder.<br>
-   `cd ~/FXServer/server-data && bash ~/FXServer/server/run.sh +exec server.cfg`
-
----
-
-<a name="servercfgexample"></a>
-
-## server.cfg
-
-An example server.cfg follows.
-
-
-
----
-
-### Common issues
-
-- If you don't get any 'resources found', and it says 'Failed to start resource', you didn't 'cd' to the right folder.
-- If no resources get started, and you also can't connect (i.e. 'timed out'/'connection refused'), you didn't add +exec.
-- If you get 'no license key was specified', one of the above two mistakes may apply.
+4.	Now run `run.sh`
+	```bash
+	bash run.sh
+	```
 
 [windows-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
 [linux-artifacts]: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
@@ -65,22 +44,3 @@ An example server.cfg follows.
 [7zip]: https://www.7-zip.org/download.html
 [git-scm]: https://git-scm.com/download/win
 
-
-
-```bash
-git clone
-```
-
-
-
-
-
-
-
-```bash
-bash create.sh
-```
-
-```bash
-bash run.sh
-```
