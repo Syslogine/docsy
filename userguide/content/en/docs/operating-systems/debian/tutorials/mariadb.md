@@ -10,8 +10,7 @@ description: >
 
 
 ## Debian update, install some packages
-### Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dXiodf31YSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/dXiodf31YSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 ### Text
 1.  First we need to login into `root` account
@@ -39,11 +38,9 @@ description: >
 
 
 ## Create sudo user
-### video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jUqDdp90P-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/jUqDdp90P-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-
-### txt
+### Text
 1.  Lets login into `root` user
     ```bash
     su -
@@ -73,5 +70,36 @@ description: >
     Now enter your `useraccount` password.
 
 
+## Installing and configuring MariaDB
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pnZAxSXGDhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
+### Text
+1.  Now we can install `mariadb-server`
+    ```bash
+    sudo apt install mariadb-server
+    ```
+
+2.  Check status of mariadb
+    ```bash
+    sudo systemctl status mariadb
+    ```
+
+3.  Now that we know MariaDB server is active and running we need to secure it a little.
+    ```bash
+    sudo mysql_secure_installation
+    ```
+
+    1.  Enter current password for root (enter for none): `enter`
+    2.  Switch to unix_socket authentication [Y/n]: `n`
+    3.  Change the root password? [Y/n]: `y`
+        *   Create a password
+        *   type again password
+    4.  Remove anonymous users? [Y/n]: `y`
+    5.  Disallow root login remotely? [Y/n]: `y`
+    6.  Remove test database and acces to it? [Y/n]: `y`
+    7.  Reload privilege tables now? [Y/n]: `y`
+4.  Not really needed but he lets restart our mariadb server
+    ```bash
+    sudo systemctl restart mariadb
+    ```
 
