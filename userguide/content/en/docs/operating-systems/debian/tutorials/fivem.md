@@ -10,10 +10,10 @@ description: >
 Wauw this is fast.
 
 ### Prerequisites
-1. Install `xz-utils` and `git` packages. 
+1. Install `xz-utils` and `wget` packages. 
 	```bash
 	sudo apt update &&\
-	sudo apt install xz-utils git wget -y
+	sudo apt install xz-utils wget -y
 	```
 
 ### Installation
