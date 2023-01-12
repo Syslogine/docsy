@@ -2,10 +2,10 @@
 linktitle: Install MariaDB
 title: How To install MariaDB on Debian server.
 categories: ["debian"]
-tags: ["debian","how to","mariadb"]
+tags: ["debian","how to","mariadb","mysql","database"]
 weight: 1
 description: >
- small and fast tutorial for installing MariaDB on a debian machine.
+ small and fast tutorial for installing MariaDB on Debian.
 ---
 
 
@@ -113,12 +113,12 @@ description: >
 2.  Lets create a user
     *   Replace `syslogine` with your wanted username
     *   Replace `localhost` with `%` or `IP` if want other conenction
-    *   Replace `password`
+    *   Replace `password` with your own password (create new)
     ```mysql
     CREATE USER 'syslogine'@'localhost' IDENTIFIED BY 'password';
     ```
 
-3.  Give the new created permissions
+3.  Give the new created user grant permissions
     *   Replace `syslogine` with new created user
     *   Replace `localhost` with `%` or `IP` if want other conenction
     ```mysql
@@ -133,4 +133,17 @@ description: >
     exit
     ```
 
-Done...
+6.  We need to do one more before we can conenct to the mysql server from other locations.
+    ```bash
+    sudo nano /etc/mysql/mariadb.conf.d/50-server-cnf
+    ```
+    1.  Find: `bind-address = 127.0.0.1`
+        *   Replace with: `localhost` or `0.0.0.0` or keep it `127.0.0.1`
+        *   Or Disable it by adding `#` in front like: `#bind-address = 127.0.0.1`
+    
+
+    When done can close nano with: `Ctrl` + `x` then press `Y` now `enter`
+
+
+## Conclusion
+We have giving our system user sudo and you should have now a working MariaDB server running with a user u can conenct to from any IP
