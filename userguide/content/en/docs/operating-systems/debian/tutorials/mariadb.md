@@ -82,6 +82,7 @@ description: >
     ```bash
     sudo systemctl status mariadb
     ```
+    Can close this by: `Ctrl` + `C`
 3.  Now that we know MariaDB server is active and running we need to secure it a little.
     ```bash
     sudo mysql_secure_installation
