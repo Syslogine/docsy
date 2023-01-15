@@ -10,7 +10,7 @@ description: >
 
 
 ## Update, Install packages
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/dXiodf31YSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/30lDl8UulX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br>
 
 1.  First we need to login into `root` account
@@ -23,22 +23,26 @@ description: >
     ```bash
     apt update
     ```
-3.  If there are packages need to eb upgarded we use
+3.  If there are packages need to be upgarded.
     ```bash
     apt upgrade -y
     ```
-4.  So now install some packages we need for MariaDB and for later use.
+4.  So now install MariaDB and other packages for later use.
     ```bash
-    apt install nano sudo git curl
+    apt install nano sudo git curl wget
     ```
 5.  Can clean if want... Not really needed
     ```bash
     apt autoremove -y && apt clean
     ```
+6.  Exit `root` account with
+    ```bash
+    exit
+    ```
 
 
 ## Create sudo user
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/jUqDdp90P-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/de00L9xTXp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br>
 
 1.  Lets login into `root` user
@@ -71,7 +75,7 @@ description: >
 
 
 ## Installing and configuring MariaDB
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pnZAxSXGDhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pDRWo93ffJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br>
 
 1.  Now we can install `mariadb-server`
@@ -102,7 +106,7 @@ description: >
     ```
 
 ## Create mysql user
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/bYsvrI1dwdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/z5UL7IpHZx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br>
 
 1.  Lets login into MariaDB `root` account and create a user
