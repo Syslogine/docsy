@@ -3,6 +3,8 @@ linktitle: systemctl services
 title: systemctl service
 tags: ["systemctl","service"]
 weight: 1
+description: >
+ Here is a list of comamnds for systemctl
 ---
 
 

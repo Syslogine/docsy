@@ -1,6 +1,9 @@
 ---
 linktitle: Create and use SSH
-
+title: Create and use SSH
+tags: ["ssh"]
+description: >
+ Some security for your server is not always bad, so we made a quick tut for creating and use of SSH key.
 ---
 
 
