@@ -1,6 +1,5 @@
 ---
 linktitle: Debian
-title: Debian
 categories: ["operating systems"]
 tags: ["debian"]
 weight: 2
