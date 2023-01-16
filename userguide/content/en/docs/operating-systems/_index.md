@@ -4,11 +4,8 @@ linktitle: Operating Systems
 tags: ["centos", "debian", "kali linux", "linux", "red hat", "ubuntu", "windows"]
 categories: ["Operating Systems"]
 description: >
-  List of operating systems we have collected data of.
+  This page has the list of some operating systems that we have created tutorials for.
 ---
-
-This page has the list of some operating systems that we have created tutorials for.
-
 
 ## CentOS
 CentOS (/ˈsɛntɒs/, from Community Enterprise Operating System; also known as CentOS Linux) is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL).

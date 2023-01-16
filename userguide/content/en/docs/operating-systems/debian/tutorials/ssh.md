@@ -1,7 +1,7 @@
 ---
 linktitle: Create and use SSH
 title: Create and use SSH
-tags: ["ssh"]
+tags: ["ssh","rsa","dsa","ecdsa","eddsa"]
 description: >
  Some security for your server is not always bad, so we made a quick tut for creating and use of SSH key.
 ---
@@ -10,7 +10,7 @@ description: >
 
 <center>
 
-![](https://blog.apnic.net/wp-content/uploads/2019/10/OpenSSL_banner.png?v=bba6dede35671c7edca88c309d9c93fd)
+![](/images/os/openssl.png)
 </center>
 
 ## Info Table
@@ -29,10 +29,13 @@ description: >
 	```bash
 	sudo apt update
 	```
-
 2.	Now we can install the `openssh-server` package
 	```bash
 	sudo apt install openssh-server -y
+	```
+3.	Check if `SSH` is running
+	```bash
+	sudo systemctl status sshd
 	```
 Congratulations now you got a SSH server.
 
@@ -40,6 +43,7 @@ Congratulations now you got a SSH server.
 ## Create SSH Key
 Now that we have a working ssh we can generate a SSH key
 
+{{< alert color="warning" title="Warning" >}}Be sure when you do this step your on client device/machine and not on the server!{{< /alert >}}
 
 
 *	My way of creating ssh key	
@@ -59,6 +63,53 @@ Now that we have a working ssh we can generate a SSH key
 
 
 
+## Secure Server
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+```bash
+Include /etc/ssh/sshd_config.d/*.conf
+
+Port 3040
+ListenAddress 192.168.69.1
+HostKey /etc/ssh/ssh_host_ed25519_key
+SyslogFacility AUTH
+LogLevel VERBOSE
+LoginGraceTime 60
+PermitRootLogin no
+StrictModes yes
+MaxAuthTries 3
+MaxSessions 2
+PubkeyAuthentication yes
+AuthorizedKeysFile     .ssh/authorized_keys
+HostbasedAuthentication no
+IgnoreRhosts yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM no
+AllowAgentForwarding no
+AllowTcpForwarding no
+GatewayPorts no
+X11Forwarding no
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive yes
+ClientAliveInterval 900
+ClientAliveCountMax 0
+UseDNS no
+MaxStartups 2
+PermitTunnel no
+#Banner none
+AcceptEnv LANG LC_*
+Subsystem       sftp    /usr/lib/openssh/sftp-server
+```
+After this set the permissions on 600 so there can be added a other key
+```bash
+sudo chmod 600 ~/.ssh/authorized_keys
+```
+
 ## Explanation
 
 ```bash
@@ -70,16 +121,16 @@ You’ll be asked to enter a passphrase for this key, use the strong one. You ca
 ### EDDSA
 *	`-o` : Save the private-key using the new OpenSSH format rather than the PEM format. Actually, this option is implied when you specify the key type as `ed25519`.
 *	`-a`: It’s the numbers of KDF (Key Derivation Function) rounds. Higher numbers result in slower passphrase verification, increasing the resistance to brute-force password cracking should the private-key be stolen.
-*	`-t`: Specifies the type of key to create, in our case the Ed25519.
+*	`-t`: Specifies the type of key to create, in our case the `Ed25519`.
 *	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
 *	`-C`: An option to specify a comment. It’s purely informational and can be anything. But it’s usually filled with `<login>@<hostname>` who generated the key.
 
 
 
 ### RSA
-*	`-t`: For rsa we use `rsa`
+*	`-t`: Specifies the type of key to create, in our case the `rsa`.
 *	`-b`: Set the bit of the encryption like: `512`, `1024`, `2048` and `4096`
-
+*	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
 
 
 
