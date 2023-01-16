@@ -147,7 +147,7 @@ description: >
         *   Or Disable it by adding `#` in front like: `#bind-address = 127.0.0.1`
     
 
-    When done can close nano with: `Ctrl` + `x` then press `Y` now `enter`
+    When done can close nano with: `Ctrl` + `X` then press `Y` now `Enter`
 7.  Restart MariaDB
     ```bash
     sudo systemctl restart mariadb
