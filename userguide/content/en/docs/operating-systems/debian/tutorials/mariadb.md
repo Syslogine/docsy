@@ -3,7 +3,6 @@ linktitle: Install MariaDB
 title: How To install MariaDB on Debian server.
 categories: ["debian"]
 tags: ["debian","how to","mariadb","mysql","database"]
-weight: 1
 description: >
  small and fast tutorial for installing MariaDB on Debian.
 ---

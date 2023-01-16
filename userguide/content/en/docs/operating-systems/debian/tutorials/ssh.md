@@ -80,6 +80,8 @@ You’ll be asked to enter a passphrase for this key, use the strong one. You ca
 
 
 
+## Extra
+How to `restart`, `start`, `stop`, `status`, etc etc. SSH service check further on: [systemctl services](/docs/operating-systems/debian/tutorials/info_systemcrl)
 
 
 
