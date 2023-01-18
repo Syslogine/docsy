@@ -35,7 +35,7 @@ description: >
 	```
 3.	Check if `SSH` is running
 	```bash
-	sudo systemctl status sshd
+	sudo systemctl is-active sshd
 	```
 Congratulations now you got a SSH server.
 
@@ -52,27 +52,25 @@ Now that we have a working ssh we can generate a SSH key
 	```
 
 
-
-
 ## Add Key to server
 *	You can do this
 	```bash
-	ssh-copy-id syslogine@192.168.0.1
+	ssh-copy-id syslogine@192.168.1.1
 	```
 
 
-
-
 ## Secure Server
+Open the file `sshd_config`
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
+Check the diffrence between this version and the one you ahev now currently... As this setup will work for me but maybe you have a other idea how to want setup your server.
 ```bash
 Include /etc/ssh/sshd_config.d/*.conf
 
 Port 3040
-ListenAddress 192.168.69.1
+ListenAddress 192.168.1.1
 HostKey /etc/ssh/ssh_host_ed25519_key
 SyslogFacility AUTH
 LogLevel VERBOSE
@@ -105,10 +103,37 @@ PermitTunnel no
 AcceptEnv LANG LC_*
 Subsystem       sftp    /usr/lib/openssh/sftp-server
 ```
-After this set the permissions on 600 so there can be added a other key
+After this set the permissions on 400 so there can be added a other key
 ```bash
-sudo chmod 600 ~/.ssh/authorized_keys
+sudo chmod 400 ~/.ssh/authorized_keys
 ```
+Or it can be `600` but i need to test this...
+
+
+### Fix Cannot Bind IP at Boot
+at boot soo lets fix this issue with giving the ssh.service a delay of 30 seconds...
+
+1.	Lets open the ssh.service
+	```bash
+	sudo nano /etc/system/
+	```
+
+2.	Find 
+	```txt
+	ExecStartPre=/usr/sbin/sshd -t
+	```
+
+3.	Add this in front of it !!!!!
+	```txt
+	ExecStartPre=/bin/sleep 30
+	```
+
+So it will looks like this:
+```txt
+ExecStartPre=/bin/sleep 30
+ExecStartPre=/usr/sbin/sshd -t
+```
+
 
 ## Explanation
 

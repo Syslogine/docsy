@@ -55,9 +55,9 @@ description: >
     visudo
     ```
 
-3.  Replace `unknown` with your own username
+3.  Replace `syslogine` with your own username
     ```txt
-    unknown ALL=(ALL) NOPASSWD:ALL
+    syslogine ALL=(ALL) NOPASSWD:ALL
     ```
     To exit nano press: `Ctrl` + `X` and then it will ask if wan to save it so press `Y` adn then `Enter`
 
@@ -70,7 +70,7 @@ description: >
     ```bash
     sudo apt update
     ```
-    Now enter your `useraccount` password.
+    From now on there is no need for a password.... 
 
 
 ## Installing and configuring MariaDB
@@ -83,9 +83,9 @@ description: >
     ```
 2.  Check status of mariadb
     ```bash
-    sudo systemctl status mariadb
+    sudo systemctl is-active mariadb
     ```
-    Can close this by: `Ctrl` + `C`
+    Hopefully it wikll say its active
 3.  Now that we know MariaDB server is active and running we need to secure it a little.
     ```bash
     sudo mysql_secure_installation
@@ -100,6 +100,22 @@ description: >
     6.  Remove test database and acces to it? [Y/n]: `y`
     7.  Reload privilege tables now? [Y/n]: `y`
 4.  Not really needed but he lets restart our mariadb server
+    ```bash
+    sudo systemctl restart mariadb
+    ```
+
+
+6.  We need to do one more before we can conenct to the mysql server from other locations.
+    ```bash
+    sudo nano /etc/mysql/mariadb.conf.d/50-server-cnf
+    ```
+    1.  Find: `bind-address = 127.0.0.1`
+        *   Replace with: `localhost` or `0.0.0.0` or keep it `127.0.0.1`
+        *   Or Disable it by adding `#` in front like: `#bind-address = 127.0.0.1`
+    
+
+    When done can close nano with: `Ctrl` + `X` then press `Y` now `Enter`
+7.  Restart MariaDB
     ```bash
     sudo systemctl restart mariadb
     ```
@@ -137,20 +153,6 @@ description: >
     exit
     ```
 
-6.  We need to do one more before we can conenct to the mysql server from other locations.
-    ```bash
-    sudo nano /etc/mysql/mariadb.conf.d/50-server-cnf
-    ```
-    1.  Find: `bind-address = 127.0.0.1`
-        *   Replace with: `localhost` or `0.0.0.0` or keep it `127.0.0.1`
-        *   Or Disable it by adding `#` in front like: `#bind-address = 127.0.0.1`
-    
-
-    When done can close nano with: `Ctrl` + `X` then press `Y` now `Enter`
-7.  Restart MariaDB
-    ```bash
-    sudo systemctl restart mariadb
-    ```
 
 ## Conclusion
 We have giving our system user sudo and you should have now a working MariaDB server running with a user u can conenct to from any IP

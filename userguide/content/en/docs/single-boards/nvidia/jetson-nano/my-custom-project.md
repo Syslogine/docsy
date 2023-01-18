@@ -27,6 +27,9 @@ List of dependencies i need for creatiing my project.
 
 
 ## Download jetson nano 
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-esEwx4mSCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br>
+
 1.	Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image), and note where it was saved on the computer.
 2.	Write the image to your microSD card with [Etcher](https://www.balena.io/etcher/).
 
