@@ -21,7 +21,7 @@ List of dependencies i need for creatiing my project.
 *	Wall power supply
 *	Samsung Class 10 MicroSD 32GB
 *	120GB SSD
-*	Sata to usb 3 cable
+*	Sata to USB 3 cable
 *	Noctua NF-A4x20-PWM
 *	Xbox Kinect v1
 
@@ -187,56 +187,66 @@ More info about this visit there Github page: [Jetson stats](https://github.com/
 
 
 
-###
-todo list
-make jetson stats fan run with boot
+## Make fan start at boot
+We need to make the fan start at boot because why not.....This will help to cool your jetson nano allot with compiling and installing packages we need.
+
+1.	Now we will edit `rc.local` with nano
+	```bash
+	sudo nano /etc/rc.local
+	```
+
+2.	Then add this to the `rc.local` file
+	```txt
+	#!/bin/bash
+	sleep 10
+	#sudo /usr/bin/jetson_clocks
+	sudo sh -c ‘echo 255 > /sys/devices/pwm-fan/target_pwm’
+	exit 0
+	```
+	And we close nano with `Ctrl` + `X` it will ask if we want to save it so `Y` and then `Enter`
 
 
-
-
-
-
-##
-
-```bash
-mkdir project && cd project
-```
 
 
 ## Installation of libusb
 
-Get the latest version of `libusb`
-```bash
-wget https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
-```
+1.	Lets create a fodler and enter it before be continue
+	```bash
+	mkdir project && cd project
+	```
 
-Now we need to extract it..
-```bash
-tar -xvjf libusb-1.0.26.tar.bz2
-```
+2.	Get the latest version of `libusb`
+	```bash
+	wget https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
+	```
 
-And i love to work with folder with smaller names so rename it
-```bash
-mv libusb-1.0.26 libusb
-```
+3.	Now we need to extract it..
+	```bash
+	tar -xvjf libusb-1.0.26.tar.bz2
+	```
 
-now we enter the folder we renamed
-```bash
-cd libusb
-```
+4.	And i love to work with folder with smaller names so rename it
+	```bash
+	mv libusb-1.0.26 libusb
+	```
 
+5.	Now we enter the folder we renamed
+	```bash
+	cd libusb
+	```
 
-```bash
-./configure --prefix=/usr --disable-static &&
-make
-```
+6.	Let's create the package or something.
+	```bash
+	./configure --prefix=/usr --disable-static &&
+	make
+	```
+7.	Thats the install
+	```bash
+	sudo make install
+	```
 
-```bash
-sudo make install
-```
-
-after `make install` was succesful we can remove the .tar.bz2
-```bash
-cd .. && rm libusb-1.0.26.tar.bz2
-```
+8.	after `make install` was succesful we can remove the .tar.bz2
+	```bash
+	cd .. && rm libusb-1.0.26.tar.bz2
+	```
 
