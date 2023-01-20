@@ -4,13 +4,6 @@ title: Nvidia Jetson Nano | Arch Linux | Volt.cx
 
 ---
 
-
-
-## Table of contents
-* [General info](#general-info)
-* [Need for](#need-for)
-* [Extra Info](#extra-info)
-
 ## General info
 Here are the steps to build your own updated version of Arch Nano. Arch Linux for Nvidia Jetson Nano 2GB and 4GB.
 If you encounter any problem with creation because i made a mistake some where just let me know so i can update this and make it better and everyone can enjoy a happy Arch Nano Project.
