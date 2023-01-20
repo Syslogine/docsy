@@ -65,6 +65,22 @@ List of dependencies i need for creatiing my project.
 	sudo apt autoremove -y && sudo apt clean
 	```
 
+### Extra
+You can also add your current user to the sudo list in a way that a password is not required anymore everytime when you use the `sudo` command
+1.	We need t install `nano` first before we can continue as i love nano for ease of use.
+	```bash
+	sudo apt install nano
+	```
+2.	After install we can open the sudoers files with `visudo` command
+	```bash
+	sudo visudo
+	```
+3.	Type this and replace `syslogine` with your own username
+	```txt
+	syslogine ALL=(ALL) NOPASSWD:ALL
+	```
+	To save and exit nano press: `Ctrl` + `X` now it ask if we want to save it so press: `Y` then `Enter`
+
 
 ## Wipe SSD and Moving MicroSD to SSD
 1.	Mount the SSD in your Jetson Nano
