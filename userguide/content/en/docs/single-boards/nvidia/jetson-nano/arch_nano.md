@@ -1,6 +1,6 @@
 ---
 linkTitle: Arch Nano
-title: Nvidia Jetson Nano | Arch Linux | Volt.cx
+title: Nvidia Jetson Nano | Arch Linux
 
 ---
 

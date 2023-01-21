@@ -190,16 +190,18 @@ you can also just watch this video from JetonHacks
 	```bash
 	sudo apt-get install python3-pip
 	```
-2.	Now we can install jetson stats with the pip3
+2.	Now we can install jetson stats with the `pip3`
 	```bash
 	sudo -H pip3 install -U jetson-stats
 	```
-3.	To run jetson stats we only need to type
+3.	best way is to restart your jetson nano
+	```bash
+	sudo reboot now
+	```
+3.	After restart and logged in run jetson stats
 	```bash
 	jtop
 	```
-More info about this visit there Github page: [Jetson stats](https://github.com/rbonghi/jetson_stats)
-
 
 
 
@@ -221,11 +223,19 @@ We need to make the fan start at boot because why not.....This will help to cool
 	```
 	And we close nano with `Ctrl` + `X` it will ask if we want to save it so `Y` and then `Enter`
 
-
+3.	Again we reboot our jetson nano to see if this works
+	```bash
+	sudo reboot now
+	```
+	After 10 seconds when jetson nano is start the jetson clocks should start running
 
 
 ## Installation of libusb
 
+0.	First install Deps
+	```bash
+	sudo apt install libudev-dev
+	```
 1.	Lets create a fodler and enter it before be continue
 	```bash
 	mkdir project && cd project
@@ -253,8 +263,7 @@ We need to make the fan start at boot because why not.....This will help to cool
 
 6.	Let's create the package or something.
 	```bash
-	./configure --prefix=/usr --disable-static &&
-	make
+	./configure --prefix=/usr --disable-static && make
 	```
 7.	Thats the install
 	```bash
