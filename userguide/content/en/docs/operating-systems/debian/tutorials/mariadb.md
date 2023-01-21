@@ -101,7 +101,7 @@ description: >
     7.  Reload privilege tables now? [Y/n]: `y`
 4.  Not really needed but he lets restart our mariadb server
     ```bash
-    sudo systemctl restart mariadb
+    sudo systemctl reload mariadb
     ```
 
 

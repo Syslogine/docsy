@@ -9,8 +9,6 @@ categories: ["jetson nano"]
 
 List of dependencies i need for creatiing my project.
 
-
-
 *	https://github.com/raymondlo84/nvidia-jetson-ai-monitor
 *	https://github.com/OpenKinect/libfreenect
 
@@ -24,6 +22,10 @@ List of dependencies i need for creatiing my project.
 *	Sata to USB 3 cable
 *	Noctua NF-A4x20-PWM
 *	Xbox Kinect v1
+
+
+## Before Begin
+*	`nano`: Save and close Nano with `Ctrl` + `X` and then `Y` then `Enter`
 
 
 ## Download jetson nano 
@@ -172,7 +174,7 @@ You can also add your current user to the sudo list in a way that a password is 
 	```
 	root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060
 	```
-	Save and close Nano with `Ctrl` + `X` and then `Y` then `Enter`
+	
 
 22.	Finnaly... Lets shutdown Jetson Nano
 	```bash
@@ -188,7 +190,7 @@ you can also just watch this video from JetonHacks
 ## Install Jetson stats
 1.	Install `pip3` because this is not installed by default
 	```bash
-	sudo apt-get install python3-pip
+	sudo apt-get install python3-pip -y
 	```
 2.	Now we can install jetson stats with the `pip3`
 	```bash
@@ -212,18 +214,21 @@ We need to make the fan start at boot because why not.....This will help to cool
 	```bash
 	sudo nano /etc/rc.local
 	```
-
 2.	Then add this to the `rc.local` file
 	```txt
 	#!/bin/bash
 	sleep 10
-	#sudo /usr/bin/jetson_clocks
-	sudo sh -c ‘echo 255 > /sys/devices/pwm-fan/target_pwm’
+	sudo /usr/bin/jetson_clocks
+	sudo sh -c 'echo 255 > /sys/devices/pwm-fan/target_pwm'
 	exit 0
 	```
-	And we close nano with `Ctrl` + `X` it will ask if we want to save it so `Y` and then `Enter`
+	{{< alert title="Note" >}}You can change the 255 to another value (0~255) to change the speed of fan.{{< /alert >}}
 
-3.	Again we reboot our jetson nano to see if this works
+3.	Then add execute permission to `rc.local` file.
+	```bash
+	sudo chmod u+x /etc/rc.local
+	```
+4.	Again we reboot our jetson nano to see if this works
 	```bash
 	sudo reboot now
 	```
@@ -274,4 +279,3 @@ We need to make the fan start at boot because why not.....This will help to cool
 	```bash
 	cd .. && rm libusb-1.0.26.tar.bz2
 	```
-
