@@ -71,7 +71,7 @@ By default on the jetson nano we have OpenCV 4.1.x installed and as i like to ha
 	sudo /etc/init.d/dphys-swapfile stop
 	```
 	```bash
-	sudo apt-get remove --purge dphys-swapfile
+	sudo apt remove --purge dphys-swapfile
 	```
 5.	just a tip to save an additional 275 MB
 	```bash
@@ -80,41 +80,17 @@ By default on the jetson nano we have OpenCV 4.1.x installed and as i like to ha
 	```bash
 	sudo rm -rf ~/opencv_contrib
 	```
-
-### Step 03
-1.	reveal the CUDA location
+6.	Let's reboot system..
 	```bash
-	sudo sh -c "echo '/usr/local/cuda/lib64' >> /etc/ld.so.conf.d/nvidia-tegra.conf"
-	sudo ldconfig
-	```
-2.	third-party libraries
-	```bash
-	sudo apt install build-essential cmake git unzip pkg-config zlib1g-dev
-	sudo apt install libjpeg-dev libjpeg8-dev libjpeg-turbo8-dev
-	sudo apt install libpng-dev libtiff-dev libglew-dev
-	sudo apt install libavcodec-dev libavformat-dev libswscale-dev
-	sudo apt install libgtk2.0-dev libgtk-3-dev libcanberra-gtk*
-	sudo apt install python-dev python-numpy python-pip
-	sudo apt install python3-dev python3-numpy python3-pip
-	sudo apt install libxvidcore-dev libx264-dev libgtk-3-dev
-	sudo apt install libtbb2 libtbb-dev libdc1394-22-dev libxine2-dev
-	sudo apt install gstreamer1.0-tools libgstreamer-plugins-base1.0-dev
-	sudo apt install libgstreamer-plugins-good1.0-dev
-	sudo apt install libv4l-dev v4l-utils v4l2ucp qv4l2
-	sudo apt install libtesseract-dev libxine2-dev libpostproc-dev
-	sudo apt install libavresample-dev libvorbis-dev
-	sudo apt install libfaac-dev libmp3lame-dev libtheora-dev
-	sudo apt install libopencore-amrnb-dev libopencore-amrwb-dev
-	sudo apt install libopenblas-dev libatlas-base-dev libblas-dev
-	sudo apt install liblapack-dev liblapacke-dev libeigen3-dev gfortran
-	sudo apt install libhdf5-dev libprotobuf-dev protobuf-compiler
-	sudo apt install libgoogle-glog-dev libgflags-dev
+	sudo reboot now
 	```
 
-
-
-
-
+### extra
+1.	only install if you want Qt5
+	to beautify your OpenCV GUI
+	```bash
+	sudo apt-get install qt5-default
+	```
 
 
 

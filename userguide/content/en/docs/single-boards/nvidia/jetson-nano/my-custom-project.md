@@ -279,3 +279,23 @@ We need to make the fan start at boot because why not.....This will help to cool
 	```bash
 	cd .. && rm libusb-1.0.26.tar.bz2
 	```
+
+
+
+
+
+
+
+
+## Python 3.7 upgrade 
+
+
+```bash
+sudo apt-get install python3.7
+```
+
+```bash
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
+```
+
+
