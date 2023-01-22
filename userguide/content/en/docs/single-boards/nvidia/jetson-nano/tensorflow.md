@@ -4,7 +4,6 @@ title: TensorFlow
 ---
 
 
-
 1.	get a fresh start
 	```bash
 	sudo apt update
@@ -14,25 +13,29 @@ title: TensorFlow
 	```bash
 	sudo apt install python-pip python3-pip
 	```
-3.	remove old versions, if not placed in a virtual environment (let pip search for them)
+3.	Uninstall current `numpy`
 	```bash
-	sudo pip uninstall tensorflow
+	sudo -H pip3 uninstall numpy && sudo -H pip3 install numpy==1.18.5
+	```
+4.	remove old versions, if not placed in a virtual environment (let pip search for them)
+	```bash
+	sudo pip uninstall tensorflow &&\
 	sudo pip3 uninstall tensorflow
 	```
-4.	install the dependencies (if not already onboard)
+5.	install the dependencies (if not already onboard)
 	```bash
-	sudo apt install gfortran &&\
-	sudo apt install libhdf5-dev libc-ares-dev libeigen3-dev &&\
-	sudo apt install libatlas-base-dev libopenblas-dev libblas-dev &&\
-	sudo apt install liblapack-dev &&\
+	sudo apt install gfortran -y &&\
+	sudo apt install libhdf5-dev libc-ares-dev libeigen3-dev -y &&\
+	sudo apt install libatlas-base-dev libopenblas-dev libblas-dev -y &&\
+	sudo apt install liblapack-dev -y &&\
 	sudo -H pip3 install Cython==0.29.21
 	```
-5.	install h5py with Cython version 0.29.21 (± 6 min @1950 MHz)
+6.	install h5py with Cython version 0.29.21 (± 6 min @1950 MHz)
 	```bash
 	sudo -H pip3 install h5py==2.10.0
 	sudo -H pip3 install -U testresources numpy
 	```
-6.	upgrade setuptools 39.0.1 -> 53.0.0
+7.	upgrade setuptools 39.0.1 -> 53.0.0
 	```bash
 	sudo -H pip3 install --upgrade setuptools
 	sudo -H pip3 install pybind11 protobuf google-pasta
@@ -40,15 +43,15 @@ title: TensorFlow
 	sudo -H pip3 install keras_applications --no-deps
 	sudo -H pip3 install keras_preprocessing --no-deps
 	```
-7.	install gdown to download from Google drive
+8.	install gdown to download from Google drive
 	```bash
 	sudo -H pip3 install gdown
 	```
-8.	download the wheel
+9.	download the wheel
 	```bash
 	gdown https://drive.google.com/uc?id=1DLk4Tjs8Mjg919NkDnYg02zEnbbCAzOz
 	```
-9.	install TensorFlow (± 12 min @1500 MHz)
+10.	install TensorFlow (± 12 min @1500 MHz)
 	```bash
 	sudo -H pip3 install tensorflow-2.4.1-cp36-cp36m-linux_aarch64.whl
 	```
