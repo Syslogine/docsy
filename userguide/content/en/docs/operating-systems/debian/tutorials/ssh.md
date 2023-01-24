@@ -6,8 +6,6 @@ description: >
  Some security for your server is not always bad, so we made a quick tut for creating and use of SSH key.
 ---
 
-
-
 <center>
 
 ![](/images/os/openssl.png)
@@ -20,8 +18,6 @@ description: >
 | **POPULARITY**  | Most widely implemented and supported.| Its notorious security history makes it less popular. | Fairly new but not as popular as EdDSA. | Fairly new but favoured by most modern cryptographic libraries. |
 | **PERFORMANCE** | Larger keys require more time to generate. | Faster for signature generation but slower for validation. | Public keys are twice the length of the desired bit security. | EdDSA is the fastest performing algorithm across all metrics. |
 | **SECURITY**    | Specialized algorithms like Quadratic Sieve and General Number Field Sieve exist to factor integers with specific qualities. | DSA requires the use of a randomly generated unpredictable and secret value that, if discovered, can reveal the private key. | Vulnerable if pseudo random number aren't cryptographically strong. | EdDSA provides the highest security level compared to key length. It also improves on the insecurities found in ECDSA. |
-
-
 
 ## Install SSH
 
@@ -45,19 +41,16 @@ Now that we have a working ssh we can generate a SSH key
 
 {{< alert color="warning" title="Warning" >}}Be sure when you do this step your on client device/machine and not on the server!{{< /alert >}}
 
-
 *	My way of creating ssh key	
 	```bash
 	ssh-keygen -o -a 1000 -t ed25519 -f ~/.ssh/id_ed25519
 	```
-
 
 ## Add Key to server
 *	You can do this
 	```bash
 	ssh-copy-id syslogine@192.168.1.1
 	```
-
 
 ## Secure Server
 Open the file `sshd_config`
@@ -134,7 +127,6 @@ ExecStartPre=/bin/sleep 30
 ExecStartPre=/usr/sbin/sshd -t
 ```
 
-
 ## Explanation
 ```bash
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "john@example.com"
@@ -149,14 +141,10 @@ You’ll be asked to enter a passphrase for this key, use the strong one. You ca
 *	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
 *	`-C`: An option to specify a comment. It’s purely informational and can be anything. But it’s usually filled with `<login>@<hostname>` who generated the key.
 
-
-
 ### RSA
 *	`-t`: Specifies the type of key to create, in our case the `rsa`.
 *	`-b`: Set the bit of the encryption like: `512`, `1024`, `2048` and `4096`
 *	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
-
-
 
 ## Extra
 How to `restart`, `start`, `stop`, `status`, etc etc. SSH service check further on: [systemctl services](/docs/operating-systems/debian/tutorials/info_systemcrl)
