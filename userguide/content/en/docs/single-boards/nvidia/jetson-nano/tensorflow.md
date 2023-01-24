@@ -62,8 +62,8 @@ If you are planning to program in C++, you will  need the C++ API build of Tenso
 
 1.	get a fresh start
 	```bash
-	sudo apt-get update
-	sudo apt-get upgrade
+	sudo apt update
+	sudo apt upgrade
 	```
 2.	remove old versions (if found)
 	```bash
@@ -72,8 +72,8 @@ If you are planning to program in C++, you will  need the C++ API build of Tenso
 	```
 3.	the dependencies
 	```bash
-	sudo apt-get install wget curl libhdf5-dev libc-ares-dev libeigen3-dev
-	sudo apt-get install libatlas-base-dev zip unzip
+	sudo apt install wget curl libhdf5-dev libc-ares-dev libeigen3-dev
+	sudo apt install libatlas-base-dev zip unzip
 	```
 4.	install gdown to download from Google drive (if not already done)
 	```bash

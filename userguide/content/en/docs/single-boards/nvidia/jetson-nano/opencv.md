@@ -1,11 +1,10 @@
 ---
 linktitle: OpenCV
 title: OpenCV
-
+tags: ["opencv","jetson","nano"]
+description: >
+ With few simple steps you can install/upgrade OpenCV 4.6 on your own jetson nano.
 ---
-
-
-
 
 ## Install OpenCV 4.6
 By default on the jetson nano we have OpenCV 4.1.x installed and as i like to have everything up to date we also going to update this one.
@@ -91,8 +90,3 @@ By default on the jetson nano we have OpenCV 4.1.x installed and as i like to ha
 	```bash
 	sudo apt-get install qt5-default
 	```
-
-
-
-
-
