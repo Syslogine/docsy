@@ -101,13 +101,13 @@ description: >
     7.  Reload privilege tables now? [Y/n]: `y`
 4.  Not really needed but he lets restart our mariadb server
     ```bash
-    sudo systemctl reload mariadb
+    sudo systemctl restart mariadb
     ```
 
 
 6.  We need to do one more before we can conenct to the mysql server from other locations.
     ```bash
-    sudo nano /etc/mysql/mariadb.conf.d/50-server-cnf
+    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
     ```
     1.  Find: `bind-address = 127.0.0.1`
         *   Replace with: `localhost` or `0.0.0.0` or keep it `127.0.0.1`
