@@ -44,6 +44,11 @@ If you do not see a prebuilt binary for the desired edition, operating system, a
 choco install hugo-extended
 ```
 
+{{%/* alert title="Note" color="primary" */%}}
+choco can be installed with [this guide](https://chocolatey.org/install)
+{{%/* /alert */%}}
+
+
 ### Scoop 
 [Scoop](https://scoop.sh/) is a free and open source package manager for Windows. This will install the extended edition of Hugo:
 ```
