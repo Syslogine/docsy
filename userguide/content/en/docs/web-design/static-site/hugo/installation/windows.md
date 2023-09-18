@@ -43,7 +43,7 @@ If you do not see a prebuilt binary for the desired edition, operating system, a
 ```
 choco install hugo-extended
 ```
-{{< alert title="Note" >}}choco can be installed with [this guide](https://chocolatey.org/install) {{< /alert >}}
+{{< alert >}}choco can be installed with [this guide](https://chocolatey.org/install).{{< /alert >}}
 
 
 ### Scoop 
@@ -74,15 +74,15 @@ hugo version
 When building the extended edition of Hugo from source on Windows, you will also need to install the [GCC compiler](https://gcc.gnu.org/). See these detailed instructions.
 
 ## Comparison 
-Prebuilt binaries	Package managers	Docker	Build from source	
-Easy to install?	✔️	✔️	✔️	✔️	
-Easy to upgrade?	✔️	✔️	✔️	✔️	
-Easy to downgrade?	✔️	✔️ 1	✔️	✔️	
-Automatic updates?	❌	❌ 2	❌ 2	❌	
-Latest version available?	✔️	✔️	✔️	✔️	
-Easy if a previous version is still installed. ↩︎
-
-Possible but requires advanced configuration. ↩︎ ↩︎
+Prebuilt binaries	Package managers	Docker	Build from source	<br>
+Easy to install?	✔️	✔️	✔️	✔️	<br>
+Easy to upgrade?	✔️	✔️	✔️	✔️	<br>
+Easy to downgrade?	✔️	✔️ 1	✔️	✔️	<br>
+Automatic updates?	❌	❌ 2	❌ 2	❌	<br>
+Latest version available?	✔️	✔️	✔️	✔️	<br>
+Easy if a previous version is still installed. ↩︎<br>
+<br>
+Possible but requires advanced configuration. ↩︎ ↩︎<br>
 
 
 
