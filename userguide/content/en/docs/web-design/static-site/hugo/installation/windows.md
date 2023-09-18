@@ -48,7 +48,7 @@ After the Install of choco we can use the command below to install `hugo-extende
 choco install hugo-extended
 ```
 
-[](/images/other/choco-windows-install.png)
+![](/images/other/choco-windows-install.png)
 
 
 ### Scoop 
