@@ -39,13 +39,14 @@ If you do not see a prebuilt binary for the desired edition, operating system, a
 
 ## Package managers 
 ### Chocolatey 
-[Chocolatey](https://chocolatey.org/) is a free and open source package manager for Windows. This will install the extended edition of Hugo:
-1.	{{< alert >}}choco can be installed with [this guide](https://chocolatey.org/install).{{< /alert >}}
+[Chocolatey](https://chocolatey.org/) is a free and open source package manager for Windows. 
+This will install the extended edition of Hugo:
+1.	`Chocolatey` can be installed with [this guide](https://chocolatey.org/install).
 2.	After the Install of choco we can use the command below to install `hugo-extended`
 	```
 	choco install hugo-extended
 	```
-![choco install](/images/other/choco-windows-install.png)
+	![choco install](/images/other/choco-windows-install.png)
 
 ### Scoop 
 [Scoop](https://scoop.sh/) is a free and open source package manager for Windows. This will install the extended edition of Hugo:
