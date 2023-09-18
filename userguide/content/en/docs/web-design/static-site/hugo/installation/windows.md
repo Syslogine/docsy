@@ -43,10 +43,7 @@ If you do not see a prebuilt binary for the desired edition, operating system, a
 ```
 choco install hugo-extended
 ```
-
-{{%/* alert title="Note" color="primary" */%}}
-choco can be installed with [this guide](https://chocolatey.org/install)
-{{%/* /alert */%}}
+{{< alert title="Note" >}}choco can be installed with [this guide](https://chocolatey.org/install) {{< /alert >}}
 
 
 ### Scoop 
