@@ -19,8 +19,6 @@ imaging:
   quality: 75
   anchor: smart
 
-menu:
-  main:
 
 services:
   googleAnalytics:
