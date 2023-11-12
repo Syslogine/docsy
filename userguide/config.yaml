@@ -19,6 +19,11 @@ imaging:
   quality: 75
   anchor: smart
 
+menu:
+  main:
+    - name: Home
+      weight: 40
+      url: https://syslogine.com
 
 services:
   googleAnalytics:
