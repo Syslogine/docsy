@@ -1,9 +1,9 @@
 ---
-linktitle: Create and use SSH
-title: Create and use SSH
+linktitle: "SSH Creation and Usage Guide"
+title: "SSH Creation and Usage Guide"
 tags: ["ssh","rsa","dsa","ecdsa","eddsa"]
 description: >
- Some security for your server is not always bad, so we made a quick tut for creating and use of SSH key.
+ Enhance your server security with our quick tutorial on creating and using SSH keys. Learn the essentials for a safer and more secure server environment.
 ---
 
 <center>
@@ -12,7 +12,6 @@ description: >
 </center>
 
 ## Info Table
-
 |             | RSA             |	DSA	        | ECDSA  | 	EDDSA|
 |-------------|-----------------|---------------|--------|-------|
 | **POPULARITY**  | Most widely implemented and supported.| Its notorious security history makes it less popular. | Fairly new but not as popular as EdDSA. | Fairly new but favoured by most modern cryptographic libraries. |
@@ -20,45 +19,46 @@ description: >
 | **SECURITY**    | Specialized algorithms like Quadratic Sieve and General Number Field Sieve exist to factor integers with specific qualities. | DSA requires the use of a randomly generated unpredictable and secret value that, if discovered, can reveal the private key. | Vulnerable if pseudo random number aren't cryptographically strong. | EdDSA provides the highest security level compared to key length. It also improves on the insecurities found in ECDSA. |
 
 ## Install SSH
+Ensure your system is equipped with the latest packages by running the following command:
+```bash
+sudo apt update
+```
 
-1.	Be sure your system is up to date with packages
-	```bash
-	sudo apt update
-	```
-2.	Now we can install the `openssh-server` package
-	```bash
-	sudo apt install openssh-server -y
-	```
-3.	Check if `SSH` is running
-	```bash
-	sudo systemctl is-active sshd
-	```
-Congratulations now you got a SSH server.
+Once your system is up to date, proceed to install the `openssh-server` package:
+```bash
+sudo apt install openssh-server -y
+```
+
+Confirm that the SSH service is running smoothly:
+```bash
+sudo systemctl is-active sshd
+```
+
+Congratulations! Your SSH server is now up and running, ready to facilitate secure connections. Feel free to explore the next steps in configuring and maximizing the potential of your SSH setup.
 
 
 ## Create SSH Key
-Now that we have a working ssh we can generate a SSH key
+Now that your SSH is up and running, it's time to generate your SSH key.
 
-{{< alert color="warning" title="Warning" >}}Be sure when you do this step your on client device/machine and not on the server!{{< /alert >}}
+### My Preferred Method:
+Execute the following command to create an SSH key with enhanced security features:
+```bash
+ssh-keygen -o -a 1000 -t ed25519 -f ~/.ssh/id_ed25519
+```
 
-*	My way of creating ssh key	
-	```bash
-	ssh-keygen -o -a 1000 -t ed25519 -f ~/.ssh/id_ed25519
-	```
+## Add Key to Server
+Next, add your SSH key to the server with the following command:
+```bash
+ssh-copy-id syslogine@192.168.1.1
+```
 
-## Add Key to server
-*	You can do this
-	```bash
-	ssh-copy-id syslogine@192.168.1.1
-	```
-
-## Secure Server
-Open the file `sshd_config`
+## Enhance Server Security
+To strengthen server security, open the `sshd_config` file using the following command:
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-Check the diffrence between this version and the one you ahev now currently... As this setup will work for me but maybe you have a other idea how to want setup your server.
+Compare the differences between this version and your current setup. While this configuration suits my needs, you might have alternative preferences for setting up your server. Feel free to explore and adapt based on your specific requirements or discover new possibilities for optimizing your server environment.
 ```bash
 Include /etc/ssh/sshd_config.d/*.conf
 
@@ -96,61 +96,57 @@ PermitTunnel no
 AcceptEnv LANG LC_*
 Subsystem       sftp    /usr/lib/openssh/sftp-server
 ```
-After this set the permissions on 400 so there can be added a other key
+### Adjust Permissions for Additional Keys
+After this step, set the permissions to 400 on the `authorized_keys` file to allow the addition of another key:
 ```bash
 sudo chmod 400 ~/.ssh/authorized_keys
 ```
-Or it can be `600` but i need to test this...
+Alternatively, you can use `600`, but further testing is recommended.
 
+### Resolve "Cannot Bind IP at Boot" Issue
+If you encounter issues with IP binding at boot, follow these steps to introduce a 30-second delay to the `ssh.service`:
 
-### Fix Cannot Bind IP at Boot
-at boot soo lets fix this issue with giving the ssh.service a delay of 30 seconds...
+1. Open the `ssh.service` file for editing:
+   ```bash
+   sudo nano /etc/systemd/system/sshd.service
+   ```
 
-1.	Lets open the ssh.service
-	```bash
-	sudo nano /etc/system/
-	```
+2. Locate the line:
+   ```txt
+   ExecStartPre=/usr/sbin/sshd -t
+   ```
 
-2.	Find 
-	```txt
-	ExecStartPre=/usr/sbin/sshd -t
-	```
+3. Add the following line before it:
+   ```txt
+   ExecStartPre=/bin/sleep 30
+   ```
 
-3.	Add this in front of it !!!!!
-	```txt
-	ExecStartPre=/bin/sleep 30
-	```
-
-So it will looks like this:
-```txt
-ExecStartPre=/bin/sleep 30
-ExecStartPre=/usr/sbin/sshd -t
-```
+   The modified section should look like this:
+   ```txt
+   ExecStartPre=/bin/sleep 30
+   ExecStartPre=/usr/sbin/sshd -t
+   ```
 
 ## Explanation
+The delay ensures that the `ssh.service` has adequate time during boot, addressing potential issues with IP binding. Adjusting the timing can contribute to a smoother and more reliable startup process.
+
 ```bash
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "john@example.com"
 ```
 
-You’ll be asked to enter a passphrase for this key, use the strong one. You can also use the same passphrase like any of your old SSH keys.
+This `ssh-keygen` command generates an Ed25519 SSH key with increased security parameters and associates it with the specified email address. Customize the parameters based on your security preferences.
 
 ### EDDSA
-*	`-o` : Save the private-key using the new OpenSSH format rather than the PEM format. Actually, this option is implied when you specify the key type as `ed25519`.
-*	`-a`: It’s the numbers of KDF (Key Derivation Function) rounds. Higher numbers result in slower passphrase verification, increasing the resistance to brute-force password cracking should the private-key be stolen.
-*	`-t`: Specifies the type of key to create, in our case the `Ed25519`.
-*	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
-*	`-C`: An option to specify a comment. It’s purely informational and can be anything. But it’s usually filled with `<login>@<hostname>` who generated the key.
+- `-o`: Save the private key in the OpenSSH format rather than the PEM format. Implicitly used with the `ed25519` key type.
+- `-a`: Sets the number of Key Derivation Function (KDF) rounds. Higher values increase resistance to brute-force attacks if the private key is compromised.
+- `-t`: Specifies the key type, such as `ed25519`.
+- `-f`: Sets the filename for the generated key. To be automatically discovered by the SSH agent, store it in the default `.ssh` directory in your home directory.
+- `-C`: Adds a comment for informational purposes, often in the format `<login>@<hostname>`.
 
 ### RSA
-*	`-t`: Specifies the type of key to create, in our case the `rsa`.
-*	`-b`: Set the bit of the encryption like: `512`, `1024`, `2048` and `4096`
-*	`-f`: Specify the filename of the generated key file. If you want it to be discovered automatically by the SSH agent, it must be stored in the default `.ssh` directory within your home directory.
+- `-t`: Specifies the key type, such as `rsa`.
+- `-b`: Sets the encryption bit, like `512`, `1024`, `2048`, or `4096`.
+- `-f`: Sets the filename for the generated key. To be automatically discovered by the SSH agent, store it in the default `.ssh` directory in your home directory.
 
 ## Extra
-How to `restart`, `start`, `stop`, `status`, etc etc. SSH service check further on: [systemctl services](/docs/operating-systems/debian/tutorials/info_systemcrl)
-
-
-
-
-
-## Secure server
+Explore more about managing SSH service with commands like `restart`, `start`, `stop`, `status`, etc. Refer to [systemctl services](/docs/operating-systems/debian/tutorials/info_systemcrl) for detailed information.

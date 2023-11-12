@@ -6,7 +6,6 @@ menu: {main: {weight: 20}}
 
 ![](/images/landing.webp)
 
-# Welcome to Syslogine Docs
 👋 Welcome, tech enthusiast! Delve into a world of learning, creating, and innovating with Syslogine Docs. We're thrilled to have you here.
 
 Discover a treasure trove of tutorials covering operating systems, single board computers, programming, and more. Whether you're a seasoned developer or a curious beginner, our step-by-step guides are designed to make tech easy and exciting for you.
