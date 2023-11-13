@@ -6,9 +6,6 @@ description: >
  Fortify Your Debian Server: Installing and Securing MariaDB
 ---
 
-
-Absolutely, here are a few additional steps you can take to enhance the security of your MariaDB installation:
-
 ## 1. **Implement Two-Factor Authentication (2FA) for MariaDB:**
 **Objective:**
 Secure MariaDB user authentication with Two-Factor Authentication.
