@@ -6,6 +6,11 @@ description: >
  Fortify Your Debian Server: Installing and Securing MariaDB
 ---
 
+<center>
+
+![](/images/os/MariaDB_Logo.webp)
+</center>
+
 ## Introduction:
 ### Brief Overview of MariaDB:
 MariaDB is a powerful and open-source relational database management system (RDBMS) that evolved as a fork of MySQL. Developed by the original creators of MySQL, MariaDB retains compatibility while introducing enhancements and additional features. It is designed for high-performance, scalability, and reliability, making it an ideal choice for various applications ranging from small projects to enterprise-level databases. MariaDB supports ACID-compliant transactions and offers a range of storage engines, ensuring flexibility and efficiency in handling diverse data workloads.

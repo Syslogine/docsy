@@ -8,7 +8,7 @@ description: >
 
 <center>
 
-![](/images/os/openssl.png)
+![](/images/os/openssl.webp)
 </center>
 
 ## Info Table
