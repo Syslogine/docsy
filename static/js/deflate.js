@@ -8,7 +8,7 @@
 */
 const deflate = (function () {
     /* constant parameters */
-    var zip_WSIZE = 32768;		// Sliding Window size
+    var zip_WSIZE = 32768;      // Sliding Window size
     var zip_STORED_BLOCK = 0;
     var zip_STATIC_TREES = 1;
     var zip_DYN_TREES = 2;
@@ -16,8 +16,8 @@ const deflate = (function () {
     /* for deflate */
     var zip_DEFAULT_LEVEL = 6;
     var zip_FULL_SEARCH = true;
-    var zip_INBUFSIZ = 32768;	// Input buffer size
-    var zip_INBUF_EXTRA = 64;	// Extra buffer
+    var zip_INBUFSIZ = 32768;   // Input buffer size
+    var zip_INBUF_EXTRA = 64;   // Extra buffer
     var zip_OUTBUFSIZ = 1024 * 8;
     var zip_window_size = 2 * zip_WSIZE;
     var zip_MIN_MATCH = 3;
@@ -129,13 +129,13 @@ const deflate = (function () {
     }
 
     function zip_DeflateTreeDesc() {
-        this.dyn_tree = null;	// the dynamic tree
-        this.static_tree = null;	// corresponding static tree or NULL
-        this.extra_bits = null;	// extra bits for each code or NULL
-        this.extra_base = 0;	// base index for extra_bits
-        this.elems = 0;		// max number of elements in the tree
-        this.max_length = 0;	// max bit length for the codes
-        this.max_code = 0;		// largest code with non zero frequency
+        this.dyn_tree = null;   // the dynamic tree
+        this.static_tree = null;    // corresponding static tree or NULL
+        this.extra_bits = null; // extra bits for each code or NULL
+        this.extra_base = 0;    // base index for extra_bits
+        this.elems = 0;     // max number of elements in the tree
+        this.max_length = 0;    // max bit length for the codes
+        this.max_code = 0;      // largest code with non zero frequency
     }
 
     /* Values for max_lazy_match, good_match and max_chain_length, depending on
@@ -365,7 +365,7 @@ const deflate = (function () {
 
         /* Initialize the hash table. */
         for (j = 0; j < zip_HASH_SIZE; j++)
-            //	zip_head2(j, zip_NIL);
+            //  zip_head2(j, zip_NIL);
             zip_prev[zip_WSIZE + j] = 0;
         /* prev will be initialized on the fly */
 
@@ -414,9 +414,9 @@ const deflate = (function () {
     function zip_longest_match(cur_match) {
         var chain_length = zip_max_chain_length; // max hash chain length
         var scanp = zip_strstart; // current string
-        var matchp;		// matched string
-        var len;		// length of current match
-        var best_len = zip_prev_length;	// best match length so far
+        var matchp;     // matched string
+        var len;        // length of current match
+        var best_len = zip_prev_length; // best match length so far
 
         /* Stop when cur_match becomes <= limit. To simplify the code,
             * we prevent matches with the string of window index 0.
@@ -517,9 +517,9 @@ const deflate = (function () {
             /* By the IN assertion, the window is not empty so we can't confuse
                     * more == 0 with more == 64K on a 16 bit machine.
                     */
-            //	Assert(window_size == (ulg)2*WSIZE, "no sliding with BIG_MEM");
+            //  Assert(window_size == (ulg)2*WSIZE, "no sliding with BIG_MEM");
 
-            //	System.arraycopy(window, WSIZE, window, 0, WSIZE);
+            //  System.arraycopy(window, WSIZE, window, 0, WSIZE);
             for (n = 0; n < zip_WSIZE; n++)
                 zip_window[n] = zip_window[n + zip_WSIZE];
 
@@ -580,7 +580,7 @@ const deflate = (function () {
                     zip_match_length = zip_lookahead;
             }
             if (zip_match_length >= zip_MIN_MATCH) {
-                //	    check_match(strstart, match_start, match_length);
+                //      check_match(strstart, match_start, match_length);
 
                 flush = zip_ct_tally(zip_strstart - zip_match_start,
                     zip_match_length - zip_MIN_MATCH);
@@ -605,11 +605,11 @@ const deflate = (function () {
                     zip_strstart += zip_match_length;
                     zip_match_length = 0;
                     zip_ins_h = zip_window[zip_strstart] & 0xff;
-                    //		UPDATE_HASH(ins_h, window[strstart + 1]);
+                    //      UPDATE_HASH(ins_h, window[strstart + 1]);
                     zip_ins_h = ((zip_ins_h << zip_H_SHIFT) ^ (zip_window[zip_strstart + 1] & 0xff)) & zip_HASH_MASK;
 
                     //#if MIN_MATCH != 3
-                    //		Call UPDATE_HASH() MIN_MATCH-3 more times
+                    //      Call UPDATE_HASH() MIN_MATCH-3 more times
                     //#endif
 
                 }
@@ -676,7 +676,7 @@ const deflate = (function () {
                 zip_match_length <= zip_prev_length) {
                 var flush; // set if current block must be flushed
 
-                //	    check_match(strstart - 1, prev_match, prev_length);
+                //      check_match(strstart - 1, prev_match, prev_length);
                 flush = zip_ct_tally(zip_strstart - 1 - zip_prev_match,
                     zip_prev_length - zip_MIN_MATCH);
 
@@ -838,11 +838,11 @@ const deflate = (function () {
     * (DEFLATE/STORE).
     */
     function zip_ct_init() {
-        var n;	// iterates over tree elements
-        var bits;	// bit counter
-        var length;	// length value
-        var code;	// code value
-        var dist;	// distance index
+        var n;  // iterates over tree elements
+        var bits;   // bit counter
+        var length; // length value
+        var code;   // code value
+        var dist;   // distance index
 
         if (zip_static_dtree[0].dl != 0) return; // ct_init already called
 
@@ -951,10 +951,10 @@ const deflate = (function () {
     * two sons).
     */
     function zip_pqdownheap(
-        tree,	// the tree to restore
-        k) {	// node to move down
+        tree,   // the tree to restore
+        k) {    // node to move down
         var v = zip_heap[k];
-        var j = k << 1;	// left son of k
+        var j = k << 1; // left son of k
 
         while (j <= zip_heap_len) {
             // Set j to the smallest of the two sons:
@@ -993,12 +993,12 @@ const deflate = (function () {
         var max_code = desc.max_code;
         var max_length = desc.max_length;
         var stree = desc.static_tree;
-        var h;		// heap index
-        var n, m;		// iterate over the tree elements
-        var bits;		// bit length
-        var xbits;		// extra bits
-        var f;		// frequency
-        var overflow = 0;	// number of elements with bit length too large
+        var h;      // heap index
+        var n, m;       // iterate over the tree elements
+        var bits;       // bit length
+        var xbits;      // extra bits
+        var f;      // frequency
+        var overflow = 0;   // number of elements with bit length too large
 
         for (bits = 0; bits <= zip_MAX_BITS; bits++)
             zip_bl_count[bits] = 0;
@@ -1040,8 +1040,8 @@ const deflate = (function () {
             bits = max_length - 1;
             while (zip_bl_count[bits] == 0)
                 bits--;
-            zip_bl_count[bits]--;		// move one leaf down the tree
-            zip_bl_count[bits + 1] += 2;	// move one overflow item as its brother
+            zip_bl_count[bits]--;       // move one leaf down the tree
+            zip_bl_count[bits + 1] += 2;    // move one overflow item as its brother
             zip_bl_count[max_length]--;
             /* The brother of the overflow item also moves one step up,
                 * but this does not affect bl_count[max_length]
@@ -1077,12 +1077,12 @@ const deflate = (function () {
     * OUT assertion: the field code is set for all tree elements of non
     *     zero code length.
     */
-    function zip_gen_codes(tree,	// the tree to decorate
-        max_code) {	// largest code with non zero frequency
+    function zip_gen_codes(tree,    // the tree to decorate
+        max_code) { // largest code with non zero frequency
         var next_code = new Array(zip_MAX_BITS + 1); // next code value for each bit length
-        var code = 0;		// running code value
-        var bits;			// bit index
-        var n;			// code index
+        var code = 0;       // running code value
+        var bits;           // bit index
+        var n;          // code index
 
         /* The distribution counts are first used to generate the code values
             * without bit reversal.
@@ -1096,7 +1096,7 @@ const deflate = (function () {
             * must be all ones.
             */
         //    Assert (code + encoder->bl_count[MAX_BITS]-1 == (1<<MAX_BITS)-1,
-        //	    "inconsistent bit counts");
+        //      "inconsistent bit counts");
         //    Tracev((stderr,"\ngen_codes: max_code %d ", max_code));
 
         for (n = 0; n <= max_code; n++) {
@@ -1107,7 +1107,7 @@ const deflate = (function () {
             tree[n].fc = zip_bi_reverse(next_code[len]++, len);
 
             //      Tracec(tree != static_ltree, (stderr,"\nn %3d %c l %2d c %4x (%x) ",
-            //	  n, (isgraph(n) ? n : ' '), len, tree[n].fc, next_code[len]-1));
+            //    n, (isgraph(n) ? n : ' '), len, tree[n].fc, next_code[len]-1));
         }
     }
 
@@ -1123,9 +1123,9 @@ const deflate = (function () {
         var tree = desc.dyn_tree;
         var stree = desc.static_tree;
         var elems = desc.elems;
-        var n, m;		// iterate over heap elements
-        var max_code = -1;	// largest code with non zero frequency
-        var node = elems;	// next internal node of the tree
+        var n, m;       // iterate over heap elements
+        var max_code = -1;  // largest code with non zero frequency
+        var node = elems;   // next internal node of the tree
 
         /* Construct the initial heap, with least frequent element in
             * heap[SMALLEST]. The sons of heap[n] are heap[2*n] and heap[2*n+1].
@@ -1180,7 +1180,7 @@ const deflate = (function () {
 
             // Create a new node father of n and m
             tree[node].fc = tree[n].fc + tree[m].fc;
-            //	depth[node] = (char)(MAX(depth[n], depth[m]) + 1);
+            //  depth[node] = (char)(MAX(depth[n], depth[m]) + 1);
             if (zip_depth[n] > zip_depth[m] + 1)
                 zip_depth[node] = zip_depth[n];
             else
@@ -1212,13 +1212,13 @@ const deflate = (function () {
     */
     function zip_scan_tree(tree,// the tree to be scanned
         max_code) {  // and its largest code of non zero frequency
-        var n;			// iterates over all tree elements
-        var prevlen = -1;		// last emitted length
-        var curlen;			// length of current code
-        var nextlen = tree[0].dl;	// length of next code
-        var count = 0;		// repeat count of the current code
-        var max_count = 7;		// max repeat count
-        var min_count = 4;		// min repeat count
+        var n;          // iterates over all tree elements
+        var prevlen = -1;       // last emitted length
+        var curlen;         // length of current code
+        var nextlen = tree[0].dl;   // length of next code
+        var count = 0;      // repeat count of the current code
+        var max_count = 7;      // max repeat count
+        var min_count = 4;      // min repeat count
 
         if (nextlen == 0) {
             max_count = 138;
@@ -1261,13 +1261,13 @@ const deflate = (function () {
     */
     function zip_send_tree(tree, // the tree to be scanned
         max_code) { // and its largest code of non zero frequency
-        var n;			// iterates over all tree elements
-        var prevlen = -1;		// last emitted length
-        var curlen;			// length of current code
-        var nextlen = tree[0].dl;	// length of next code
-        var count = 0;		// repeat count of the current code
-        var max_count = 7;		// max repeat count
-        var min_count = 4;		// min repeat count
+        var n;          // iterates over all tree elements
+        var prevlen = -1;       // last emitted length
+        var curlen;         // length of current code
+        var nextlen = tree[0].dl;   // length of next code
+        var count = 0;      // repeat count of the current code
+        var max_count = 7;      // max repeat count
+        var min_count = 4;      // min repeat count
 
         /* tree[max_code+1].dl = -1; */  /* guard already set */
         if (nextlen == 0) {
@@ -1339,7 +1339,7 @@ const deflate = (function () {
         /* Update opt_len to include the bit length tree and counts */
         zip_opt_len += 3 * (max_blindex + 1) + 5 + 5 + 4;
         //    Tracev((stderr, "\ndyn trees: dyn %ld, stat %ld",
-        //	    encoder->opt_len, encoder->static_len));
+        //      encoder->opt_len, encoder->static_len));
 
         return max_blindex;
     }
@@ -1354,7 +1354,7 @@ const deflate = (function () {
 
         //    Assert (lcodes >= 257 && dcodes >= 1 && blcodes >= 4, "not enough codes");
         //    Assert (lcodes <= L_CODES && dcodes <= D_CODES && blcodes <= BL_CODES,
-        //	    "too many codes");
+        //      "too many codes");
         //    Tracev((stderr, "\nbl counts: "));
         zip_send_bits(lcodes - 257, 5); // not +255 as stated in appnote.txt
         zip_send_bits(dcodes - 1, 5);
@@ -1377,8 +1377,8 @@ const deflate = (function () {
     */
     function zip_flush_block(eof) { // true if this is the last block for a file
         var opt_lenb, static_lenb; // opt_len and static_len in bytes
-        var max_blindex;	// index of last bit length code of non zero freq
-        var stored_len;	// length of input block
+        var max_blindex;    // index of last bit length code of non zero freq
+        var stored_len; // length of input block
 
         stored_len = zip_strstart - zip_block_start;
         zip_flag_buf[zip_last_flags] = zip_flags; // Save the flags for the last 8 items
@@ -1386,11 +1386,11 @@ const deflate = (function () {
         // Construct the literal and distance trees
         zip_build_tree(zip_l_desc);
         //    Tracev((stderr, "\nlit data: dyn %ld, stat %ld",
-        //	    encoder->opt_len, encoder->static_len));
+        //      encoder->opt_len, encoder->static_len));
 
         zip_build_tree(zip_d_desc);
         //    Tracev((stderr, "\ndist data: dyn %ld, stat %ld",
-        //	    encoder->opt_len, encoder->static_len));
+        //      encoder->opt_len, encoder->static_len));
         /* At this point, opt_len and static_len are the total bit lengths of
             * the compressed block data, excluding the tree representations.
             */
@@ -1405,9 +1405,9 @@ const deflate = (function () {
         static_lenb = (zip_static_len + 3 + 7) >> 3;
 
         //    Trace((stderr, "\nopt %lu(%lu) stat %lu(%lu) stored %lu lit %u dist %u ",
-        //	   opt_lenb, encoder->opt_len,
-        //	   static_lenb, encoder->static_len, stored_len,
-        //	   encoder->last_lit, encoder->last_dist));
+        //     opt_lenb, encoder->opt_len,
+        //     static_lenb, encoder->static_len, stored_len,
+        //     encoder->last_lit, encoder->last_dist));
 
         if (static_lenb <= opt_lenb)
             opt_lenb = static_lenb;
@@ -1422,7 +1422,7 @@ const deflate = (function () {
                 * transform a block into a stored block.
                 */
             zip_send_bits((zip_STORED_BLOCK << 1) + eof, 3);  /* send block type */
-            zip_bi_windup();		 /* align on byte boundary */
+            zip_bi_windup();         /* align on byte boundary */
             zip_put_short(stored_len);
             zip_put_short(~stored_len);
 
@@ -1465,10 +1465,10 @@ const deflate = (function () {
             zip_dyn_ltree[lc].fc++;
         } else {
             // Here, lc is the match length - MIN_MATCH
-            dist--;		    // dist = match distance - 1
+            dist--;         // dist = match distance - 1
             //      Assert((ush)dist < (ush)MAX_DIST &&
-            //	     (ush)lc <= (ush)(MAX_MATCH-MIN_MATCH) &&
-            //	     (ush)D_CODE(dist) < (ush)D_CODES,  "ct_tally: bad match");
+            //       (ush)lc <= (ush)(MAX_MATCH-MIN_MATCH) &&
+            //       (ush)D_CODE(dist) < (ush)D_CODES,  "ct_tally: bad match");
 
             zip_dyn_ltree[zip_length_code[lc] + zip_LITERALS + 1].fc++;
             zip_dyn_dtree[zip_D_CODE(dist)].fc++;
@@ -1496,8 +1496,8 @@ const deflate = (function () {
             }
             out_length >>= 3;
             //      Trace((stderr,"\nlast_lit %u, last_dist %u, in %ld, out ~%ld(%ld%%) ",
-            //	     encoder->last_lit, encoder->last_dist, in_length, out_length,
-            //	     100L - out_length*100L/in_length));
+            //       encoder->last_lit, encoder->last_dist, in_length, out_length,
+            //       100L - out_length*100L/in_length));
             if (zip_last_dist < parseInt(zip_last_lit / 2) &&
                 out_length < parseInt(in_length / 2))
                 return true;
@@ -1514,16 +1514,16 @@ const deflate = (function () {
     * Send the block data compressed using the given Huffman trees
     */
     function zip_compress_block(
-        ltree,	// literal tree
-        dtree) {	// distance tree
-        var dist;		// distance of matched string
-        var lc;		// match length or unmatched char (if dist == 0)
-        var lx = 0;		// running index in l_buf
-        var dx = 0;		// running index in d_buf
-        var fx = 0;		// running index in flag_buf
-        var flag = 0;	// current flags
-        var code;		// the code to send
-        var extra;		// number of extra bits to send
+        ltree,  // literal tree
+        dtree) {    // distance tree
+        var dist;       // distance of matched string
+        var lc;     // match length or unmatched char (if dist == 0)
+        var lx = 0;     // running index in l_buf
+        var dx = 0;     // running index in d_buf
+        var fx = 0;     // running index in flag_buf
+        var flag = 0;   // current flags
+        var code;       // the code to send
+        var extra;      // number of extra bits to send
 
         if (zip_last_lit != 0) do {
             if ((lx & 7) == 0)
@@ -1531,7 +1531,7 @@ const deflate = (function () {
             lc = zip_l_buf[lx++] & 0xff;
             if ((flag & 1) == 0) {
                 zip_SEND_CODE(lc, ltree); /* send a literal byte */
-                //	Tracecv(isgraph(lc), (stderr," '%c' ", lc));
+                //  Tracecv(isgraph(lc), (stderr," '%c' ", lc));
             } else {
                 // Here, lc is the match length - MIN_MATCH
                 code = zip_length_code[lc];
@@ -1544,9 +1544,9 @@ const deflate = (function () {
                 dist = zip_d_buf[dx++];
                 // Here, dist is the match distance - 1
                 code = zip_D_CODE(dist);
-                //	Assert (code < D_CODES, "bad d_code");
+                //  Assert (code < D_CODES, "bad d_code");
 
-                zip_SEND_CODE(code, dtree);	  // send the distance code
+                zip_SEND_CODE(code, dtree);   // send the distance code
                 extra = zip_extra_dbits[code];
                 if (extra != 0) {
                     dist -= zip_base_dist[code];
@@ -1565,8 +1565,8 @@ const deflate = (function () {
     */
     var zip_Buf_size = 16; // bit size of bi_buf
     function zip_send_bits(
-        value,	// value to send
-        length) {	// number of bits
+        value,  // value to send
+        length) {   // number of bits
         /* If not enough room in bi_buf, use (valid) bits from bi_buf and
             * (16 - bi_valid) bits from value, leaving (width - (16-bi_valid))
             * unused bits in value.
@@ -1588,8 +1588,8 @@ const deflate = (function () {
     * IN assertion: 1 <= len <= 15
     */
     function zip_bi_reverse(
-        code,	// the value to invert
-        len) {	// its bit length
+        code,   // the value to invert
+        len) {  // its bit length
         var res = 0;
         do {
             res |= code & 1;
