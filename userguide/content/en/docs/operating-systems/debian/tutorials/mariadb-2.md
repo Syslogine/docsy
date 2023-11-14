@@ -6,6 +6,11 @@ description: >
  Fortify Your Debian Server: Installing and Securing MariaDB
 ---
 
+<center>
+
+![](/images/os/MariaDB_Logo.webp)
+</center>
+
 ## 1. **Implement Two-Factor Authentication (2FA) for MariaDB:**
 **Objective:**
 Secure MariaDB user authentication with Two-Factor Authentication.

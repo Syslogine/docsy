@@ -8,7 +8,7 @@ weight: 2
 
 <center>
 
-![Debian Logo](/images/debian.webp)
+![Debian Logo](/images/os/debian.webp)
 
 </center>
 <br><br>
