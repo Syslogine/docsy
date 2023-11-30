@@ -88,6 +88,19 @@ A mining module is a sub-item of mining laser which can be used to alter its beh
 | Vaux-C3 Module   | 0 ||| 125 % ||||| -5 % |
 | Forel Module     | 6 | 60 s || 150 % | 15 % |||||
 
+### Thermyte Concern
+|  | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
+|---|--|--|--|--|--|--|--|--|--|
+| Focus Module       | 0 || 85 % |||| 30 % ||
+| Focus II Module    | 0 || 90 % |||| 37 % ||
+| Focus III Module   | 0 || 95 % |||| 40 % ||
+| Torrent Module     | 0 |||||| -10 % | 30 % |
+| Torrent II Module  | 0 |||||| -3 % | 35 % |
+| Torrent III Module | 0 |||||| -1 % | 40 % |
+| Stampede Module    | 6 | 30 s | 135 % ||||||
+| Surge Module       | 7 | 15 s | 150 % ||||||
+
+
 
 # Recovery
 
