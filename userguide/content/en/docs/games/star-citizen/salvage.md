@@ -17,19 +17,21 @@ linktitle: "Salvage"
 
 
 | Brand | ?? | Size | Buy Location | Price |
-
+|---|---|---|---|---|
 | Aegis | Reclaimer | Capital	| New Deal | 15 126 400 | 
 | Drake | Vulture   | Small 	| New Deal |  1 264 000 | 
 
 
 **Prospecting and Mining Ships**
-| Brand | ?? | Size | Buy Location | Price |
-| Argo | Mole | Medium | New Deal | 5 130 500 | 
-| MISC | Prospector | Small | New Deal | 2 061 000 | 
+| Brand | ?? 		 | Size 	| Buy Location  | Price |
+|---|---|---|---|---|
+| Argo  | Mole 		 | Medium 	| New Deal 		| 5 130 500 | 
+| MISC  | Prospector | Small 	| New Deal 		| 2 061 000 | 
 
 **Recovery Ships**
-| Brand | ?? | Size | Buy Location | Price |
-| Argo 	| SRV  | Small | 			   | 	   | 
+| Brand | ??  | Size  | Buy Location | Price |
+|---|---|---|---|---|
+| Argo 	| SRV | Small | 			 | 	     | 
 
 
 
