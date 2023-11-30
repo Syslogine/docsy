@@ -10,20 +10,15 @@ linktitle: "Salvage"
 
 
 
-## Current ships
+## Ships
 
-
-**Salvage Ships**
-
-
-| Role                   | Manufacturer | Name        | Size    | Buy Location | Price (aUEC) |
+| Role                   | Manufacturer | Name        | Crew | Cargo (SCU) |	| Size    | Buy Location | Price (aUEC) |
 |------------------------|--------------|-------------|---------|--------------|--------------|
-| Heavy Salvage 		 | Aegis        | Reclaimer   | Capital	| New Deal     | 15 126 400   | 
-| Light Salvage 		 | Drake        | Vulture     | Small 	| New Deal     |  1 264 000   | 
-| Prospecting and Mining | Argo         | Mole 		  | Medium 	| New Deal 	   |  5 130 500   | 
-| Prospecting and Mining | MISC         | Prospector  | Small 	| New Deal 	   |  2 061 000   | 
-| Recovery 				 | Argo 	    | SRV         | Small   | 		       | 	          | 
-
+| Heavy Salvage 		 | Aegis        | Reclaimer   | 4 – 5 | 300 | Capital	| New Deal     | 15 126 400   | 
+| Light Salvage 		 | Drake        | Vulture     | 1 | 12 | Small 	| New Deal     |  1 264 000   | 
+| Prospecting and Mining | Argo         | Mole 		  | 2 – 4 | 96 | Medium 	| New Deal 	   |  5 130 500   | 
+| Prospecting and Mining | MISC         | Prospector  | 1 | 32 | Small 	| New Deal 	   |  2 061 000   | 
+| Recovery 				 | Argo 	    | SRV         | 1 | 10 | Small   | 		       | 	          | 
 
 
 ## (RMC) Sell Location
