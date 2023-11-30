@@ -33,12 +33,15 @@ Empower your Star Citizen journey with our intuitive trading platform. Your prof
 | Prospecting and Mining | MISC         | Prospector  | 1      | 32          | Small   | New Deal 	  |  2 061 000   | 
 | Recovery 				 | Argo 	    | SRV         | 1      | 10          | Small   | 		      | 	         | 
 
-PS: Stanton ➡️ Hurston ➡️ Lorville ➡️ Teasa Spaceport ➡️ New Deal
-
-
 
 
 # Salvage
+
+### Scraper modules
+*	Abrade Scraper Module
+*	Cinch Scraper Module
+*	Trawler Scraper Module
+
 
 ### (RMC) Sell Location
 | System   	| | Planet      | | City            | | Location |
@@ -47,6 +50,12 @@ PS: Stanton ➡️ Hurston ➡️ Lorville ➡️ Teasa Spaceport ➡️ New Dea
 | Stanton	|➡️| ArcCorp    |➡️| Area18     	|➡️| Area 18 TDD |
 | Stanton	|➡️| Crusader   |➡️| Orison  		|➡️| Orison TDD |
 | Stanton	|➡️| microTech  |➡️| New Babbage  	|➡️| New Babbage TDD |
+
+
+
+
+
+
 
 
 # Mining
@@ -104,6 +113,27 @@ A mining module is a sub-item of mining laser which can be used to alter its beh
 
 # Recovery
 
+
+
+#### Scan Signal Profiles
+**Mastering Radar Scans in Star Citizen**
+
+Navigate the vast expanse of Star Citizen with precision by understanding Rader scans, essential for detecting both asteroids and salvageable entities like derelicts or bulk panels. Analyzing the signal profile empowers you to effortlessly distinguish between asteroids and potential salvage, while also identifying the specific type of derelict vehicle associated with a signal.
+
+When it comes to asteroids, expect a consistent Radar Signal (RS) of 1700 per asteroid. On the other hand, reclaimer-sized panels yield an RS of 2000 per section. For larger salvage prospects like C2 and 890j Derelict Vehicles, their presence is automatically detected at distances well beyond the typical scanning range, streamlining the identification process.
+
+Equip yourself with the knowledge of Rader scans to make informed decisions in the vast reaches of Star Citizen. Whether you're navigating through asteroids or salvaging valuable derelicts, understanding the nuances of signal profiles is key to maximizing your exploration and ensuring a prosperous journey through the stars.
+
+
+
+| Signal | Astroids | Panels | Redeemer | Inferno | Titan | C2 | 890 |
+|---|---|---|---|---|---|---|---|
+| IR ||| 10700 | 4500 | 3100 | AutoDetect | AutoDetect |
+| CS ||| 8300 | 4800 | 1800 | AutoDetect | AutoDetect |
+| RS | N*1700 | N*2000 | 2000 | 1850 | 1700 | AutoDetect | AutoDetect |
+
+
+Note: I need to check if this is right...
 
 
 
