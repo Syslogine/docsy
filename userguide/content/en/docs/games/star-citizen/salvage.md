@@ -8,6 +8,19 @@ linktitle: "Salvage"
 
 </center>
 
+**Maximize Your Profits in Star Citizen**
+
+After breaking down a spacecraft and acquiring valuable resources, you hold the power to either upgrade your gear or turn a profit by selling them. However, navigating the vast universe of Star Citizen makes this process more complex, as specific materials can only be traded in certain locations.
+
+Thankfully, our website simplifies this endeavor. All you need to do is select the material you wish to trade, specify the quantity, and click submit. Instantly, you'll receive information on buyers offering the highest prices for your resources. Keep in mind that stolen resources may limit your options, so be sure to mark the "stolen cargo" box when necessary.
+
+For instance, Trade and Development Division (TDD) is a reliable hub for selling various materials. You can find TDD branches in diverse locations like Stanton/Microtech/New Babbage, Stanton/Crusader/Orison, and more.
+
+If you're dealing with general materials, Admin is your go-to. Look for Admin locations at Stanton/ArcCorp/Baijini Point or Stanton/Microtech/Port Tressler, among others.
+
+When it comes to offloading stolen goods discreetly, No Question Asked is your best bet. Explore locations such as Stanton/CRU L4/CRU-L4 Shallow Fields Station or Stanton/CRU L5/CRU-L5 Shallow Fields Station for lucrative deals without the prying eyes.
+
+Empower your Star Citizen journey with our intuitive trading platform. Your profits await—explore the universe and trade wisely!
 
 
 ## Ships
