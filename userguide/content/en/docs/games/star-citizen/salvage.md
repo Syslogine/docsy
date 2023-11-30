@@ -35,16 +35,33 @@ Empower your Star Citizen journey with our intuitive trading platform. Your prof
 
 PS: Stanton ➡️ Hurston ➡️ Lorville ➡️ Teasa Spaceport ➡️ New Deal
 
-## (RMC) Sell Location
+
+
+
+## Salvage
+
+### (RMC) Sell Location
 | System   	| | Planet      | | City            | | Location |
 |-----------|-|-------------|-|-----------------|-|----------|
-| Stanton	|➡️| Hurston    |➡️| Lorville		|➡️| Central Business District |
-| Stanton	|➡️| ArcCorp    |➡️| Area18     	|➡️| Area 18 TDD Building |
-| Stanton	|➡️| Crusader   |➡️| Orison  		|➡️| Orison TDD & Admin Office |
+| Stanton	|➡️| Hurston    |➡️| Lorville		|➡️| Lorville CBD |
+| Stanton	|➡️| ArcCorp    |➡️| Area18     	|➡️| Area 18 TDD |
+| Stanton	|➡️| Crusader   |➡️| Orison  		|➡️| Orison TDD |
 | Stanton	|➡️| microTech  |➡️| New Babbage  	|➡️| New Babbage TDD |
 
-### Definitions
+
+## Mining
+
+## Recovery
+
+
+
+
+
+
+## Definitions
 | Short | Long                              | 
 |-------|-----------------------------------|
 | RMC	| Recycled Material Composite   	| 
 | TDD	| Trade & Development Division   	| 
+| CBD	| Central Business District      	| 
+
