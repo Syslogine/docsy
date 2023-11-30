@@ -51,6 +51,17 @@ PS: Stanton ➡️ Hurston ➡️ Lorville ➡️ Teasa Spaceport ➡️ New Dea
 
 ## Mining
 
+
+
+### Mining module
+A mining module is a sub-item of mining laser which can be used to alter its behavior. Depending on the module, they may be passive (conferring permanent changes to the laser), or they may be active (with a limited number of uses).
+
+
+| | Manufacturer | Uses | Duration | Mining-laser-power | Extraction-laser-power | Resistance | Shatter-damage | Inert-materials | Optimal-charge-window | Optimal-charge-rate |
+|--|--|--|--|--|--|--|--|--|--|--|
+||||||||||||
+
+
 ## Recovery
 
 
