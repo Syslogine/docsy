@@ -16,4 +16,22 @@ linktitle: "Salvage"
 | Stanton	| Hurston   	| Lorville		| Central Business District |
 | Stanton	| ArcCorp    	| Area18     	| Area 18 TDD Building |
 | Stanton	| Crusader      | Orison  		| Orison TDD & Admin Office |
-| Stanton	| microTech     | New Babbage  	| New Babbage TDD |
+| Stanton	| microTech     | New Babbage  	| New Babbage TDD |]
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Definitions
+
+| Short    | Long        | 
+|----------|-------------|
+| RMC	| Recycled Material Composite   	| 
