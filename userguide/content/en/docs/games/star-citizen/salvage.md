@@ -71,12 +71,22 @@ A mining module is a sub-item of mining laser which can be used to alter its beh
 | Torpid Module   | 5 | 60 s |||| 40 % ||| 60 %|
 | Rime Module     | 10 | 20 s | 85 % || -25 % | -10 % ||||
 
+#### Musashi Industrial and Starflight Concern
 |  | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
 |---|--|--|--|--|--|--|--|--|--|
-|||||||||||
-|||||||||||
-|||||||||||
-|||||||||||
+| Brandt Module  | 5 | 60 s | 135 % || 15 % | -30 % ||||
+| Optimum Module | 5 | 60 s | 85 % |||||||
+
+#### Shubin Interstellar
+|  | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
+|---|--|--|--|--|--|--|--|--|--|
+| Rieger Module    | 0 || 115 % ||||| -10 % ||
+| Rieger-C2 Module | 0 || 120 % ||||| -3 % ||
+| Rieger-C3 Module | 0 || 125 % ||||| -1 % ||
+| Vaux Module      | 0 ||| 125 % ||||| -20 % |
+| Vaux-C2 Module   | 0 ||| 120 % ||||| -15 % |
+| Vaux-C3 Module   | 0 ||| 125 % ||||| -5 % |
+| Forel Module     | 6 | 60 s || 150 % | 15 % |||||
 
 
 ## Recovery
