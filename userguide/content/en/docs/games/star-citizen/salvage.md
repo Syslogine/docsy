@@ -57,24 +57,26 @@ PS: Stanton ➡️ Hurston ➡️ Lorville ➡️ Teasa Spaceport ➡️ New Dea
 A mining module is a sub-item of mining laser which can be used to alter its behavior. Depending on the module, they may be passive (conferring permanent changes to the laser), or they may be active (with a limited number of uses).
 
 
-| | Manufacturer | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
-|--|--|--|--|--|--|--|--|--|--|--|
-| FLTR-L Module   | Greycat Industrial | 0 ||| 90 % ||| -23 % |||
-| FLTR-XL Module  | Greycat Industrial | 0 ||| 95 % ||| -24 % |||
-| XTR Module      | Greycat Industrial | 0 ||| 85 % ||| -5 % | 15 % ||
-| XTR-L Module    | Greycat Industrial | 0 ||| 90 % ||| -5.7 % | 22 % ||
-| XTR-XL Module   | Greycat Industrial | 0 ||| 95 % ||| -6 % | 25 % ||
-| FLTR Module     | Greycat Industrial | 0 ||| 85 % ||| -20 % |||
-| Lifeline Module | Greycat Industrial | 3 | 15 s ||||||||
-| Torpid Module   | Greycat Industrial | 5 | 60 s |||| 40 % ||| 60 %|
-| Rime Module     | Greycat Industrial | 10 | 20 s | 85 % || -25 % | -10 % ||||
 
-| | Manufacturer | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
+#### Greycat Industrial
+|  | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
 |--|--|--|--|--|--|--|--|--|--|--|
-||||||||||||
-||||||||||||
-||||||||||||
-||||||||||||
+| FLTR-L Module   | 0 ||| 90 % ||| -23 % |||
+| FLTR-XL Module  | 0 ||| 95 % ||| -24 % |||
+| XTR Module      | 0 ||| 85 % ||| -5 % | 15 % ||
+| XTR-L Module    | 0 ||| 90 % ||| -5.7 % | 22 % ||
+| XTR-XL Module   | 0 ||| 95 % ||| -6 % | 25 % ||
+| FLTR Module     | 0 ||| 85 % ||| -20 % |||
+| Lifeline Module | 3 | 15 s ||||||||
+| Torpid Module   | 5 | 60 s |||| 40 % ||| 60 %|
+| Rime Module     | 10 | 20 s | 85 % || -25 % | -10 % ||||
+
+|  | Uses | Duration | Mining laser power | Extraction laser power | Resistance | Shatter damage | Inert materials | Optimal charge window | Optimal charge rate |
+|---|--|--|--|--|--|--|--|--|--|
+|||||||||||
+|||||||||||
+|||||||||||
+|||||||||||
 
 
 ## Recovery
