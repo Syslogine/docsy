@@ -11,18 +11,12 @@ linktitle: "Salvage"
 
 ### Sell Location
 
-| System    | Planet        | City         |  |
-|-----------|---------------|---------------|------|
-| Stanton	| Hurston   	| Lorville		| Central Business District |
-| Stanton	| ArcCorp    	| Area18     	| Area 18 TDD Building |
-| Stanton	| Crusader      | Orison  		| Orison TDD & Admin Office |
-| Stanton	| microTech     | New Babbage  	| New Babbage TDD |]
-
-
-
-
-
-
+| System   	| | Planet        | City         |  |
+|-----------|-|---------------|---------------|------|
+| Stanton	|->| Hurston   	| Lorville		| Central Business District |
+| Stanton	|->| ArcCorp    	| Area18     	| Area 18 TDD Building |
+| Stanton	|->| Crusader      | Orison  		| Orison TDD & Admin Office |
+| Stanton	|->| microTech     | New Babbage  	| New Babbage TDD |
 
 
 
@@ -35,3 +29,4 @@ linktitle: "Salvage"
 | Short    | Long        | 
 |----------|-------------|
 | RMC	| Recycled Material Composite   	| 
+| TDD	| Trade & Development Division   	| 
