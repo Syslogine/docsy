@@ -11,10 +11,9 @@ linktitle: "Salvage"
 
 ### Sell Location
 
-Stanton:
-*	Hurston		->	Lorville
-*	ArcCorp		->	Area18
-*	Crusader	->	Orison
-*	microTech	->	New Babbage
-
-
+| System    | Planet        | City         |  |
+|-----------|---------------|---------------|------|
+| Stanton	| Hurston   	| Lorville		| Central Business District |
+| Stanton	| ArcCorp    	| Area18     	| Area 18 TDD Building |
+| Stanton	| Crusader      | Orison  		| Orison TDD & Admin Office |
+| Stanton	| microTech     | New Babbage  	| New Babbage TDD |
