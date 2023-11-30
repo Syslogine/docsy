@@ -4,7 +4,7 @@ linktitle: "Salvage"
 
 <center>
 
-![](/images/game/star-citizen/vulture.webp)
+![](/images/game/star-citizen/vulture.png)
 
 </center>
 
