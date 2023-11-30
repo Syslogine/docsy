@@ -2,8 +2,11 @@
 linktitle: "Salvage"
 ---
 
+<center>
 
+![](/images/game/star-citizen/vulture.webp)
 
+</center>
 
 
 ### Sell Location
