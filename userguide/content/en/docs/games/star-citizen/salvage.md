@@ -43,6 +43,18 @@ Empower your Star Citizen journey with our intuitive trading platform. Your prof
 *	Trawler Scraper Module
 
 
+| Name | Base price | Speed | Efficiency | Radius | Standard on |
+|---|---|---|---|---|---|
+| Abrade Scraper Module | 1,250 | 0.15 | 0.9 | 3.5 m | Vulture |
+| Cinch Scraper Module | 750 | 0.6 | 1 | 1.5 m | Vulture |
+| Trawler Scraper Module | 1,650 | 0.05 | 0.7 | 6 m | Reclaimer |
+
+
+
+
+
+
+
 ### (RMC) Sell Location
 | System   	| | Planet      | | City            | | Location |
 |-----------|-|-------------|-|-----------------|-|----------|
