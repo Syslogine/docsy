@@ -25,8 +25,8 @@ Empower your Star Citizen journey with our intuitive trading platform. Your prof
 
 ## Ships
 
-| Role                   | Manufacturer | Name        | Crew   | Cargo (SCU) | Size    | Buy Location | Price (aUEC) | 
-|------------------------|--------------|-------------|--------|-------------|---------|--------------|--------------| 
+| Role | Manufacturer | Name | Crew | Cargo (SCU) | Size | Buy Location | Price (aUEC) | 
+|---|---|---|---|---|---|----|---| 
 | Heavy Salvage 		 | Aegis        | Reclaimer   | 4 – 5  | 300         | Capital | New Deal     | 15 126 400   |  
 | Light Salvage 		 | Drake        | Vulture     | 1 	   | 12          | Small   | New Deal     |  1 264 000   |  
 | Prospecting and Mining | Argo         | Mole 		  | 2 – 4  | 96          | Medium  | New Deal 	  |  5 130 500   | 
@@ -38,16 +38,12 @@ Empower your Star Citizen journey with our intuitive trading platform. Your prof
 # Salvage
 
 ### Scraper modules
-*	Abrade Scraper Module
-*	Cinch Scraper Module
-*	Trawler Scraper Module
 
-
-| Name | Base price | Speed | Efficiency | Radius | Standard on |
+| Name | Standard on | Base price (aUEC) | Speed | Efficiency | Radius | 
 |---|---|---|---|---|---|
-| Abrade Scraper Module | 1,250 | 0.15 | 0.9 | 3.5 m | Vulture |
-| Cinch Scraper Module | 750 | 0.6 | 1 | 1.5 m | Vulture |
-| Trawler Scraper Module | 1,650 | 0.05 | 0.7 | 6 m | Reclaimer |
+| Abrade Scraper Module | Vulture | 1,250 | 0.15 | 0.9 | 3.5 m | 
+| Cinch Scraper Module | Vulture | 750 | 0.6 | 1 | 1.5 m | 
+| Trawler Scraper Module | Reclaimer | 1,650 | 0.05 | 0.7 | 6 m | 
 
 
 
