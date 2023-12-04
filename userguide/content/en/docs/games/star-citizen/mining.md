@@ -2,6 +2,15 @@
 linktitle: "Mining"
 ---
 
+## Ships
+As of now, there are two meticulously crafted spacecraft designed specifically for the intricate tasks of prospecting and mining in the vast expanse of Star Citizen.
+
+| Role | Manufacturer | Name | Crew | Cargo (SCU) | Size | Buy Location | Price (aUEC) | 
+|---|---|---|---|---|---|----|---| 
+| Prospecting and Mining | Argo | Mole | 2 – 4 | 96 | Medium | New Deal |  5 130 500 | 
+| Prospecting and Mining | MISC | Prospector | 1 | 32 | Small | New Deal |  2 061 000 | 
+
+
 
 ## Mining module
 A mining module is a sub-item of mining laser which can be used to alter its behavior. Depending on the module, they may be passive (conferring permanent changes to the laser), or they may be active (with a limited number of uses).
