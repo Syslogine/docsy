@@ -1,10 +1,11 @@
 ---
 linktitle: "Tips and Tricks"
-title: Useful tips and tricks for Ubuntu
+title: Tips and Tricks for Ubuntu
 tags: ['ubuntu','tips','tricks']
 categories: ["Ubuntu"]
 weight: 1
 ---
+
 ## Managing Packages with apt
 
 ### apt update
