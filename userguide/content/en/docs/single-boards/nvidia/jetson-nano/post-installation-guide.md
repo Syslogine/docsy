@@ -12,6 +12,9 @@ Ensure your system has the latest updates and security patches.
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt upgrade
 ```
 

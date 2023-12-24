@@ -49,39 +49,50 @@ List of dependencies i need for creatiing my project.
 10.	And close the other welcome window...
 
 
-## Updating Jetson Nano
-1.	Now we need to update our packages list, so open `terminal` and type
-	```bash
-	sudo apt update
-	```
-2.	Now we need to upgrade the packages
-	```bash
-	sudo apt upgrade -y
-	```
-3.	After this is done.. just reboot your device
-	```bash
-	sudo reboot now
-	```
-4.	Once again after login open `terminal` as we need to clean a bit so type
-	```bash
-	sudo apt autoremove -y && sudo apt clean
-	```
+# Updating Your Nvidia Jetson Nano
+Keep your Nvidia Jetson Nano up-to-date by following these simple steps.
 
-### Extra
-You can also add your current user to the sudo list in a way that a password is not required anymore everytime when you use the `sudo` command
-1.	We need t install `nano` first before we can continue as i love nano for ease of use.
-	```bash
-	sudo apt install nano
-	```
-2.	After install we can open the sudoers files with `visudo` command
-	```bash
-	sudo visudo
-	```
-3.	Type this and replace `syslogine` with your own username
-	```txt
-	syslogine ALL=(ALL) NOPASSWD:ALL
-	```
-	To save and exit nano press: `Ctrl` + `X` now it ask if we want to save it so press: `Y` then `Enter`
+## Update Package Lists
+1. Open a terminal window.
+2. Run the following command to update the package lists:
+    ```bash
+    sudo apt update
+    ```
+
+## Upgrade Packages
+1. Continue in the terminal.
+2. Upgrade the installed packages to their latest versions:
+    ```bash
+    sudo apt upgrade -y
+    ```
+3. After the upgrade is complete, reboot your device:
+    ```bash
+    sudo reboot now
+    ```
+
+## Clean Up
+1. Once your device is back online and you've logged in, open the terminal again.
+2. Clean up unnecessary packages and free up space:
+    ```bash
+    sudo apt autoremove -y && sudo apt clean
+    ```
+
+## Extra: Passwordless Sudo
+For added convenience, you can configure your user account to use `sudo` without entering a password.
+
+1. Install the `nano` text editor if not already installed:
+    ```bash
+    sudo apt install nano
+    ```
+2. Open the sudoers file using the `visudo` command:
+    ```bash
+    sudo visudo
+    ```
+3. Add the following line, replacing `your_username` with your actual username:
+    ```txt
+    your_username ALL=(ALL) NOPASSWD:ALL
+    ```
+4. Save and exit `nano` by pressing `Ctrl` + `X`, confirming with `Y`, and then pressing `Enter`.
 
 
 ## Wipe SSD and Moving MicroSD to SSD
