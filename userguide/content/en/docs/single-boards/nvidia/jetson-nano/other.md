@@ -18,7 +18,7 @@ description: >
 3. [**Basic Port Scanner:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/basic-port-scanner/)
    - Empower the Jetson Nano to scan for open ports on remote computers or devices, identifying potential vulnerabilities exploitable by attackers.
 
-4. **Reverse Engineer an Executable File:**
+4. [**Reverse Engineer an Executable File:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/reverse-engineer-an-executable-file/)
    - Leverage the Jetson Nano's potent GPU to disassemble and analyze binary executable files. Gain a deep understanding of software workings and identify potential security weaknesses.
 
 5. **Experiment with Steganography:**
