@@ -21,7 +21,7 @@ description: >
 4. [**Reverse Engineer an Executable File:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/reverse-engineer-an-executable-file/)
    - Leverage the Jetson Nano's potent GPU to disassemble and analyze binary executable files. Gain a deep understanding of software workings and identify potential security weaknesses.
 
-5. **Experiment with Steganography:**
+5. [**Experiment with Steganography:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/experiment-with-steganography/)
    - Use the Jetson Nano to hide secret data within images, audio files, or other media using steganography techniques. An intriguing exploration of data hiding and cryptography.
 
 6. **Simple Web Crawler:**
