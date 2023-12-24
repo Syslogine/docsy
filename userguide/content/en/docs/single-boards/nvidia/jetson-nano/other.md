@@ -12,7 +12,7 @@ description: >
 1. [**Basic Password Cracker:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/basic-password-cracker/)
    - Unleash the power of the Jetson Nano to create a tool that tests password strength by trying various combinations of characters. Ideal for assessing the robustness of your own or others' passwords.
 
-2. **Simple Wi-Fi Sniffer:**
+2. [**Simple Wi-Fi Sniffer:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/simple-wi-fi-sniffer)
    - Utilize the Jetson Nano to capture and analyze network traffic on nearby wireless networks. Gain insights into data transmission over the air and explore potential security vulnerabilities.
 
 3. **Basic Port Scanner:**
