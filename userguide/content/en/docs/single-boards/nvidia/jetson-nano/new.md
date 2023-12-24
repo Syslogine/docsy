@@ -84,32 +84,55 @@ sudo make altinstall
 
 These commands download, configure, compile, and install Python 3.8 on your Nvidia Jetson Nano. This version is installed alongside the default Python versions and does not replace them.
 
-### Install `pip` for Python 3.8
-1. Download the `get-pip.py` script using wget:
-    ```bash
-    wget https://bootstrap.pypa.io/get-pip.py
-    ```
-2. Install Python 3.8 and Pip with the following command:
-    ```bash
-    python3 get-pip.py --prefix=/usr/local/python3.8
-    `````
-3. Export the Python 3.8 bin directory to the PATH. Add the following line to your shell profile file (e.g., `~/.bashrc` or `~/.zshrc`):
-    ```bash
-    export PATH="/usr/local/python3.8/bin:$PATH"
-    ```
-    Save the file and apply the changes with:
-    ```bash
-    source ~/.bashrc   # For Bash
-    ```
-    or
-    ```bash
-    source ~/.zshrc   # For Zsh
-    ```
-4. Verify the installation by checking the Python and Pip versions:
-    ```bash
-    python3.8 --version
-    pip3.8 --version
-    ```
+## **Install Python 3.8 and Pip on Nvidia Jetson Nano**
+
+### **1. Download `get-pip.py` Script**
+
+Download the `get-pip.py` script using `wget`:
+
+```bash
+wget https://bootstrap.pypa.io/get-pip.py
+```
+
+### **2. Install Python 3.8 and Pip**
+
+Use the following command to install Python 3.8 and Pip:
+
+```bash
+python3 get-pip.py --prefix=/usr/local/python3.8
+```
+
+### **3. Update Bash Configuration**
+
+Open the `.bashrc` file for editing:
+
+```bash
+sudo nano ~/.bashrc
+```
+
+Add the following line to the bottom of the file:
+
+```bash
+export PATH="/usr/local/python3.8/bin:$PATH"
+```
+
+Save the file and apply the changes:
+
+```bash
+source ~/.bashrc
+```
+
+### **4. Verify Installation**
+
+Check the Python and Pip versions to ensure successful installation:
+
+```bash
+python3.8 --version
+pip3.8 --version
+```
+
+These commands download and install Python 3.8 along with Pip on your Nvidia Jetson Nano. The `.bashrc` update ensures that the new Python version is available in your system's PATH. Verify the installation by checking the versions of Python and Pip.
+
 
 =====
 
