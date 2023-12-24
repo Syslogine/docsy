@@ -49,24 +49,42 @@ In this tutorial, we covered the steps to set up the Xbox 360 v1 camera on a Nvi
 ====
 
 ## **Download and Install the necessary packages**
+1.  **Download Python3**: Download Python3 from its official website (https://www.python.org/downloads/) and install it using the following command:
+    ```bash
+    wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
+    tar -xzf Python-3.8.5.tgz
+    cd Python-3.8.5
+    ./configure --prefix=/usr/local/python3.8
+    make
+    sudo make install
+    ```
+2. **Configure the Environment**: After installing, configure the environment by adding the following lines to your `~/.bashrc` file:
+    ```bash
+    export PATH="/usr/local/python3.8/bin:$PATH"
+    ```
+3. **Download Pip**: Download Pip from its official website (https://pypi.org/project/pip/) and install it using the following command:
+    ```bash
+    wget https://bootstrap.pypa.io/get-pip.py
+    python3 get-pip.py --prefix=/usr/local/python3.8
+    ```
+4. **Configure Pip**: After installing, configure Pip by adding the following lines to your `~/.bashrc` file:
+    ```bash
+    export PATH="/usr/local/python3.8/bin:$PATH"
+    ```
 
-1. **Download Python3**: Download Python3 from its official website (https://www.python.org/downloads/) and install it.
-
-2. **Install Pip**: If you haven't already installed pip, download it from its official website (https://pypi.org/project/pip/) and install it.
-
-3. **Download OpenCV**: Download OpenCV from its official website (https://opencv.org/releases/) and install it using the following command:
+5. **Download OpenCV**: Download OpenCV from its official website (https://opencv.org/releases/) and install it using the following command:
     ```bash
     sudo apt-get install libopencv-dev python-opencv
     ```
-4. **Download Numpy**: Download Numpy from its official website (https://numpy.org/install/) and install it using pip:
+6. **Download Numpy**: Download Numpy from its official website (https://numpy.org/install/) and install it using pip:
     ```bash
     pip install numpy
     ```
-5. **Download Pycuda**: Download Pycuda from its official website (https://pypi.org/project/pycuda/) and install it using the following command:
+7. **Download Pycuda**: Download Pycuda from its official website (https://pypi.org/project/pycuda/) and install it using the following command:
     ```bash
     sudo apt-get install python3-dev libcupti-dev libcupti-dev-common libnvvm-dev libnvvm3 libnvvm3-dev libnvvm3-bin libnvvm3-dev-common libnvvm3-bin-common libnvvm3-dev-doc libnvvm3-dev-doc-common cuda-nvcc cuda-command-line-tools-10-2 cuda-libraries-10-2 cuda-libraries-dev-10-2
     ```
-6. **Download CUDA**: Download CUDA from its official website (https://developer.nvidia.com/cuda-downloads) and install it using the following command:
+8. **Download CUDA**: Download CUDA from its official website (https://developer.nvidia.com/cuda-downloads) and install it using the following command:
     ```bash
     sudo dpkg -i cuda-repo-ubuntu1804-10-2-local_10.2.89-1_amd64.deb
     sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
