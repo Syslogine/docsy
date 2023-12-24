@@ -1,36 +1,36 @@
 ---
 linktitle: Upgrade Python
-title: Upgrade Python
+title: Upgrade Python to Version 3.7 on Ubuntu
 
 ---
 
-### Version Check
-Run below command to test the current version installed of python.
+## **Version Check**
+
+Run the following command to check the current version of Python installed:
 ```bash
 python3 --version
 ```
 
-OUTPUT:
+**Output:**
 ```txt
 Python 3.6.9
 ```
 
+## **Download and Install Python 3.7**
 
-### Download and Install Python 3.7
-
-Update the packages list
+Update the packages list:
 ```bash
 sudo apt update
 ```
 
-Install Python 3.7
+Install Python 3.7:
 ```bash
 sudo apt-get install python3.7 -y
 ```
 
+## **Add Python 3.6 & Python 3.7 to update-alternatives**
 
-### Add python 3.6 & python 3.7 to update-alternatives
-erer
+Add Python 3.6 and Python 3.7 to the update-alternatives system:
 ```bash
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 ```
@@ -38,34 +38,32 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
 ```
 
+## **Update Python 3 to Point to Python 3.7**
 
-### Update python 3 to point to python 3.7
-By default, Python 3.6 is pointed to Python 3. That means when we run python3 it will execute as python3.6 binary but we want to execute this as python3.7.
-
-Type this command to configure python3:
+Configure Python 3 to use Python 3.7:
 ```bash
 sudo update-alternatives --config python3
 ```
-You should get the above output. Now type 2 and hit enter for Python 3.7. Remember the selection number may differ so choose the selection number which is for Python 3.7.
+Choose the selection number corresponding to Python 3.7.
 
+## **Alternative: Update Python 3 to Point to Python 3.7**
 
-### Alternative update python 3 to point to python3.7
-/usr/bin/python3 is just a symlink. Delete it and make a new symlink to
-python3.7:
+If you prefer a direct symlink update, run the following commands:
 ```bash
 sudo rm /usr/bin/python3
 sudo ln -s python3.7 /usr/bin/python3
 ```
 
-### Test the new version of python3
+## **Test the New Version of Python3**
+
+Check the new Python 3 version:
 ```bash
 python3 -V
 ```
-OUTPUT:
+
+**Output:**
 ```txt
 Python 3.7.5
 ```
 
-
-
-
+Now you have successfully upgraded Python to version 3.7 on your Ubuntu system. This is particularly useful for accessing the latest features and improvements in Python 3.7.
