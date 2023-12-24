@@ -9,7 +9,7 @@ description: >
 
 ## Featured Security and Hacking Projects:
 
-1. **Basic Password Cracker:**
+1. [**Basic Password Cracker:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/basic-password-cracker/)
    - Unleash the power of the Jetson Nano to create a tool that tests password strength by trying various combinations of characters. Ideal for assessing the robustness of your own or others' passwords.
 
 2. **Simple Wi-Fi Sniffer:**

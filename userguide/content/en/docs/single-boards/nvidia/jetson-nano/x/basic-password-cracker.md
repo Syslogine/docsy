@@ -1,9 +1,11 @@
 ---
-linkTitle: Basic Password Cracker
-title: Basic Password Cracker with Nvidia Jetson Nano on Ubuntu
-description: >
- In this tutorial, we will cover the steps to create a basic password cracker using the Nvidia Jetson Nano on Ubuntu. This tool can be used to test the strength of your own passwords or those of others, and may also have applications in security testing or forensic analysis.
+
 ---
+
+# Basic Password Cracker with Nvidia Jetson Nano on Ubuntu
+
+## Overview
+In this tutorial, we will cover the steps to create a basic password cracker using the Nvidia Jetson Nano on Ubuntu. This tool can be used to test the strength of your own passwords or those of others, and may also have applications in security testing or forensic analysis.
 
 ## Requirements
 - Nvidia Jetson Nano with Ubuntu installed
