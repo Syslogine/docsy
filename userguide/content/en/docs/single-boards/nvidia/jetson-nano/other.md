@@ -15,7 +15,7 @@ description: >
 2. [**Simple Wi-Fi Sniffer:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/simple-wi-fi-sniffer/)
    - Utilize the Jetson Nano to capture and analyze network traffic on nearby wireless networks. Gain insights into data transmission over the air and explore potential security vulnerabilities.
 
-3. **Basic Port Scanner:**
+3. [**Basic Port Scanner:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/basic-port-scanner/)
    - Empower the Jetson Nano to scan for open ports on remote computers or devices, identifying potential vulnerabilities exploitable by attackers.
 
 4. **Reverse Engineer an Executable File:**
