@@ -6,38 +6,76 @@ description: >
 categories: ["jetson nano"]
 ---
 
-## Prerequisites
+## **Prerequisites**
 
 - Nvidia Jetson Nano
 - SSD
 - MicroSD card
 - Terminal access
 
-## Steps
+## **Steps**
 
-### 1. Wipe SSD
-1.1. Mount the SSD on your Jetson Nano.
-1.2. Open the `Disks` utility.
-1.3. Select the SSD Disk and press `Ctrl` + `F`.
-   - **Erase**: Choose either `Don't overwrite existing data (Quick)` or `Overwrite existing data with zeroes (slow)`.
-   - **Partitioning**: Select `Compatitble with modern systems and hard disks > 2TB (GPT)`.
+### **1. Wipe SSD Using Terminal**
+1.1. Connect the SSD to your Jetson Nano.
+1.2. Open a terminal.
+1.3. Use the `fdisk` command to manage partitions:
+    ```bash
+    sudo fdisk /dev/sda
+    ```
+1.4. Delete existing partitions by typing `d` and follow the on-screen prompts.
+1.5. Create a new partition by typing `n` and follow the prompts. Choose `Primary` and use the default values.
+1.6. Set the partition type to Linux (`83`) by typing `t` and choosing `83`.
+1.7. Write the changes and exit by typing `w`.
 
-1.4. Click `Format...`.
-1.5. Click `Format` and wait for the process to complete (duration depends on the chosen quick or slow format).
-1.6. Click the `+` to create a new partition.
-1.7. Set the Partition size to 110GB for SWAP.
-1.8. Click `Next`.
-   - **Volume Name**: Create one.
-   - **Type**: Choose `Internal disk for use with Linux systems only (Ext4)`.
+### 2. Format and Mount the SSD
+2.1. Format the SSD partition with the Ext4 file system:
+    ```bash
+    sudo mkfs.ext4 /dev/sda1
+    ```
+2.2. Create a mount point:
+    ```bash
+    sudo mkdir /media/ssd
+    ```
+2.3. Mount the SSD:
+    ```bash
+    sudo mount /dev/sda1 /media/ssd
+    ```
+2.4. Confirm that the SSD is mounted:
+    ```bash
+    df -h
+    ```
+2.5. Make the SSD mount automatically on boot by adding an entry to `/etc/fstab`:
+    ```bash
+    echo '/dev/sda1 /media/ssd ext4 defaults 0 0' | sudo tee -a /etc/fstab
+    ```
+2.6. Check the entry in `/etc/fstab`:
+    ```bash
+    cat /etc/fstab
+    ```
 
-1.9. Click `Create`.
-1.10. Finally, mount the SSD.
-1.11. After the SSD is mounted, open `Terminal` to install `nano`:
+### 3. Additional Configuration (Optional)
+3.1. If you want to set up a SWAP partition (optional), you can create and enable it using the following commands:
+    ```bash
+    sudo fallocate -l 4G /media/ssd/swapfile
+    sudo chmod 600 /media/ssd/swapfile
+    sudo mkswap /media/ssd/swapfile
+    sudo swapon /media/ssd/swapfile
+    ```
+3.2. To make the SWAP file permanent, add an entry to `/etc/fstab`:
+    ```bash
+    echo '/media/ssd/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+    ```
+
+### Conclusion
+You have successfully wiped, formatted, and mounted your SSD using the terminal on your Nvidia Jetson Nano.
+
+
+### **2. Download and Move Files**
+
+2.0. After the SSD is mounted, open `Terminal` to install `nano`:
     ```bash
     sudo apt install nano
     ```
-
-### 2. Download and Move Files
 2.1. Download the `bootFromUSB` repository from [JetsonHacks](https://github.com/jetsonhacks/bootFromUSB):
     ```bash
     git clone https://github.com/jetsonhacks/bootFromUSB
