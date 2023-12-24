@@ -1,6 +1,6 @@
 ---
 linkTitle: Basic Network Intrusion Detection System
-title: Fortify Your Network: Building a Basic Intrusion Detection System on Nvidia Jetson Nano
+title: Building a Basic Intrusion Detection System on Nvidia Jetson Nano
 description: >
  Prepare to fortify your digital fortress as we delve into the world of network security with the Nvidia Jetson Nano. In this tutorial, we'll transform your Jetson Nano into a vigilant guardian, capable of detecting and alerting you to potential intrusions on your network. Join us on this cybersecurity adventure, harnessing the power of Ubuntu and the Jetson Nano to create a Basic Network Intrusion Detection System (NIDS).
 toc_hide: true
