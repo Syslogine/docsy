@@ -46,9 +46,8 @@ def crack_hash(hash_value):
     # Load the list of common passwords from a plaintext file
     password_list = open("common_passwords.txt").read().splitlines()
     
-    # Loop through each password in the list and compute its hash value
+    # Loop through each password in the list and compute its hash value using SHA-1 algorithm
     for password in password_list:
-        # Compute the hash value using SHA-1 algorithm
         hash_object = hashlib.sha1(password.encode())
         computed_hash_value = hash_object.hexdigest()
         
@@ -66,7 +65,7 @@ def main():
     # Read the user's input for the password hash value
     hash_value = input("Enter the hash value of the password to crack: ")
     
-    # Call the crack_hash function to attempt to crack the password hash
+    # Call the crack_hash function to attempt to crack the password hash using SHA-1 algorithm
     cracked_password = crack_hash(hash_value)
     
     # Display the results of the password cracking attempt
