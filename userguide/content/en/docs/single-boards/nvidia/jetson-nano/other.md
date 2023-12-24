@@ -1,12 +1,11 @@
 ---
 linkTitle: Fun With Nano
-title: Fun With Nano
-
+title: Explore a World of Innovation with Nvidia Jetson Nano Projects
+description: >
+ Dive into the limitless possibilities of the Nvidia Jetson Nano with our curated collection of fascinating projects! From cutting-edge artificial intelligence to creative IoT applications, these hands-on projects cater to hobbyists, students, and developers alike.
 ---
 
-# Explore a World of Innovation with Nvidia Jetson Nano Projects
 
-Dive into the limitless possibilities of the Nvidia Jetson Nano with our curated collection of fascinating projects! From cutting-edge artificial intelligence to creative IoT applications, these hands-on projects cater to hobbyists, students, and developers alike.
 
 ## Featured Security and Hacking Projects:
 
