@@ -1,4 +1,9 @@
 ---
+linkTitle: Basic Password Cracker
+title: Basic Password Cracker
+
+toc_hide: true
+hide_summary: true
 
 ---
 
