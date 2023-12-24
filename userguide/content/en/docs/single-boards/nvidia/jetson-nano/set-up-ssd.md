@@ -17,58 +17,58 @@ categories: ["jetson nano"]
 
 ### **1. Wipe SSD Using Terminal**
 
-1.1. Connect the SSD to your Jetson Nano.
+1. Connect the SSD to your Jetson Nano.
 
-1.2. Open a terminal.
+2. Open a terminal.
 
-1.3. Use the `fdisk` command to manage partitions:
+3. Use the `fdisk` command to manage partitions:
     ```bash
     sudo fdisk /dev/sda
     ```
 
-1.4. Delete existing partitions by typing `d` and follow the on-screen prompts.
+4. Delete existing partitions by typing `d` and follow the on-screen prompts.
 
-1.5. Create a new partition by typing `n` and follow the prompts. Choose `Primary` and use the default values.
+5. Create a new partition by typing `n` and follow the prompts. Choose `Primary` and use the default values.
 
-1.6. Set the partition type to Linux (`83`) by typing `t` and choosing `83`.
+6. Set the partition type to Linux (`83`) by typing `t` and choosing `83`.
 
-1.7. Write the changes and exit by typing `w`.
+7. Write the changes and exit by typing `w`.
 
 ### 2. Format and Mount the SSD
 
-2.1. Format the SSD partition with the Ext4 file system:
+1. Format the SSD partition with the Ext4 file system:
     ```bash
     sudo mkfs.ext4 /dev/sda1
     ```
 
-2.2. Create a mount point:
+2. Create a mount point:
     ```bash
     sudo mkdir /media/ssd
     ```
 
-2.3. Mount the SSD:
+3. Mount the SSD:
     ```bash
     sudo mount /dev/sda1 /media/ssd
     ```
 
-2.4. Confirm that the SSD is mounted:
+4. Confirm that the SSD is mounted:
     ```bash
     df -h
     ```
 
-2.5. Make the SSD mount automatically on boot by adding an entry to `/etc/fstab`:
+5. Make the SSD mount automatically on boot by adding an entry to `/etc/fstab`:
     ```bash
     echo '/dev/sda1 /media/ssd ext4 defaults 0 0' | sudo tee -a /etc/fstab
     ```
 
-2.6. Check the entry in `/etc/fstab`:
+6. Check the entry in `/etc/fstab`:
     ```bash
     cat /etc/fstab
     ```
 
 ### 3. Additional Configuration (Optional)
 
-3.1. If you want to set up a SWAP partition (optional), you can create and enable it using the following commands:
+1. If you want to set up a SWAP partition (optional), you can create and enable it using the following commands:
     ```bash
     sudo fallocate -l 4G /media/ssd/swapfile
     sudo chmod 600 /media/ssd/swapfile
@@ -76,7 +76,7 @@ categories: ["jetson nano"]
     sudo swapon /media/ssd/swapfile
     ```
 
-3.2. To make the SWAP file permanent, add an entry to `/etc/fstab`:
+2. To make the SWAP file permanent, add an entry to `/etc/fstab`:
     ```bash
     echo '/media/ssd/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
     ```
@@ -88,46 +88,46 @@ You have successfully wiped, formatted, and mounted your SSD using the terminal 
 
 ### **2. Download and Move Files**
 
-2.0. After the SSD is mounted, open `Terminal` to install `nano`:
+0. After the SSD is mounted, open `Terminal` to install `nano`:
     ```bash
     sudo apt install nano
     ```
 
-2.1. Download the `bootFromUSB` repository from [JetsonHacks](https://github.com/jetsonhacks/bootFromUSB):
+1. Download the `bootFromUSB` repository from [JetsonHacks](https://github.com/jetsonhacks/bootFromUSB):
     ```bash
     git clone https://github.com/jetsonhacks/bootFromUSB
     ```
 
-2.2. Enter the `bootFromUSB` folder:
+2. Enter the `bootFromUSB` folder:
     ```bash
     cd bootFromUSB
     ```
 
-2.3. Obtain the SSD UUID:
+3. Obtain the SSD UUID:
     ```bash
     ./partUUID.sh
     ```
 
    Remember the output: `root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060`.
 
-2.4. Move files from MicroSD to SSD:
+4. Move files from MicroSD to SSD:
     ```bash
     ./copyRootToUSB.sh -p /dev/sda1
     ```
 
 ### 3. Configure SSD
 
-3.1. Navigate to the SSD folders:
+1. Navigate to the SSD folders:
     ```bash
     cd /media/syslogine/myproject/boot/extlinux
     ```
 
-3.2. Open `extlinux.conf`:
+2. Open `extlinux.conf`:
     ```bash
     sudo nano extlinux.conf
     ```
 
-3.3. Replace:
+3. Replace:
     ```
     root=/dev/mmcblk0p1
     ```
@@ -136,14 +136,14 @@ You have successfully wiped, formatted, and mounted your SSD using the terminal 
     root=PARTUUID=a40b6c71-ca35-79d3-8an0-d6v66749e060
     ```
 
-3.4. Save and exit `nano` (`Ctrl` + `X`, `Y`, `Enter`).
+4. Save and exit `nano` (`Ctrl` + `X`, `Y`, `Enter`).
 
-3.5. Shutdown Jetson Nano:
+5. Shutdown Jetson Nano:
     ```bash
     sudo poweroff
     ```
 
-3.6. After your Jetson Nano powers off, remove the MicroSD card and power it on again. The system should now boot from the SSD instead of the MicroSD card.
+6. After your Jetson Nano powers off, remove the MicroSD card and power it on again. The system should now boot from the SSD instead of the MicroSD card.
 
 ## Conclusion
 
