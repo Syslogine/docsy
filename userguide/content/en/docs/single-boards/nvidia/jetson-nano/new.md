@@ -48,7 +48,34 @@ In this tutorial, we covered the steps to set up the Xbox 360 v1 camera on a Nvi
 
 ====
 
-1. **Download and Install the necessary packages**: Before starting, ensure that you have installed all necessary packages including Python3, Pip, OpenCV, Numpy, Pycuda, and CUDA. If not, download them from their official websites and install.
+## **Download and Install the necessary packages**
+
+1. **Download Python3**: Download Python3 from its official website (https://www.python.org/downloads/) and install it.
+
+2. **Install Pip**: If you haven't already installed pip, download it from its official website (https://pypi.org/project/pip/) and install it.
+
+3. **Download OpenCV**: Download OpenCV from its official website (https://opencv.org/releases/) and install it using the following command:
+    ```bash
+    sudo apt-get install libopencv-dev python-opencv
+    ```
+4. **Download Numpy**: Download Numpy from its official website (https://numpy.org/install/) and install it using pip:
+    ```bash
+    pip install numpy
+    ```
+5. **Download Pycuda**: Download Pycuda from its official website (https://pypi.org/project/pycuda/) and install it using the following command:
+    ```bash
+    sudo apt-get install python3-dev libcupti-dev libcupti-dev-common libnvvm-dev libnvvm3 libnvvm3-dev libnvvm3-bin libnvvm3-dev-common libnvvm3-bin-common libnvvm3-dev-doc libnvvm3-dev-doc-common cuda-nvcc cuda-command-line-tools-10-2 cuda-libraries-10-2 cuda-libraries-dev-10-2
+    ```
+6. **Download CUDA**: Download CUDA from its official website (https://developer.nvidia.com/cuda-downloads) and install it using the following command:
+    ```bash
+    sudo dpkg -i cuda-repo-ubuntu1804-10-2-local_10.2.89-1_amd64.deb
+    sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
+    sudo apt-get update
+    sudo apt-get install cuda
+    ```
+
+
+## 1
 
 2. **Clone the GitHub Repository**: Use the following command to clone the repository:
     ```bash
