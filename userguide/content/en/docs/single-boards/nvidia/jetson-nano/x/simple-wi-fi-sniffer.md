@@ -10,7 +10,7 @@ hide_summary: true
 
 ## Requirements
 - Nvidia Jetson Nano with Ubuntu installed
-- A Wi-Fi adapter compatible with monitor mode (e.g., [Alfa AWUS036NH](https://www.amazon.com/Alfa-Network-AWUS036NH-Raspberry-Tinkerers/dp/B00YQIB8KC) or any other compatible adapter)
+- A Wi-Fi adapter compatible with monitor mode (e.g., [Alfa AWUS036NH](https://www.amazon.com/s?k=Alfa-Network-AWUS036NH-Raspberry-Tinkerers) or any other compatible adapter)
 
 ## Steps
 1. Connect your Jetson Nano to a power source and insert an SD card with Ubuntu installed.
