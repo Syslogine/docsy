@@ -5,7 +5,7 @@ description: >
  In this tutorial, we will cover the steps to reverse engineer an ARM/Linux executable file on your Nvidia Jetson Nano using the IDA Pro disassembler. This process involves analyzing the binary code of the executable file to understand its functionality and potentially identify security vulnerabilities or other interesting patterns of behavior.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## **Requirements**

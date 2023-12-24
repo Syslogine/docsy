@@ -5,7 +5,7 @@ description: >
  Steganography is the art of concealing information within other media to achieve secrecy. In this tutorial, we'll explore steganography on your Nvidia Jetson Nano running Ubuntu. Follow these detailed steps to embed and extract secret messages within image files.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## **Requirements**

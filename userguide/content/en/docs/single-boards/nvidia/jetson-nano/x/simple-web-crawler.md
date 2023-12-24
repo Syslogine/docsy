@@ -5,7 +5,7 @@ description: >
  In this tutorial, we'll guide you through the steps of creating a simple web crawler on your Nvidia Jetson Nano running Ubuntu. A web crawler is a script or program that systematically browses the internet, typically for the purpose of extracting data. By building a basic web crawler, you can explore the fundamentals of web scraping and data extraction.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## **Requirements**

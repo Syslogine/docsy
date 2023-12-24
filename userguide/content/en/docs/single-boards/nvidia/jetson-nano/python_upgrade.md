@@ -1,7 +1,7 @@
 ---
 linktitle: Upgrade Python
 title: Upgrade Python to Version 3.7 on Ubuntu
-
+categories: ["jetson nano"]
 ---
 
 ## **Version Check**

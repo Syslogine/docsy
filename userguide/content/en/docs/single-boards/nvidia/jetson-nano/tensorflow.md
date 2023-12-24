@@ -1,6 +1,7 @@
 ---
 linktitle: TensorFlow
 title: TensorFlow 2.4 Installation on Nvidia Jetson Nano
+categories: ["jetson nano"]
 ---
 
 ## **Python API Installation**

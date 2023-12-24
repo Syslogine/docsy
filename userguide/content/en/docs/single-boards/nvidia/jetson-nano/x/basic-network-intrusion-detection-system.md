@@ -5,7 +5,7 @@ description: >
  In this tutorial, we will cover the steps to create a basic network intrusion detection system using Python and Scapy on your Nvidia Jetson Nano with Ubuntu. This intrusion detection system can be used to monitor network traffic for suspicious activity, such as unauthorized access attempts or malicious data transfers.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## **Requirements**

@@ -5,7 +5,7 @@ description: >
  In this tutorial, we will cover the steps to create a simple Wi-Fi sniffer using the Nvidia Jetson Nano on Ubuntu. This tool can be used to capture and analyze network traffic on nearby wireless networks, allowing you to gain insights into how data is transmitted over the air, identify potential security vulnerabilities, or potentially intercept sensitive information if no security measures are in place.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## Requirements

@@ -1,7 +1,7 @@
 ---
 linkTitle: Arch Nano
 title: Nvidia Jetson Nano | Arch Linux
-
+categories: ["jetson nano"]
 ---
 
 ## General info

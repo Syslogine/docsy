@@ -1,7 +1,7 @@
 ---
 linkTitle: Xbox 360 v1 Camera
 title: Xbox 360 v1 Camera
-
+categories: ["jetson nano"]
 ---
 
 # Setting up the Xbox 360 v1 Camera on Jetson Nano with Ubuntu

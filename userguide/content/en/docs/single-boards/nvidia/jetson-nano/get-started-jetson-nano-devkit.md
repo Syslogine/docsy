@@ -1,6 +1,7 @@
 ---
 Title: Getting Started with Jetson Nano Developer Kit
 linkTitle: Get Started
+categories: ["jetson nano"]
 ---
 
 <style> 

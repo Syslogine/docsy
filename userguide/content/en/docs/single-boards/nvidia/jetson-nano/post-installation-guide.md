@@ -3,6 +3,7 @@ linkTitle: Post-Installation Guide
 title: Nvidia Jetson Nano Post-Installation Guide
 description: >
  Congratulations on successfully installing your Nvidia Jetson Nano! This guide will help you set up and optimize your system for various tasks.
+categories: ["jetson nano"]
 ---
 
 ## 1. **Update System Software**

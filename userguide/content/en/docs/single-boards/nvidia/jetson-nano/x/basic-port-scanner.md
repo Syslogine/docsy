@@ -5,7 +5,7 @@ description: >
  In this tutorial, we will cover the steps to create a basic port scanner using the Nvidia Jetson Nano on Ubuntu. This tool can be used to scan for open ports on remote computers or devices, potentially allowing you to identify potential security vulnerabilities or other interesting patterns of behavior.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## Requirements

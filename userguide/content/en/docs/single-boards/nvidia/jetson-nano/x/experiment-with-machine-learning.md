@@ -5,7 +5,7 @@ description: >
  Welcome to a thrilling journey into the realm of machine learning with your Nvidia Jetson Nano powered by Ubuntu. This tutorial invites you to explore the vast and fascinating landscape of machine learning, leveraging the exceptional capabilities of the Jetson Nano's GPU. Whether you're a curious beginner or a seasoned enthusiast, prepare to be captivated by the possibilities that unfold as we dive into the magic of intelligent algorithms.
 toc_hide: true
 hide_summary: true
-
+categories: ["jetson nano"]
 ---
 
 ## **Requirements**
