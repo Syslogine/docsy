@@ -101,7 +101,7 @@ params:
       diagramPadding: 20
 
 taxonomies:
-  tag: tags
+  
   category: categories
 
 module:

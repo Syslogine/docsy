@@ -12,7 +12,7 @@ linkTitle: Get Started
 }
 </style>
 
-## Introduction
+## **Introduction**
 The [NVIDIA® Jetson Nano™ Developer Kit](https://developer.nvidia.com/embedded/buy/jetson-nano-devkit) is a small AI computer for makers, learners, and developers. After following along with this brief guide, you’ll be ready to start building practical AI applications, cool AI robots, and more.
 
 
@@ -41,7 +41,7 @@ You’ll also need:
 *	Computer display (HDMI or DP)
 *	Micro-USB power supply
 
-## Prepare for Setup
+## **Prepare for Setup**
 ### Items for Getting Started
 #### microSD Card
 The Jetson Nano Developer Kit uses a microSD card as a boot device and for main storage. It’s important to have a card that’s fast and large enough for your projects; the minimum recommended is a 32 GB UHS-1 card.
@@ -60,7 +60,7 @@ The stated power output capability of a USB power supply can be seen on its labe
 Actual power delivery capabilities of USB power supplies do vary. Please see the [Jetson Nano Developer Kit User Guide](https://developer.nvidia.com/embedded/downloads#?search=Jetson%20Nano%20Developer%20Kit%20User%20Guide) for additional information.
 
 
-## Write Image to the microSD Card
+## **Write Image to the microSD Card**
 To prepare your microSD card, you’ll need a computer with Internet connection and the ability to read and write SD cards, either via a built-in SD card slot or adapter.
 1.	Download the [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image), and note where it was saved on the computer.
 2.	Write the image to your microSD card by following the instructions below according to your computer’s operating system: Windows, macOS, or Linux.
@@ -213,14 +213,14 @@ You can either write the SD card image using a graphical program like Etcher, or
 
 After your microSD card is ready, proceed to [Setup your developer kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup).
 
-## Setup and First Boot
+## **Setup and First Boot**
 ### Initial Setup with Display Attached
 ### Initial Setup in Headless Mode
 
-## Next Steps
+## **Next Steps**
 ### Find Your Way Around
 ### Projects and Learning
 
-## Troubleshooting
+## **Troubleshooting**
 ### Power
 ### Display
