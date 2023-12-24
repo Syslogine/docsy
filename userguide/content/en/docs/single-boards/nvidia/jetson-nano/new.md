@@ -48,29 +48,70 @@ In this tutorial, we covered the steps to set up the Xbox 360 v1 camera on a Nvi
 
 ====
 
-## **Download and Install the necessary packages**
-1.  **Download Python3**: Download Python3 from its official website (https://www.python.org/downloads/) and install it using the following command:
-    ```bash
-    wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
-    tar -xzf Python-3.8.5.tgz
-    cd Python-3.8.5
-    ./configure --prefix=/usr/local/python3.8
-    make
-    sudo make install
-    ```
-2. **Configure the Environment**: After installing, configure the environment by adding the following lines to your `~/.bashrc` file:
-    ```bash
-    export PATH="/usr/local/python3.8/bin:$PATH"
-    ```
-3. **Download Pip**: Download Pip from its official website (https://pypi.org/project/pip/) and install it using the following command:
+## **Download and Install Python 3.8 on Nvidia Jetson Nano**
+
+### **Install Dependencies**
+
+Before we begin, let's make sure the system has the necessary tools and libraries. Open a terminal on your Nvidia Jetson Nano and run the following commands:
+
+```bash
+sudo apt update
+sudo apt install -y build-essential libssl-dev libffi-dev python3.8-dev
+```
+
+- `sudo apt update`: Updates the package lists on your system.
+- `sudo apt install -y build-essential libssl-dev libffi-dev python3.8-dev`: Installs essential build tools and libraries required for Python compilation.
+
+### **Download and Install Python 3.8**
+
+Now, let's download and install Python 3.8. In the same terminal, execute the following commands:
+
+```bash
+wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tgz
+tar xvf Python-3.8.12.tgz
+cd Python-3.8.12
+./configure --enable-optimizations
+make -j4
+sudo make altinstall
+```
+
+- `wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tgz`: Downloads the Python 3.8 source code archive.
+- `tar xvf Python-3.8.12.tgz`: Extracts the contents of the archive.
+- `cd Python-3.8.12`: Navigates into the extracted directory.
+- `./configure --enable-optimizations`: Configures the Python build with optimizations.
+- `make -j4`: Compiles Python. The `-j4` flag specifies the number of parallel processes (adjust as needed).
+- `sudo make altinstall`: Installs Python with a version-specific executable (`python3.8`).
+
+These commands download, configure, compile, and install Python 3.8 on your Nvidia Jetson Nano. This version is installed alongside the default Python versions and does not replace them.
+
+### Install `pip` for Python 3.8
+1. Download the `get-pip.py` script using wget:
     ```bash
     wget https://bootstrap.pypa.io/get-pip.py
-    python3 get-pip.py --prefix=/usr/local/python3.8
     ```
-4. **Configure Pip**: After installing, configure Pip by adding the following lines to your `~/.bashrc` file:
+2. Install Python 3.8 and Pip with the following command:
+    ```bash
+    python3 get-pip.py --prefix=/usr/local/python3.8
+    `````
+3. Export the Python 3.8 bin directory to the PATH. Add the following line to your shell profile file (e.g., `~/.bashrc` or `~/.zshrc`):
     ```bash
     export PATH="/usr/local/python3.8/bin:$PATH"
     ```
+    Save the file and apply the changes with:
+    ```bash
+    source ~/.bashrc   # For Bash
+    ```
+    or
+    ```bash
+    source ~/.zshrc   # For Zsh
+    ```
+4. Verify the installation by checking the Python and Pip versions:
+    ```bash
+    python3.8 --version
+    pip3.8 --version
+    ```
+
+=====
 
 5. **Download OpenCV**: Download OpenCV from its official website (https://opencv.org/releases/) and install it using the following command:
     ```bash
