@@ -46,3 +46,24 @@ In this tutorial, we will cover the steps to set up the Xbox 360 v1 camera on a 
 ## Conclusion
 In this tutorial, we covered the steps to set up the Xbox 360 v1 camera on a Nvidia Jetson Nano running Ubuntu. By following these steps, you should be able to use the camera for various applications such as computer vision and machine learning.
 
+====
+
+1. **Download and Install the necessary packages**: Before starting, ensure that you have installed all necessary packages including Python3, Pip, OpenCV, Numpy, Pycuda, and CUDA. If not, download them from their official websites and install.
+
+2. **Clone the GitHub Repository**: Use the following command to clone the repository:
+    ```bash
+    git clone https://github.com/raymondlo84/nvidia-jetson-ai-monitor
+    ```
+3. **Navigate to the Cloned Directory**: After cloning, use the `cd` command to navigate to the directory.
+
+4. **Install Dependencies**: Use pip to install the necessary dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+5. **Run the Script**: To run the script, use the following command:
+    ```bash
+    python main.py
+    ```
+6. **Configure the Script**: The script has a configuration file named `config.py`. You can modify this file to configure various aspects of the script such as the frequency at which the script checks for GPU usage, CPU temperature, and other metrics.
+
+7. **Check the Output**: Once you have run the script, it will start monitoring your NVIDIA Jetson Nano's GPU usage, CPU temperature, and other metrics. The output can be viewed in the console or redirected to a file for later analysis.
