@@ -24,13 +24,13 @@ description: >
 5. [**Experiment with Steganography:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/experiment-with-steganography/)
    - Use the Jetson Nano to hide secret data within images, audio files, or other media using steganography techniques. An intriguing exploration of data hiding and cryptography.
 
-6. **Simple Web Crawler:**
+6. [**Simple Web Crawler:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/simple-web-crawler/)
    - Transform the Jetson Nano into a tool that automatically navigates and downloads content from websites, ideal for data mining or archiving purposes.
 
-7. **Experiment with Machine Learning:**
+7. [**Experiment with Machine Learning:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/experiment-with-machine-learning/)
    - Harness the Jetson Nano's GPU for training machine learning models, from image recognition to speech synthesis and natural language processing.
 
-8. **Basic Network Intrusion Detection System:**
+8. [**Basic Network Intrusion Detection System:**](https://syslogine.cloud/docs/single-boards/nvidia/jetson-nano/x/basic-network-intrusion-detection-system/)
    - Utilize the Jetson Nano to analyze network traffic, detecting potential security threats or anomalies to enhance your computer or network's security.
 
 9. **Reverse Engineer Wireless Protocols:**
