@@ -54,7 +54,7 @@ hide_summary: true
     tcpdump -r wifi_capture.pcapng
     ```
 
-12. After you have collected enough network traffic data, stop the packet capture utility by pressing `Ctrl+C`. For guidance on how much data might be considered sufficient for analysis, refer to [recommended network traffic data sizes](link-to-relevant-guide).
+12. After you have collected enough network traffic data, stop the packet capture utility by pressing `Ctrl+C`. 
 
 13. Analyze the captured network traffic using tools such as Wireshark or `aircrack-ng` to identify potential security vulnerabilities or other interesting patterns of behavior.
 
