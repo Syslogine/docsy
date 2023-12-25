@@ -1,6 +1,29 @@
 ---
-linktitle: "FiveM"
+title: "FiveM Installation"
+date: 2023-12-26T12:00:00Z
+description: "Learn how to install FiveM on your Windows PC."
 ---
+
+# FiveM Installation
+
+Welcome to the FiveM installation guide. Follow the steps below to get started:
+
+1. Grand Theft Auto V (GTA V)
+   - Make sure you have a legal copy of Grand Theft Auto V installed on your computer.
+
+2. FiveM Account
+   - Visit the [FiveM website](https://fivem.net/) and create a FiveM account. You'll need this account to log in to FiveM servers.
+
+...
+
+8. Install Mods (Optional)
+   - Some servers may have custom mods or assets. Follow the server-specific instructions to install any additional mods required to join the server.
+
+**Note:** Using mods or connecting to unofficial servers might violate the terms of service of GTA V, so proceed at your own risk. FiveM is a third-party modification and is not affiliated with Rockstar Games.
+
+Always follow the rules and guidelines of the server you're playing on, and have fun exploring the various multiplayer experiences that FiveM offers!
+
+[Back to Home](/)
 
 # FiveM Installation Tutorial
 
@@ -40,4 +63,3 @@ FiveM may prompt you to update when you launch it. Allow the update to proceed t
 Some servers may have custom mods or assets. Follow the server-specific instructions to install any additional mods required to join the server.
 
 **Note:** Using mods or connecting to unofficial servers might violate the terms of service of GTA V, so proceed at your own risk. FiveM is a third-party modification and is not affiliated with Rockstar Games.
-
