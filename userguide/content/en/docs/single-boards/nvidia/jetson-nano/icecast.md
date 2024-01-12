@@ -5,7 +5,6 @@ date = 2024-01-12T12:00:00Z
 tags = ["Ubuntu", "Icecast", "Jetson Nano", "Streaming", "Tutorial"]
 +++
 
-# Setting Up Your Own Radio Station on Ubuntu with Icecast and Jetson Nano
 
 ## Introduction
 
