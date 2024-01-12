@@ -8,8 +8,6 @@ tags: ["Docker", "Containerization", "Tutorial", "DevOps"]
 categories: ["DevOps", "Docker"]
 ---
 
-Docker is a powerful tool that allows you to package, distribute, and run applications in isolated environments called containers. In this tutorial, we'll cover the basics of Docker to help you get started.
-
 ## Prerequisites
 
 Before you begin, ensure that you have Docker installed on your machine. Follow the official [Docker installation guide](https://docs.docker.com/get-docker/) for your operating system.
