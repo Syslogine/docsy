@@ -1,10 +1,12 @@
-+++
-title = "Setting Up Your Own Radio Station on Ubuntu with Icecast and Jetson Nano"
-linktitle = "Radio Station Setup"
-date = 2024-01-12T12:00:00Z
-tags = ["Ubuntu", "Icecast", "Jetson Nano", "Streaming", "Tutorial"]
-+++
-
+---
+title: Setting Up Your Own Radio Station on Ubuntu with Icecast and Jetson Nano
+linktitle: Radio Station Setup
+date: 2024-01-12T12:00:00Z
+description: >
+  Learn how to set up your own radio station using Icecast on an Ubuntu machine, specifically on a Jetson Nano. Broadcast audio content over the internet with ease.
+tags: ["Ubuntu", "Icecast", "Jetson Nano", "Streaming", "Tutorial"]
+categories: ["Jetson Nano", "Tutorials"]
+---
 
 ## Introduction
 
