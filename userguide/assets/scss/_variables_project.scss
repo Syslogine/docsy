@@ -3,3 +3,87 @@ Add styles or override variables from the theme here.
 */
 
 $secondary: #D95040;
+
+
+/* General Section Styling */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Lead Block Styling */
+.lead {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.lead h2 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.lead p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+/* Feature Items Styling */
+.feature-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.feature-item .icon {
+    font-size: 2.5em;
+    color: #007bff; /* Blue color for icons */
+}
+
+.feature-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.feature-item a:hover {
+    text-decoration: underline;
+}
+
+/* Color Overrides for Sections */
+.section.dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.section.light {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.section.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Adjustments for links in primary section */
+.section.primary a {
+    color: white;
+}
+
+.section.primary a:hover {
+    color: #ffdd00; /* Change for hover effect */
+}
