@@ -1,12 +1,13 @@
 ---
 title: "Installing a FiveM Server on CentOS"
+linktitle: "CentOS FiveM Setup"
 draft: false
-description: "Step-by-step guide to install and run a FiveM server on CentOS."
+description: "This tutorial will guide you through the process of installing a FiveM server on a CentOS operating system."
 ---
 
 # Installing a FiveM Server on CentOS
 
-This tutorial will guide you through the process of installing a FiveM server on a CentOS operating system.
+
 
 ## Prerequisites
 

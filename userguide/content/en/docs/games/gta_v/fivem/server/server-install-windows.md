@@ -1,5 +1,6 @@
 ---
 title: "Creating a FiveM Server on Windows"
+linktitle: "Windows FiveM Setup"
 draft: false
 description: "A step-by-step guide to setting up a FiveM server on your Windows PC."
 ---

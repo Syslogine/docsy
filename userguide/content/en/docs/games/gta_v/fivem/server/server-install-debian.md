@@ -1,5 +1,6 @@
 ---
 title: "Setting Up a FiveM Server on Debian"
+linktitle: "Debian FiveM Setup"
 draft: false
 description: "A comprehensive guide to setting up a FiveM server on a Debian-based system."
 ---
