@@ -43,16 +43,31 @@ It's a good practice to run services like FiveM under a separate user.
    su - fivem
    ```
 
-## Step 3: Downloading FiveM Server Files
+## Step 3: Downloading and Preparing FiveM Server Files
 
-1. Download the latest server artifact: `7290`
+1. Download the latest server artifact:
    ```bash
-   wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/7290-a654bcc2adfa27c4e020fc915a1a6343c3b4f921/fx.tar.xz
+   wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/latest.tar.xz
    ```
 
 2. Extract the server files:
    ```bash
-   tar xf fx.tar.xz
+   tar xf latest.tar.xz
+   ```
+
+3. Clone the `cfx-server-data` repository from GitHub. This repository contains essential data for your FiveM server:
+   ```bash
+   git clone https://github.com/citizenfx/cfx-server-data.git
+   ```
+
+4. Move the `resources` folder from `cfx-server-data` to your main FiveM server directory:
+   ```bash
+   mv cfx-server-data/resources /home/fivem/
+   ```
+
+5. Remove the now-empty `resources` directory from `cfx-server-data`:
+   ```bash
+   rm -rf cfx-server-data/resources
    ```
 
 ## Step 4: Configuring the Server
@@ -155,30 +170,35 @@ It's a good practice to run services like FiveM under a separate user.
 
 ## Step 5: Configuring Firewall for FiveM
 
-FiveM requires certain ports to be open for proper functionality. Here's how you can open these ports on a Debian server.
+Before enabling the firewall, it's important to ensure you won't lose remote access to your server, especially if you're using SSH.
 
 1. Check if UFW (Uncomplicated Firewall) is installed:
    ```bash
    sudo apt install ufw
    ```
 
-2. Enable UFW:
+2. Allow SSH connections to ensure you can still access your server after the firewall is enabled:
+   ```bash
+   sudo ufw allow 22/tcp
+   ```
+
+3. Enable UFW:
    ```bash
    sudo ufw enable
    ```
 
-3. Allow the default FiveM ports. FiveM typically uses ports 30120 and 30110 for server and HTTP server:
+4. Allow the default FiveM ports. FiveM typically uses ports 30120 and 30110 for server and HTTP server:
    ```bash
    sudo ufw allow 30120/tcp
    sudo ufw allow 30110/tcp
    ```
 
-4. Optionally, if you are using additional ports for specific resources, open them similarly:
+5. Optionally, if you are using additional ports for specific resources or services, open them similarly:
    ```bash
    sudo ufw allow [YourAdditionalPort]/tcp
    ```
 
-5. Check your UFW status to ensure the rules are applied:
+6. Check your UFW status to ensure the rules are applied:
    ```bash
    sudo ufw status
    ```
