@@ -45,14 +45,14 @@ It's a good practice to run services like FiveM under a separate user.
 
 ## Step 3: Downloading FiveM Server Files
 
-1. Download the latest server artifact:
+1. Download the latest server artifact: `7290`
    ```bash
-   wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/latest.tar.xz
+   wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/7290-a654bcc2adfa27c4e020fc915a1a6343c3b4f921/fx.tar.xz
    ```
 
 2. Extract the server files:
    ```bash
-   tar xf latest.tar.xz
+   tar xf fx.tar.xz
    ```
 
 ## Step 4: Configuring the Server
