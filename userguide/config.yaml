@@ -85,7 +85,7 @@ params:
     enable: true
     theme: default
     svg_image_url: https://www.plantuml.com/plantuml/svg/
-    svg: false
+    svg: true
   katex:
     enable: true
     html_dom_element: document.body
