@@ -1,12 +1,10 @@
 ---
-title: "FiveM Server Tutorials for GTA V"
-description: "Comprehensive guides to help you set up and manage your own FiveM servers for GTA V."
+title: "Welcome to the FiveM Server Tutorials"
+linktitle: "Server Tutorials"
+description: "Explore our detailed tutorials designed to assist you in setting up and managing your FiveM servers for Grand Theft Auto V. Perfect for both beginners and experienced server administrators, these guides cover everything from basic setup to advanced configurations."
 draft: false
 ---
 
-# Welcome to the FiveM Server Tutorials
-
-Explore our detailed tutorials designed to assist you in setting up and managing your FiveM servers for Grand Theft Auto V. Perfect for both beginners and experienced server administrators, these guides cover everything from basic setup to advanced configurations.
 
 ## Tutorials
 
