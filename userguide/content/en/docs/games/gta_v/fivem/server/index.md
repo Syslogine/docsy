@@ -11,9 +11,9 @@ Explore our detailed tutorials designed to assist you in setting up and managing
 
 ## Tutorials
 
-- [Installing a FiveM Server on Windows](/docs/games/gta_v/fivem/server/windows-setup.md)
-- [Setting Up a FiveM Server on Debian](/docs/games/gta_v/fivem/server/debian-setup.md)
-- [Installing a FiveM Server on CentOS](/docs/games/gta_v/fivem/server/centos-setup.md)
+- [Installing a FiveM Server on Windows](/docs/games/gta_v/fivem/server/windows-setup)
+- [Setting Up a FiveM Server on Debian](/docs/games/gta_v/fivem/server/debian-setup)
+- [Installing a FiveM Server on CentOS](/docs/games/gta_v/fivem/server/centos-setup)
 
 
 ## Getting Started
