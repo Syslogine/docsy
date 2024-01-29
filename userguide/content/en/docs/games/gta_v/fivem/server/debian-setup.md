@@ -62,7 +62,7 @@ It's a good practice to run services like FiveM under a separate user.
    nano server.cfg
    ```
 
-   ```
+   ```cfg
    # Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
    endpoint_add_tcp "0.0.0.0:30120"
    endpoint_add_udp "0.0.0.0:30120"
@@ -153,7 +153,37 @@ It's a good practice to run services like FiveM under a separate user.
     - After pressing `Ctrl + O`, nano will ask you to confirm the file name. By default, it will use the name of the file you're editing. Simply press `Enter` to confirm.
     - Now that your changes are saved, you can exit nano. Press `Ctrl + X` to close the editor and return to the command prompt.
 
-## Step 5: Running the Server
+## Step 5: Configuring Firewall for FiveM
+
+FiveM requires certain ports to be open for proper functionality. Here's how you can open these ports on a Debian server.
+
+1. Check if UFW (Uncomplicated Firewall) is installed:
+   ```bash
+   sudo apt install ufw
+   ```
+
+2. Enable UFW:
+   ```bash
+   sudo ufw enable
+   ```
+
+3. Allow the default FiveM ports. FiveM typically uses ports 30120 and 30110 for server and HTTP server:
+   ```bash
+   sudo ufw allow 30120/tcp
+   sudo ufw allow 30110/tcp
+   ```
+
+4. Optionally, if you are using additional ports for specific resources, open them similarly:
+   ```bash
+   sudo ufw allow [YourAdditionalPort]/tcp
+   ```
+
+5. Check your UFW status to ensure the rules are applied:
+   ```bash
+   sudo ufw status
+   ```
+
+## Step 6: Running the Server
 
 1. Start the server using `screen` for background execution:
    ```bash
