@@ -6,7 +6,8 @@ linktitle: "Job Grades"
 
 Here's a list of job grades available in our server:
 
-## Ambulance
+## A
+### Ambulance
 
 - Jr. EMT (Grade 0) - Salary: $20
 - EMT (Grade 1) - Salary: $40
@@ -16,7 +17,8 @@ Here's a list of job grades available in our server:
 - Ambulance Supervisor (Grade 5) - Salary: $120
 - Ambulance Manager (Grade 6) - Salary: $140
 
-## Banker
+## B
+### Banker
 
 - Consultant (Grade 0) - Salary: $10
 - Banker (Grade 1) - Salary: $20
@@ -27,66 +29,70 @@ Here's a list of job grades available in our server:
 - Bank Manager (Grade 6) - Salary: $60
 - Bank Executive (Grade 7) - Salary: $80
 
-## Bartender
+### Bartender
 
 - Senior Bartender (Grade 1) - Salary: $20
 - Mixologist (Grade 2) - Salary: $30
 - Bar Manager (Grade 3) - Salary: $40
 
-## Bounty Hunter
+### Bounty Hunter
 
 - Senior Bounty Hunter (Grade 1) - Salary: $50
 - Bounty Hunter Leader (Grade 2) - Salary: $70
 - Bounty Hunter Chief (Grade 3) - Salary: $90
 
-## Bus Driver
+### Bus Driver
 
 - Senior Bus Driver (Grade 1) - Salary: $25
 - Bus Operator (Grade 2) - Salary: $35
 - Transit Manager (Grade 3) - Salary: $50
 
-## Car Dealer
+
+## C
+### Car Dealer
 
 - Recruit (Grade 0) - Salary: $10
 - Novice (Grade 1) - Salary: $25
 - Experienced (Grade 2) - Salary: $40
 - Boss (Grade 3) - Salary: $0
 
-## Casino Dealer
+### Casino Dealer
 
 - Senior Casino Dealer (Grade 1) - Salary: $30
 - Casino Pit Boss (Grade 2) - Salary: $45
 - Casino Manager (Grade 3) - Salary: $60
 
-## Delivery Driver
+## D
+### Delivery Driver
 
 - Senior Delivery Driver (Grade 1) - Salary: $30
 - Courier Manager (Grade 2) - Salary: $45
 
-## DJ
+### DJ
 
 - Senior DJ (Grade 1) - Salary: $30
 - Music Director (Grade 2) - Salary: $45
 
-## Drug Dealer
+### Drug Dealer
 
 - Senior Drug Dealer (Grade 1) - Salary: $50
 - Drug Lord (Grade 2) - Salary: $70
 
-## Fisherman
+## F
+### Fisherman
 
 - Employee (Grade 0) - Salary: $0
 - Senior Fisherman (Grade 1) - Salary: $25
 - Master Fisherman (Grade 2) - Salary: $40
 - Fishing Captain (Grade 3) - Salary: $55
 
-## Flight Instructor
+### Flight Instructor
 
 - Senior Flight Instructor (Grade 1) - Salary: $45
 - Chief Flight Instructor (Grade 2) - Salary: $65
 - Flight School Owner (Grade 3) - Salary: $100
 
-## Fueler
+### Fueler
 
 - Employee (Grade 0) - Salary: $0
 - Senior Fueler (Grade 1) - Salary: $15
