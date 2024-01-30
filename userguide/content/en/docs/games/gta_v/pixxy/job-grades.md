@@ -4,12 +4,12 @@ linktitle: "Job Grades"
 
 # Job Grades
 
-Here's a list of job grades available in our server:
+Explore the diverse job opportunities within our server, each offering a unique progression path and rewarding experiences. Below is a comprehensive list of job grades available, allowing you to climb the ranks, earn salaries, and shape your virtual career.
 
 ## List
 
 ### Ambulance
-
+---
 The Ambulance job in our server is all about providing crucial medical support during emergencies. As a member of the Ambulance team, you'll start as a "Jr. EMT" and work your way up the ranks, gaining experience and saving lives along the way.
 
 - **Jr. EMT (Grade 0)**
@@ -43,7 +43,7 @@ The Ambulance job in our server is all about providing crucial medical support d
 Join the Ambulance team and make a difference by saving lives and providing critical medical care to those in need.
 
 ### Banker
-
+---
 The Banker job in our server is all about managing financial affairs and helping clients achieve their financial goals. As a Banker, you'll start as a "Consultant" and work your way up through the ranks, gaining expertise in the world of banking and finance.
 
 - **Consultant (Grade 0)**
@@ -77,7 +77,7 @@ The Banker job in our server is all about managing financial affairs and helping
 Join the Banker team and embark on a rewarding career in the world of finance. Help clients secure their financial futures, make wise investments, and build a strong financial foundation.
 
 ### Bartender
-
+---
 Welcome to the world of mixology and hospitality! As a Bartender in our server, you'll become the life of the party and master the art of crafting delicious cocktails and beverages.
 
 - **Barback (Grade 0)**
@@ -111,7 +111,7 @@ Welcome to the world of mixology and hospitality! As a Bartender in our server, 
 Join the Bartender profession, shake, stir, and pour your way to success, and leave a lasting impression on every patron who walks into your bar. Whether it's a classic cocktail or an innovative concoction, your bartending skills will keep the drinks flowing and the party going!
 
 ### Bounty Hunter
-
+---
 Step into the thrilling world of bounty hunting, where you'll track down fugitives and bring them to justice. As a Bounty Hunter in our server, you'll be the enforcer of the law and embark on dangerous missions.
 
 - **Trainee Hunter (Grade 0)**
@@ -145,7 +145,7 @@ Step into the thrilling world of bounty hunting, where you'll track down fugitiv
 Join the ranks of the fearless Bounty Hunters, hone your tracking skills, and become a force to be reckoned with in the world of fugitive apprehension. Your determination and expertise will ensure that no fugitive can escape the long arm of the law.
 
 ### Bus Driver
-
+---
 Hop behind the wheel and take on the role of a Bus Driver in our bustling city. As a Bus Driver, you'll be responsible for safely transporting passengers to their destinations while navigating the busy streets.
 
 - **Novice Driver (Grade 0)**
@@ -179,7 +179,7 @@ Hop behind the wheel and take on the role of a Bus Driver in our bustling city. 
 Take pride in being the driving force behind the city's public transit network, ensuring that commuters reach their destinations safely and on time. Your dedication to providing top-notch service will be appreciated by passengers throughout the city.
 
 ### Car Dealer
-
+---
 Welcome to the world of high-end automobiles and lucrative deals as a Car Dealer. As a Car Dealer, you'll dive into the exciting world of car sales, showcasing the latest models and helping customers find their dream vehicles.
 
 - **Sales Trainee (Grade 0)**
@@ -213,7 +213,7 @@ Welcome to the world of high-end automobiles and lucrative deals as a Car Dealer
 In the fast-paced world of Car Dealers, every sale brings the opportunity for profit and success. Your knowledge of automobiles and your ability to provide top-notch service will be the keys to your triumph in this competitive industry.
 
 ### Casino Dealer
-
+---
 Step into the thrilling world of casino entertainment as a Casino Dealer. As a Casino Dealer, you'll be at the heart of the action, dealing cards, spinning roulette wheels, and ensuring an unforgettable gaming experience for your players.
 
 - **Trainee Dealer (Grade 0)**
@@ -247,7 +247,7 @@ Step into the thrilling world of casino entertainment as a Casino Dealer. As a C
 The world of casino gaming is fast-paced and filled with excitement. Whether you're dealing with novice players or seasoned gamblers, your ability to create an engaging and fair gaming environment will determine your success as a Casino Dealer.
 
 ### Delivery Driver
-
+---
 Become a vital part of the urban hustle and bustle as a Delivery Driver. In this role, you'll crisscross the city, delivering packages, food, and goods to their destinations promptly and efficiently.
 
 - **Trainee Driver (Grade 0)**
@@ -281,7 +281,7 @@ Become a vital part of the urban hustle and bustle as a Delivery Driver. In this
 Whether you're delivering hot pizzas, important documents, or online shopping orders, the life of a Delivery Driver is never dull. Your ability to navigate the streets swiftly and handle all sorts of deliveries will make you a sought-after asset in the bustling city.
 
 ### DJ
-
+---
 Step into the spotlight and become the life of the party as a DJ. In this exhilarating role, you'll command the turntables, create music magic, and keep the dance floor grooving all night long.
 
 - **Amateur DJ (Grade 0)**
@@ -314,9 +314,8 @@ Step into the spotlight and become the life of the party as a DJ. In this exhila
 
 Being a DJ isn't just a job; it's a lifestyle. You'll immerse yourself in the world of music, mastering the art of mixing and blending tracks to create unforgettable experiences. From intimate parties to massive festivals, your talent will set the mood and make every event unforgettable.
 
-
 ### Drug Dealer
-
+---
 Enter the gritty underworld of illicit substances as a Drug Dealer. This high-risk, high-reward profession involves navigating the shadows, making connections, and raking in the profits. But beware, the law is always on your tail, and rival dealers are waiting to cut into your territory.
 
 - **Street Peddler (Grade 0)**
@@ -350,7 +349,7 @@ Enter the gritty underworld of illicit substances as a Drug Dealer. This high-ri
 Becoming a Drug Dealer means living on the edge, where every deal could lead to immense wealth or dire consequences. You'll need street smarts, cunning, and the ability to stay one step ahead of the law enforcement agencies aiming to bring you down.
 
 ### Fisherman
-
+---
 Dive into the world of the "Fisherman" and experience life on the high seas and serene lakes. As a fisherman, you'll navigate waters, cast your nets, and bring in the catch of the day. Whether you're a novice or a seasoned angler, this job offers a tranquil yet challenging way to make a living.
 
 - **Beginner Angler (Grade 0)**
@@ -386,7 +385,7 @@ Fishing isn't just about catching fish; it's about the thrill of the hunt and th
 Cast your line, set your hooks, and embark on a journey to become the ultimate Fisherman in your server's world of opportunities.
 
 ### Flight Instructor
-
+---
 Take to the skies and become a Flight Instructor, guiding aspiring pilots on their journey to mastering the art of aviation. In this thrilling and educational role, you'll be responsible for teaching others how to soar through the clouds safely and confidently.
 
 - **Trainee Pilot (Grade 0)**
@@ -424,7 +423,7 @@ Whether you dream of teaching commercial pilots or helping hobbyists take flight
 Fly high, inspire future aviators, and ensure the skies are filled with confident and capable pilots under your guidance in your server's aviation world.
 
 ### Fueler (Truck)
-
+---
 If you have a passion for keeping vehicles on the road, the Fueler (Truck) job is perfect for you. As a Fueler for trucks, you'll play a vital role in ensuring that various vehicles, from delivery trucks to construction vehicles, have the fuel they need to keep moving.
 
 - **Fueling Assistant (Grade 0)**
@@ -458,7 +457,7 @@ If you have a passion for keeping vehicles on the road, the Fueler (Truck) job i
 As a Fueler (Truck), you'll work closely with various truck drivers and fleet managers to ensure that the vehicles stay on the road and deliveries are made efficiently. Your expertise in truck refueling and maintenance will be crucial to the success of transportation operations in your server's world.
 
 ### Lumberjack
-
+---
 Venture into the great outdoors and embrace the rugged life of a Lumberjack. This job is not for the faint of heart but promises an exhilarating experience in the heart of the wilderness.
 
 - **Lumberjack Trainee (Grade 0)**
@@ -492,7 +491,7 @@ Venture into the great outdoors and embrace the rugged life of a Lumberjack. Thi
 As a Lumberjack, you'll work amidst the towering trees, mastering the art of felling and processing timber. Your dedication to sustainable logging practices and your ability to manage forests responsibly will ensure a steady supply of lumber for construction and crafting needs in your server's world. Embrace the call of the wild and become a true Lumberjack!
 
 ### News Anchor
-
+---
 Step into the fast-paced world of broadcasting and journalism as a News Anchor. In this exciting and influential role, you'll be at the forefront of delivering news, updates, and stories to your server's community.
 
 - **News Intern (Grade 0)**
@@ -526,7 +525,7 @@ Step into the fast-paced world of broadcasting and journalism as a News Anchor. 
 As a News Anchor, you'll be responsible for delivering accurate and timely news updates to keep the server's community well-informed. Whether you're reporting on local events, conducting in-depth investigations, or anchoring live broadcasts, your role as a News Anchor is crucial in shaping public opinion and fostering engagement. Join the ranks of journalism and become a trusted source of information and entertainment for your server!
 
 ### Mechanic
-
+---
 Join the world of grease, gears, and engines as a Mechanic. As a vital part of the automotive industry, you'll be responsible for maintaining, repairing, and fine-tuning various vehicles, ensuring they run smoothly on the server's virtual roads.
 
 - **Recruit (Grade 0)**
@@ -560,7 +559,7 @@ Join the world of grease, gears, and engines as a Mechanic. As a vital part of t
 In the role of a Mechanic, you'll dive into the world of automotive repair, offering your skills to keep the server's vehicles running smoothly. Whether it's fixing engines, tuning performance, or customizing cars to perfection, your work as a Mechanic is essential to the server's transportation infrastructure. Join the ranks of skilled technicians and leave your mark on the virtual roads!
 
 ### Miner
-
+---
 Delve deep into the virtual earth and embark on an underground adventure as a Miner. Your job is to extract valuable resources from the server's vast underground landscape, contributing to the economy and development of the server.
 
 - **Employee (Grade 0)**
@@ -594,7 +593,7 @@ Delve deep into the virtual earth and embark on an underground adventure as a Mi
 As a Miner, you'll work tirelessly underground, extracting valuable ores and minerals that fuel the server's economy and technological advancements. Whether you're seeking precious metals, rare gemstones, or valuable minerals, your contributions as a Miner play a crucial role in the server's growth and prosperity. So grab your pickaxe, put on your mining helmet, and embark on a journey into the depths of the virtual world!
 
 ### Police
-
+---
 Maintain law and order in the virtual realm as a dedicated officer of the law in the Police force. Your duty is to uphold justice, protect citizens, and ensure a safe environment within the server.
 
 - **Recruit (Grade 0)**
@@ -628,7 +627,7 @@ Maintain law and order in the virtual realm as a dedicated officer of the law in
 As a Police officer, you'll be at the forefront of ensuring a safe and orderly environment for all server users. From handling routine traffic stops to investigating complex crimes, your dedication and bravery are essential in maintaining the server's security. Join the ranks of the Police force and be a beacon of justice in the virtual world!
 
 ### Reporter
-
+---
 Uncover the latest stories, events, and scandals in the virtual world as a dedicated Reporter. Your role is to provide up-to-the-minute news coverage, conduct interviews, and deliver breaking news to the server's community.
 
 - **Employee (Grade 0)**
@@ -662,7 +661,7 @@ Uncover the latest stories, events, and scandals in the virtual world as a dedic
 As a Reporter, you'll have the opportunity to be the eyes and ears of the server, bringing important information and stories to the community. Whether you're covering in-game events, conducting interviews with server celebrities, or breaking news on major updates, your dedication to reporting will make you an essential part of the virtual world's narrative. Join the server's news team and be the voice that keeps everyone informed!
 
 ### Slaughterer (Butcher)
-
+---
 Embrace the art of butchery and ensure a steady supply of fresh meat for the server's inhabitants as a Slaughterer, also known as a Butcher. Your role involves processing animals, preparing meat cuts, and managing inventory to keep everyone well-fed.
 
 - **Employee (Grade 0)**
@@ -696,7 +695,7 @@ Embrace the art of butchery and ensure a steady supply of fresh meat for the ser
 As a Slaughterer (Butcher), you play a crucial role in providing sustenance to the server's inhabitants. Your dedication to meat processing ensures that everyone can enjoy a variety of delicious dishes. Whether you're just starting as a Trainee or aiming to become a renowned Master Butcher, your expertise will be in high demand, making you an essential part of the server's economy and culinary culture. Join the ranks of the server's Butchers and carve out a successful career in the world of meat!
 
 ### Tailor
-
+---
 Unleash your creativity and fashion sense as a Tailor in the server. As a Tailor, you'll be responsible for crafting a wide range of clothing and accessories, ensuring that the server's inhabitants look their best.
 
 - **Employee (Grade 0)**
@@ -730,7 +729,7 @@ Unleash your creativity and fashion sense as a Tailor in the server. As a Tailor
 As a Tailor, you have the power to transform fabrics into works of art, and your creations will define the server's fashion landscape. Whether you're starting as an Apprentice or aiming to become a renowned Couturier, your talent for fashion design and garment construction will be in high demand. Join the ranks of the server's Tailors and make a stylish impact on the server's inhabitants!
 
 ### Taxi
-
+---
 Hit the road and embark on a career as a Taxi driver in the server. As a Taxi driver, you'll provide essential transportation services to the community, helping citizens reach their destinations safely and efficiently.
 
 - **Recruit (Grade 0)**
@@ -758,7 +757,7 @@ As a Taxi driver, you'll navigate through the city's bustling streets, ensuring 
 Certainly! Here's the added text for the "Unemployed" job:
 
 ### Unemployed
-
+---
 The "Unemployed" job offers a unique progression system, allowing players to advance through various roles as they gain experience and expertise in different fields. Starting as a "Job Seeker" and climbing up to the highest ranks, players can explore different career paths and opportunities within the server.
 
 - **Job Seeker (Grade 1)**
