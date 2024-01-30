@@ -5,13 +5,13 @@ linktitle: "SQL job_grades"
 
 ```sql
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-	(27, 'ambulance', 0, 'jremt', 'Jr. EMT', 20, '{}', '{}'),
-	(28, 'ambulance', 1, 'emt', 'EMT', 40, '{}', '{}'),
-	(29, 'ambulance', 2, 'sr_emt', 'Sr. EMT', 60, '{}', '{}'),
-	(30, 'ambulance', 3, 'emt_supervisor', 'EMT Supervisor', 80, '{}', '{}'),
-	(31, 'ambulance', 4, 'chief_emt', 'Chief EMT', 100, '{}', '{}'),
-	(32, 'ambulance', 5, 'ambulance_supervisor', 'Ambulance Supervisor', 120, '{}', '{}'),
-	(33, 'ambulance', 6, 'ambulance_manager', 'Ambulance Manager', 140, '{}', '{}');
+    (27, 'ambulance', 0, 'jremt', 'Jr. EMT', 25, '{}', '{}'),
+    (28, 'ambulance', 1, 'emt', 'EMT', 50, '{}', '{}'),
+    (29, 'ambulance', 2, 'sr_emt', 'Sr. EMT', 75, '{}', '{}'),
+    (30, 'ambulance', 3, 'emt_supervisor', 'EMT Supervisor', 100, '{}', '{}'),
+    (31, 'ambulance', 4, 'chief_emt', 'Chief EMT', 125, '{}', '{}'),
+    (32, 'ambulance', 5, 'ambulance_supervisor', 'Ambulance Supervisor', 150, '{}', '{}'),
+    (33, 'ambulance', 6, 'ambulance_manager', 'Ambulance Manager', 175, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(36, 'banker', 0, 'consultant', 'Consultant', 10, '{}', '{}'),
@@ -95,13 +95,13 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(98, 'drug_dealer', 6, 'drug_lord', 'Drug Lord', 1000, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-	(99, 'fisherman', 0, 'beginner_angler', 'Beginner Angler', 50, '{}', '{}'),
-	(100, 'fisherman', 1, 'amateur_fisher', 'Amateur Fisher', 100, '{}', '{}'),
-	(101, 'fisherman', 2, 'experienced_fisherman', 'Experienced Fisherman', 200, '{}', '{}'),
-	(102, 'fisherman', 3, 'professional_angler', 'Professional Angler', 350, '{}', '{}'),
-	(103, 'fisherman', 4, 'fishing_captain', 'Fishing Captain', 500, '{}', '{}'),
-	(104, 'fisherman', 5, 'master_angler', 'Master Angler', 750, '{}', '{}'),
-	(105, 'fisherman', 6, 'legendary_fisher', 'Legendary Fisher', 1000, '{}', '{}');
+    (99, 'fisherman', 0, 'beginner_angler', 'Beginner Angler', 25, '{}', '{}'),
+    (100, 'fisherman', 1, 'amateur_fisher', 'Amateur Fisher', 50, '{}', '{}'),
+    (101, 'fisherman', 2, 'experienced_fisherman', 'Experienced Fisherman', 75, '{}', '{}'),
+    (102, 'fisherman', 3, 'professional_angler', 'Professional Angler', 100, '{}', '{}'),
+    (103, 'fisherman', 4, 'fishing_captain', 'Fishing Captain', 125, '{}', '{}'),
+    (104, 'fisherman', 5, 'master_angler', 'Master Angler', 150, '{}', '{}'),
+    (105, 'fisherman', 6, 'legendary_fisher', 'Legendary Fisher', 175, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(106, 'flight_instructor', 0, 'trainee_pilot', 'Trainee Pilot', 20, '{}', '{}'),
@@ -122,40 +122,40 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(119, 'fueler_truck', 6, 'chief_fuel_officer', 'Chief Fuel Officer', 70, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-    (120, 'lumberjack', 0, 'lumberjack_trainee', 'Lumberjack Trainee', 0, '{}', '{}'),
-    (121, 'lumberjack', 1, 'woodcutter', 'Woodcutter', 0, '{}', '{}'),
-    (122, 'lumberjack', 2, 'forestry_technician', 'Forestry Technician', 0, '{}', '{}'),
-    (123, 'lumberjack', 3, 'timber_specialist', 'Timber Specialist', 0, '{}', '{}'),
-    (124, 'lumberjack', 4, 'lumberyard_supervisor', 'Lumberyard Supervisor', 0, '{}', '{}'),
-    (125, 'lumberjack', 5, 'forest_manager', 'Forest Manager', 0, '{}', '{}'),
-    (126, 'lumberjack', 6, 'lumber_baron', 'Lumber Baron', 0, '{}', '{}');
+    (120, 'lumberjack', 0, 'lumberjack_trainee', 'Lumberjack Trainee', 30, '{}', '{}'),
+    (121, 'lumberjack', 1, 'woodcutter', 'Woodcutter', 45, '{}', '{}'),
+    (122, 'lumberjack', 2, 'forestry_technician', 'Forestry Technician', 60, '{}', '{}'),
+    (123, 'lumberjack', 3, 'timber_specialist', 'Timber Specialist', 75, '{}', '{}'),
+    (124, 'lumberjack', 4, 'lumberyard_supervisor', 'Lumberyard Supervisor', 90, '{}', '{}'),
+    (125, 'lumberjack', 5, 'forest_manager', 'Forest Manager', 110, '{}', '{}'),
+    (126, 'lumberjack', 6, 'lumber_baron', 'Lumber Baron', 130, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-    (127, 'news_anchor', 0, 'news_intern', 'News Intern', 0, '{}', '{}'),
-    (128, 'news_anchor', 1, 'junior_reporter', 'Junior Reporter', 0, '{}', '{}'),
-    (129, 'news_anchor', 2, 'senior_correspondent', 'Senior Correspondent', 0, '{}', '{}'),
-    (130, 'news_anchor', 3, 'news_anchor', 'News Anchor', 0, '{}', '{}'),
-    (131, 'news_anchor', 4, 'lead_anchor', 'Lead Anchor', 0, '{}', '{}'),
-    (132, 'news_anchor', 5, 'news_director', 'News Director', 0, '{}', '{}'),
-    (133, 'news_anchor', 6, 'network_executive', 'Network Executive', 0, '{}', '{}');
+    (127, 'news_anchor', 0, 'news_intern', 'News Intern', 20, '{}', '{}'),
+    (128, 'news_anchor', 1, 'junior_reporter', 'Junior Reporter', 40, '{}', '{}'),
+    (129, 'news_anchor', 2, 'senior_correspondent', 'Senior Correspondent', 60, '{}', '{}'),
+    (130, 'news_anchor', 3, 'news_anchor', 'News Anchor', 80, '{}', '{}'),
+    (131, 'news_anchor', 4, 'lead_anchor', 'Lead Anchor', 100, '{}', '{}'),
+    (132, 'news_anchor', 5, 'news_director', 'News Director', 120, '{}', '{}'),
+    (133, 'news_anchor', 6, 'network_executive', 'Network Executive', 140, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-    (134, 'mechanic', 0, 'recruit', 'Recruit', 500, '{}', '{}'),
-    (135, 'mechanic', 1, 'novice', 'Novice', 1000, '{}', '{}'),
-    (136, 'mechanic', 2, 'experienced', 'Experienced', 1500, '{}', '{}'),
-    (137, 'mechanic', 3, 'leader', 'Leader', 2000, '{}', '{}'),
-    (138, 'mechanic', 4, 'boss', 'Boss', 2500, '{}', '{}'),
-    (139, 'mechanic', 5, 'master_mechanic', 'Master Mechanic', 3000, '{}', '{}'),
-    (140, 'mechanic', 6, 'engine_whisperer', 'Engine Whisperer', 3500, '{}', '{}');
+    (134, 'mechanic', 0, 'recruit', 'Recruit', 25, '{}', '{}'),
+    (135, 'mechanic', 1, 'novice', 'Novice', 50, '{}', '{}'),
+    (136, 'mechanic', 2, 'experienced', 'Experienced', 75, '{}', '{}'),
+    (137, 'mechanic', 3, 'leader', 'Leader', 100, '{}', '{}'),
+    (138, 'mechanic', 4, 'boss', 'Boss', 125, '{}', '{}'),
+    (139, 'mechanic', 5, 'master_mechanic', 'Master Mechanic', 150, '{}', '{}'),
+    (140, 'mechanic', 6, 'engine_whisperer', 'Engine Whisperer', 175, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
-    (141, 'miner', 0, 'employee', 'Employee', 500, '{}', '{}'),
-    (142, 'miner', 1, 'laborer', 'Laborer', 1000, '{}', '{}'),
-    (143, 'miner', 2, 'digger', 'Digger', 1500, '{}', '{}'),
-    (144, 'miner', 3, 'foreman', 'Foreman', 2000, '{}', '{}'),
-    (145, 'miner', 4, 'mining_engineer', 'Mining Engineer', 2500, '{}', '{}'),
-    (146, 'miner', 5, 'mine_owner', 'Mine Owner', 3000, '{}', '{}'),
-    (147, 'miner', 6, 'mineral_magnate', 'Mineral Magnate', 3500, '{}', '{}');
+    (141, 'miner', 0, 'employee', 'Employee', 25, '{}', '{}'),
+    (142, 'miner', 1, 'laborer', 'Laborer', 50, '{}', '{}'),
+    (143, 'miner', 2, 'digger', 'Digger', 75, '{}', '{}'),
+    (144, 'miner', 3, 'foreman', 'Foreman', 100, '{}', '{}'),
+    (145, 'miner', 4, 'mining_engineer', 'Mining Engineer', 125, '{}', '{}'),
+    (146, 'miner', 5, 'mine_owner', 'Mine Owner', 150, '{}', '{}'),
+    (147, 'miner', 6, 'mineral_magnate', 'Mineral Magnate', 175, '{}', '{}');
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
     (148, 'police', 0, 'recruit', 'Recruit', 20, '{}', '{}'),
