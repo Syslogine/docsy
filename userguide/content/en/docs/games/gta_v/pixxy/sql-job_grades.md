@@ -3,7 +3,7 @@ linktitle: "SQL job_grades"
 ---
 
 
-```
+```sql
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(27, 'ambulance', 0, 'jremt', 'Jr. EMT', 20, '{}', '{}'),
 	(28, 'ambulance', 1, 'emt', 'EMT', 40, '{}', '{}'),
@@ -12,7 +12,6 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(31, 'ambulance', 4, 'chief_emt', 'Chief EMT', 100, '{}', '{}'),
 	(32, 'ambulance', 5, 'ambulance_supervisor', 'Ambulance Supervisor', 120, '{}', '{}'),
 	(33, 'ambulance', 6, 'ambulance_manager', 'Ambulance Manager', 140, '{}', '{}');
-
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(36, 'banker', 0, 'consultant', 'Consultant', 10, '{}', '{}'),
