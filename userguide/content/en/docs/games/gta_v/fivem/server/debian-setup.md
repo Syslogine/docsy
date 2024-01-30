@@ -210,6 +210,10 @@ Before enabling the firewall, it's important to ensure you won't lose remote acc
    screen -S fivem-server ./run.sh +exec server.cfg
    ```
 
+
+cd ~/FXServer/server-data && bash ~/FXServer/server/run.sh +exec server.cfg
+
+
 ## Step 6: Managing Your Server
 
 - To detach from the `screen` session, press `Ctrl+A` then `Ctrl+D`.

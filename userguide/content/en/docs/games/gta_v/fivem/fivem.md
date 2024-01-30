@@ -1,6 +1,5 @@
 ---
 title: "FiveM Installation"
-date: 2023-12-26T12:00:00Z
 description: "Learn how to install FiveM on your Windows PC."
 ---
 
