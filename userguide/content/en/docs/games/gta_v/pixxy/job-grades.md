@@ -107,59 +107,58 @@ Here's a list of job grades available in our server:
 - Editor-in-Chief (Grade 3) - Salary: $75
 
 ### Mechanic
-
 - Recruit (Grade 0) - Salary: $12
 - Novice (Grade 1) - Salary: $24
 - Experienced (Grade 2) - Salary: $36
 - Leader (Grade 3) - Salary: $48
 - Boss (Grade 4) - Salary: $0
+---
 
 ### Miner
-
 - Employee (Grade 0) - Salary: $0
 - Senior Miner (Grade 1) - Salary: $25
 - Master Miner (Grade 2) - Salary: $40
 - Mining Supervisor (Grade 3) - Salary: $55
+---
 
 ### Police
-
 - Recruit (Grade 0) - Salary: $20
 - Officer (Grade 1) - Salary: $40
 - Sergeant (Grade 2) - Salary: $60
 - Lieutenant (Grade 3) - Salary: $85
 - Captain (Grade 4) - Salary: $100
+---
 
 ### Reporter
----
 - Employee (Grade 0) - Salary: $0
 - Senior Reporter (Grade 1) - Salary: $35
 - News Editor (Grade 2) - Salary: $50
 - Editor-in-Chief (Grade 3) - Salary: $75
+---
 
 ### Slaughterer (Butcher)
----
 - Employee (Grade 0) - Salary: $0
 - Senior Slaughterer (Grade 1) - Salary: $20
 - Butcher (Grade 2) - Salary: $35
 - Meatpacking Manager (Grade 3) - Salary: $50
+---
 
 ### Tailor
----
 - Employee (Grade 0) - Salary: $0
 - Senior Tailor (Grade 1) - Salary: $25
 - Master Tailor (Grade 2) - Salary: $35
 - Fashion Designer (Grade 3) - Salary: $50
+---
 
 ### Taxi
----
 - Recruit (Grade 0) - Salary: $12
 - Novice (Grade 1) - Salary: $24
 - Experienced (Grade 2) - Salary: $36
 - Uber Cabby (Grade 3) - Salary: $48
 - Lead Cabby (Grade 5) - Salary: $75
+---
 
 ### Unemployed
----
 - Job Seeker (Grade 1) - Salary: $5
 - Freelancer (Grade 2) - Salary: $10
 - Self-Employed (Grade 3) - Salary: $15
