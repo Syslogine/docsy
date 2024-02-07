@@ -34,17 +34,18 @@ After relog
 	```
 
 
-Clone the script
-```
-git clone https://github.com/Syslogine/fivem-server-manager.git
-```
+3.	Clone the script
+	```
+	git clone https://github.com/Syslogine/fivem-server-manager.git
+	```
 
-give permissions to run the script
-```
- chmod +x fivemanager.sh
- ```
+4.	give permissions to run the script
+	```
+	 chmod +x fivemanager.sh
+	 ```
 
-Run the script
- ```
- ./fivemanager.sh start
- ```
+5.	Run the script
+	 ```
+	 ./fivemanager.sh start
+	 ```
+---
