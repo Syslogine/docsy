@@ -5,47 +5,49 @@ tags: ["centos", "debian", "kali linux", "linux", "red hat", "ubuntu", "windows"
 categories: ["Operating Systems"]
 weight: 400
 description: >
-  This page has the list of some operating systems that we have created tutorials for.
+  Explore our tutorials across various operating systems including Linux distributions and Windows.
 ---
 
-## CentOS
-CentOS (/ˈsɛntɒs/, from Community Enterprise Operating System; also known as CentOS Linux) is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL).
+Explore our comprehensive guides and tutorials for a range of operating systems. Whether you're interested in open-source Linux distributions like Ubuntu or CentOS, or proprietary systems like Windows, find all the resources you need to get started.
 
-<a class="btn btn-outline-primary btn-sm" href="centos" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="centos/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="centos/downloads" role="button">DOWNLOADS</a>
+### [CentOS](centos)
+The Community Enterprise Operating System (CentOS) is a free, open-source platform compatible with its upstream source, Red Hat Enterprise Linux (RHEL).
 
-## Debian
-Debian (/ˈdɛbiən/), also known as Debian GNU/Linux, is a Linux distribution composed of free and open-source software, developed by the community-supported Debian Project, which was established by Ian Murdock on August 16, 1993.
+- [Main Info](centos)
+- [Tutorials](centos/tutorials)
+- [Downloads](centos/downloads)
 
-<a class="btn btn-outline-primary btn-sm" href="debian" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="debian/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="debian/downloads" role="button">DOWNLOADS</a>
+### [Debian](debian)
+Debian GNU/Linux is a robust, free operating system that emphasizes openness and community support.
 
-## Kali Linux
-Kali Linux is a Debian-derived Linux distribution designed for digital forensics and penetration testing. It is maintained and funded by Offensive Security. Kali Linux has around 600 penetration-testing programs (tools), including Armitage (a graphical cyber attack management tool).
+- [Main Info](debian)
+- [Tutorials](debian/tutorials)
+- [Downloads](debian/downloads)
 
-<a class="btn btn-outline-primary btn-sm" href="kali-linux" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="kali-linux/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="kali-linux/downloads" role="button">DOWNLOADS</a>
+### [Kali Linux](kali-linux)
+Designed for digital forensics and penetration testing, Kali Linux comes packed with over 600 tools for cybersecurity professionals.
 
-## Red Hat
-Red Hat, Inc. is an American software company that provides open source software products to enterprises. Founded in 1993, Red Hat has its corporate headquarters in Raleigh, North Carolina, with other offices worldwide.
+- [Main Info](kali-linux)
+- [Tutorials](kali-linux/tutorials)
+- [Downloads](kali-linux/downloads)
 
-<a class="btn btn-outline-primary btn-sm" href="red-hat" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="red-hat/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="red-hat/downloads" role="button">DOWNLOADS</a>
+### [Red Hat](red-hat)
+An American software company offering open-source products to the enterprise community.
 
-## Ubuntu
-Ubuntu (/ʊˈbʊntuː/ uu-BUUN-too) is a Linux distribution based on Debian and composed mostly of free and open-source software. Ubuntu is officially released in three editions: Desktop, Server, and Core for Internet of things devices and robots.
+- [Main Info](red-hat)
+- [Tutorials](red-hat/tutorials)
+- [Downloads](red-hat/downloads)
 
-<a class="btn btn-outline-primary btn-sm" href="ubuntu" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="ubuntu/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="ubuntu/downloads" role="button">DOWNLOADS</a>
+### [Ubuntu](ubuntu)
+Ubuntu is a community-developed, Linux-based operating system for desktops, servers, and IoT devices.
 
-## Windows
-Windows is a group of several proprietary graphical operating system families developed and marketed by Microsoft. Each family caters to a certain sector of the computing industry. For example, Windows NT for consumers, Windows Server for servers, and Windows IoT for embedded systems.
+- [Main Info](ubuntu)
+- [Tutorials](ubuntu/tutorials)
+- [Downloads](ubuntu/downloads)
 
-<a class="btn btn-outline-primary btn-sm" href="windows" role="button">MAIN INFO</a>
-<a class="btn btn-outline-primary btn-sm" href="windows/tutorials" role="button">TUTORIALS</a>
-<a class="btn btn-outline-primary btn-sm" href="windows/downloads" role="button">DOWNLOADS</a>
+### [Windows](windows)
+Microsoft's Windows operating system is foundational in both personal computing and enterprise environments.
+
+- [Main Info](windows)
+- [Tutorials](windows/tutorials)
+- [Downloads](windows/downloads)

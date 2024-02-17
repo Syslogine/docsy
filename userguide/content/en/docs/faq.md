@@ -1,12 +1,11 @@
 ---
-title: "FAQ"
+title: "Frequently Asked Questions"
+linkTitle: "FAQ"
 menu: main
 weight: 800
+description: >
+  Welcome to our FAQ page, where we aim to answer your most common questions about Syslogine and related topics. If you have further questions, feel free to reach out.
 ---
-
-# Frequently Asked Questions
-
-Welcome to our FAQ page, where we aim to answer your most common questions about Syslogine and related topics. If you have further questions, feel free to reach out.
 
 ## Using Syslogine
 
