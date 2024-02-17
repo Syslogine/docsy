@@ -1,7 +1,6 @@
 ---
 title: "FAQ"
-menu: main
-weight: 800
+menu: {main: {weight: 80}}
 ---
 
 # Frequently Asked Questions
