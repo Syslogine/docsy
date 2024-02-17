@@ -24,7 +24,7 @@ menu:
     - name: Home
       weight: 40
       url: https://syslogine.com
-
+      
 services:
   googleAnalytics:
     id: G-BYVWHXRKRZ
