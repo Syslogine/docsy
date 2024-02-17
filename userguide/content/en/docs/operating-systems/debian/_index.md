@@ -43,6 +43,7 @@ Our tutorials cover a wide range of topics, from basic system management to adva
 - [Debian for Beginners](/docs/operating-systems/debian/beginners-guide): If you're new to Debian or Linux, start here.
 - [Networking](/docs/operating-systems/debian/networking): Setting up and managing network configurations.
 - [Security](/docs/operating-systems/debian/security): Securing your Debian system against threats.
+- [Securing MariaDB](/docs/operating-systems/debian/securing-mariadb): Fortify your Debian server by installing and securing MariaDB.
 
 ## Community and Support
 
