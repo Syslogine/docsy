@@ -1,6 +1,6 @@
 ---
 title: Debian Networking Guide
-linktitle: Networking
+#linktitle: Networking
 categories: ["operating systems"]
 tags: ["debian", "networking"]
 weight: 6

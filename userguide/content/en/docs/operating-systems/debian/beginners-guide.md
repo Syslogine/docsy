@@ -1,6 +1,6 @@
 ---
 title: Debian Beginner's Guide
-linktitle: Beginner's Guide
+#linktitle: Beginner's Guide
 categories: ["operating systems"]
 tags: ["debian", "beginners"]
 weight: 5

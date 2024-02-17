@@ -1,6 +1,6 @@
 ---
 title: Debian System Configuration Guide
-linktitle: System Configuration
+#linktitle: System Configuration
 categories: ["operating systems"]
 tags: ["debian", "configuration"]
 weight: 3

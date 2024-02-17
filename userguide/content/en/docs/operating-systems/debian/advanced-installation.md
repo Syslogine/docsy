@@ -1,6 +1,6 @@
 ---
 title: Advanced Debian Installation Guide
-linktitle: Advanced Installation
+#linktitle: Advanced Installation
 categories: ["operating systems"]
 tags: ["debian", "advanced installation"]
 weight: 2

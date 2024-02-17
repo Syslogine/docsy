@@ -1,6 +1,6 @@
 ---
 title: Debian Installation Guide
-linktitle: Installation Guide
+#linktitle: Installation Guide
 categories: ["operating systems"]
 tags: ["debian", "installation"]
 weight: 1
