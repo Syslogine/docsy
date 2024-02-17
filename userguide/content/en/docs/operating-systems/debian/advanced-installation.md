@@ -1,9 +1,10 @@
 ---
 title: Advanced Debian Installation Guide
-#linktitle: Advanced Installation
+linktitle: Advanced Installation
 categories: ["operating systems"]
 tags: ["debian", "advanced installation"]
 weight: 2
+hideFromSidebar: true
 description: >
   Dive deeper into the Debian installation process with advanced options, including manual partitioning, dual-boot setups, and encryption.
 ---
