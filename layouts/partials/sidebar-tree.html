@@ -72,3 +72,9 @@
   {{- end }}
 </li>
 {{- end }}
+
+{{ range .Pages }}
+  {{ if not .Params.hideFromSidebar }}
+    <!-- Render the link in the sidebar -->
+  {{ end }}
+{{ end }}
