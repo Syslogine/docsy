@@ -2,6 +2,7 @@
 linktitle: Single Board Computers
 title: Single Board Computers
 main_menu: true
+weight: 500
 description: >
   This section will contain everything you need to start your project with a single-board computer device, such as the Jetson Nano or Raspberry Pi. Find tutorials, project ideas, and comprehensive guides to make the most of these versatile devices.
 ---

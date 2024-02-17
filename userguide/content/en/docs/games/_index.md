@@ -3,6 +3,8 @@ title: "Games"
 weight: 1
 type: docs
 categories: ["Games"]
+weight: 200
+
 description: >
   This category contains a list of game-related stuff, including reviews, tutorials, and insights into the latest in gaming technology and culture. Explore to find in-depth discussions, tips, and resources for gamers of all levels.
 ---

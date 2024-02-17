@@ -3,6 +3,7 @@ title: Operating Systems
 linktitle: Operating Systems
 tags: ["centos", "debian", "kali linux", "linux", "red hat", "ubuntu", "windows"]
 categories: ["Operating Systems"]
+weight: 400
 description: >
   This page has the list of some operating systems that we have created tutorials for.
 ---
