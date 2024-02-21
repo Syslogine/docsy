@@ -3,8 +3,6 @@ linktitle: Debian
 categories: ["operating systems"]
 tags: ["debian"]
 no_list: true
-toc_hide: true
-hide_summary: true
 weight: 2
 ---
 
