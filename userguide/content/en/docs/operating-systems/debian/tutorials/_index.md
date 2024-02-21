@@ -14,6 +14,4 @@ Welcome to our Debian tutorials section, where you can find step-by-step guides 
 
 ## Available Tutorials
 
-
-
 Browse through our tutorials to get started, and enhance your Debian system today.
