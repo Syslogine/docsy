@@ -1,6 +1,7 @@
 ---
 title: Welcome to Syslogine Docs
 linkTitle: Documentation
+hide_summary: true
 menu: {main: {weight: 20}}
 ---
 
