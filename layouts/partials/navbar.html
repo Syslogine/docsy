@@ -4,15 +4,10 @@
 -}}
 {{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
 
-<nav class="td-navbar navbar-dark js-navbar-scroll
-            {{- if $cover }} td-navbar-cover {{- end }}">
+<nav class="td-navbar navbar-dark js-navbar-scroll {{- if $cover }} td-navbar-cover {{- end }}">
 <div class="container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-    {{- /**/ -}}
-    <a href="/">
-        <img src="/images/icons/small-w.png" alt="Your Site Name Logo" style="height: 50px;">
-    </a>
-    {{- /**/ -}}
+  <a href="/">
+    <img src="/images/icons/small-w.png" alt="Your Site Name Logo" style="height: 50px;">
   </a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
