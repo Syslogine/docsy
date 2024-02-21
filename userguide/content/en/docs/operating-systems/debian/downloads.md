@@ -39,10 +39,10 @@ Debian 11, codenamed "Bullseye," is the previous stable release, offering robust
 
 ### Torrent Downloads
 
-- **64-bit PC (DVD):** [Torrents](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/)
-- **32-bit PC (DVD):** [Torrents](https://cdimage.debian.org/debian-cd/current/i386/bt-dvd/)
-- **64-bit PC (CD):** [Torrents](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
-- **32-bit PC (CD):** [Torrents](https://cdimage.debian.org/debian-cd/current/i386/bt-cd/)
+- **64-bit PC (DVD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-dvd/)
+- **32-bit PC (DVD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-dvd/)
+- **64-bit PC (CD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-cd/)
+- **32-bit PC (CD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-cd/)
 
 ## Debian 10 "Buster"
 
