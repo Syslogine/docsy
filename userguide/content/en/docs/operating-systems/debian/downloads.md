@@ -8,7 +8,7 @@ description: >
   Access the latest, upcoming, and archival Debian ISO images. Find direct download links, torrents, and essential verification instructions.
 ---
 
-![Debian Downloads](/images/os/downloads_01.webp)
+![Debian Downloads](/images/os/downloads_03.webp)
 
 # Debian Downloads
 
