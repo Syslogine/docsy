@@ -8,6 +8,8 @@ description: >
   Access the latest, upcoming, and archival Debian ISO images. Find direct download links, torrents, and essential verification instructions.
 ---
 
+![Debian Downloads](/images/os/downloads_01.webp)
+
 # Debian Downloads
 
 Welcome to the comprehensive Debian downloads page, where you can find direct ISO links and torrents for the latest, upcoming, and archival versions of Debian. This section is designed to make it easy for you to access Debian ISO images for various architectures, ensuring you get the version that best fits your needs.
@@ -18,15 +20,15 @@ Debian 12, known as "Bookworm," is at the forefront of Debian stable releases, i
 
 ### ISO Direct Downloads
 
-- **Debian 12 Bookworm (64-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.0.0-amd64-netinst.iso)
-- **Debian 12 Bookworm (32-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-12.0.0-i386-netinst.iso)
+- **Debian 12 Bookworm (64-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.0.0-amd64-netinst.iso)
+- **Debian 12 Bookworm (32-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-12.0.0-i386-netinst.iso)
 
 ### Torrent Downloads
 
-- **64-bit PC (DVD):** [Torrents 🌊](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/)
-- **32-bit PC (DVD):** [Torrents 🌊](https://cdimage.debian.org/debian-cd/current/i386/bt-dvd/)
-- **64-bit PC (CD):** [Torrents 🌊](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
-- **32-bit PC (CD):** [Torrents 🌊](https://cdimage.debian.org/debian-cd/current/i386/bt-cd/)
+- **64-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/)
+- **32-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/debian-cd/current/i386/bt-dvd/)
+- **64-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
+- **32-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/debian-cd/current/i386/bt-cd/)
 
 Discover [what's new in Debian 12 "Bookworm"](https://www.debian.org/releases/bookworm/amd64/release-notes/) to explore the latest features and improvements.
 
@@ -36,15 +38,15 @@ Debian 11, or "Bullseye," provides a stable foundation with robust features and 
 
 ### ISO Direct Downloads
 
-- **Debian 11.6 Bullseye (64-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso)
-- **Debian 11.6 Bullseye (32-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-11.6.0-i386-netinst.iso)
+- **Debian 11.6 Bullseye (64-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-11.6.0-amd64-netinst.iso)
+- **Debian 11.6 Bullseye (32-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-11.6.0-i386-netinst.iso)
 
 ### Torrent Downloads
 
-- **64-bit PC (DVD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-dvd/)
-- **32-bit PC (DVD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-dvd/)
-- **64-bit PC (CD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-cd/)
-- **32-bit PC (CD):** [Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-cd/)
+- **64-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-dvd/)
+- **32-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-dvd/)
+- **64-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/amd64/bt-cd/)
+- **32-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/11.6.0/i386/bt-cd/)
 
 ## Debian 10 "Buster"
 
@@ -52,15 +54,15 @@ As the oldstable release, Debian 10 "Buster" continues to receive security updat
 
 ### ISO Direct Downloads
 
-- **Debian 10.12 Buster (64-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/iso-cd/debian-10.12.0-amd64-netinst.iso)
-- **Debian 10.12 Buster (32-bit PC netinst iso):** [Download 📥](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/iso-cd/debian-10.12.0-i386-netinst.iso)
+- **Debian 10.12 Buster (64-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/iso-cd/debian-10.12.0-amd64-netinst.iso)
+- **Debian 10.12 Buster (32-bit PC netinst iso):** [📥 Download](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/iso-cd/debian-10.12.0-i386-netinst.iso)
 
 ### Torrent Downloads
 
-- **64-bit PC (DVD):** [Torrents 🌊](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/bt-dvd/)
-- **32-bit PC (DVD):** [Torrents 🌊](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/bt-dvd/)
-- **64-bit PC (CD):** [Torrents 🌊](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/bt-cd/)
-- **32-bit PC (CD):** [Torrents 🌊](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/bt-cd/)
+- **64-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/bt-dvd/)
+- **32-bit PC (DVD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/bt-dvd/)
+- **64-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/10.12.0/amd64/bt-cd/)
+- **32-bit PC (CD):** [🌊 Torrents](https://cdimage.debian.org/cdimage/archive/10.12.0/i386/bt-cd/)
 
 ## Note on Using Torrents
 
