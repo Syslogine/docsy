@@ -14,10 +14,6 @@ Welcome to our Debian tutorials section, where you can find step-by-step guides 
 
 ## Available Tutorials
 
-- [Getting Started with Debian](/docs/operating-systems/debian/tutorials/getting-started/)
-- [Securing Your Debian System](/docs/operating-systems/debian/tutorials/securing-debian/)
-- [Advanced Package Management in Debian](/docs/operating-systems/debian/tutorials/package-management/)
-- [Setting Up a Debian Server](/docs/operating-systems/debian/tutorials/setting-up-server/)
-- [Network Configuration](/docs/operating-systems/debian/tutorials/network-configuration/)
+
 
 Browse through our tutorials to get started, and enhance your Debian system today.
