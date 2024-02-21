@@ -26,24 +26,24 @@ Debian GNU/Linux is renowned for its robustness, extensive software repositories
 
 Debian is designed to fit a wide range of systems, from desktop computers to network servers. The installation process can be tailored to your specific needs, whether you're a beginner or an experienced user.
 
-- [Basic Installation Guide](/docs/operating-systems/debian/installation): Step-by-step instructions to get Debian up and running on your system.
-- [Advanced Installation Techniques](/docs/operating-systems/debian/advanced-installation): Explore more complex setups, including dual booting, LVM, and encrypted installations.
+- [Basic Installation Guide](/docs/operating-systems/debian/tutorials/installation): Step-by-step instructions to get Debian up and running on your system.
+- [Advanced Installation Techniques](/docs/operating-systems/debian/tutorials/advanced-installation): Explore more complex setups, including dual booting, LVM, and encrypted installations.
 
 ### Configuring Your Debian System
 
 Once installed, configuring your Debian system allows you to tailor your computing experience to your preferences and needs.
 
-- [System Configuration](/docs/operating-systems/debian/configuration): Tips on customizing and configuring Debian.
-- [Software Management](/docs/operating-systems/debian/software-management): How to use APT and other tools to manage software on your Debian system.
+- [System Configuration](/docs/operating-systems/debian/tutorials/configuration): Tips on customizing and configuring Debian.
+- [Software Management](/docs/operating-systems/debian/tutorials/software-management): How to use APT and other tools to manage software on your Debian system.
 
 ## Tutorials
 
 Our tutorials cover a wide range of topics, from basic system management to advanced server configurations.
 
-- [Debian for Beginners](/docs/operating-systems/debian/beginners-guide): If you're new to Debian or Linux, start here.
-- [Networking](/docs/operating-systems/debian/networking): Setting up and managing network configurations.
-- [Security](/docs/operating-systems/debian/security): Securing your Debian system against threats.
-- [Securing MariaDB](/docs/operating-systems/debian/securing-mariadb): Fortify your Debian server by installing and securing MariaDB.
+- [Debian for Beginners](/docs/operating-systems/debian/tutorials/beginners-guide): If you're new to Debian or Linux, start here.
+- [Networking](/docs/operating-systems/debian/tutorials/networking): Setting up and managing network configurations.
+- [Security](/docs/operating-systems/debian/tutorials/security): Securing your Debian system against threats.
+- [Securing MariaDB](/docs/operating-systems/debian/tutorials/securing-mariadb): Fortify your Debian server by installing and securing MariaDB.
 
 ## Community and Support
 
