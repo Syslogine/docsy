@@ -27,6 +27,6 @@ Main website: [Ubuntu Official](https://ubuntu.com/)<br>
 
 
 ### Ubuntu Links (intern)
-* [Tutorials](/docs/operating-systems/ubuntu/tutorials/)
-* [Tools](/docs/operating-systems/ubuntu/tools/)
-* [Downloads](/docs/operating-systems/ubuntu/downloads)
+* [Tutorials](/docs/os/ubuntu/tutorials/)
+* [Tools](/docs/os/ubuntu/tools/)
+* [Downloads](/docs/os/ubuntu/downloads)

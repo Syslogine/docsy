@@ -149,4 +149,4 @@ This `ssh-keygen` command generates an Ed25519 SSH key with increased security p
 - `-f`: Sets the filename for the generated key. To be automatically discovered by the SSH agent, store it in the default `.ssh` directory in your home directory.
 
 ## Extra
-Explore more about managing SSH service with commands like `restart`, `start`, `stop`, `status`, etc. Refer to [systemctl services](/docs/operating-systems/debian/tutorials/info_systemcrl) for detailed information.
+Explore more about managing SSH service with commands like `restart`, `start`, `stop`, `status`, etc. Refer to [systemctl services](/docs/os/debian/tutorials/info_systemcrl) for detailed information.
