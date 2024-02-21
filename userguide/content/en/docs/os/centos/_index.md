@@ -24,9 +24,9 @@ CentOS is widely recognized for its stability, reliability, and enterprise-level
 
 Dive into our CentOS tutorials below and start enhancing your Linux skills today. Whether you're a system administrator, a developer, or a tech enthusiast, Syslogine Docs has the resources you need to succeed with CentOS.
 
-[Beginner's Guide to CentOS](/docs/os/centos/getting-started)
-[CentOS Network Configuration](/docs/os/centos/network-configuration)
-[Securing Your CentOS Server](/docs/os/centos/security)
-[Advanced CentOS Administration](/docs/os/centos/advanced-administration)
+- [Beginner's Guide to CentOS](/docs/os/centos/getting-started)
+- [CentOS Network Configuration](/docs/os/centos/network-configuration)
+- [Securing Your CentOS Server](/docs/os/centos/security)
+- [Advanced CentOS Administration](/docs/os/centos/advanced-administration)
 
 We're constantly updating and expanding our tutorials, so check back often for the latest tips, tricks, and guides. If there's a specific topic you'd like us to cover, feel free to reach out to us at feedback@syslogine.com.
