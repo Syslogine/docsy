@@ -61,7 +61,7 @@ params:
   offlineSearch: false
   offlineSearchSummaryLength: 70
   offlineSearchMaxResults: 10
-  prism_syntax_highlighting: true
+  prism_syntax_highlighting: false
   ui:
     navbar_logo: true
     sidebar_menu_compact: true
