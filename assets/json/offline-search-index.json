@@ -7,7 +7,7 @@
     (dict
         "ref" .RelPermalink
         "title" .Title
-        "categoriess" (.Params.categories | default "")
+        "categories" (.Params.categories | default "")
         "tags" (.Params.tags | default "")
         "description" (.Description | default "")
         "body" (.Plain | htmlUnescape)
