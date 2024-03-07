@@ -103,7 +103,7 @@ params:
 
 taxonomies:
   
-  category: categoriess
+  category: categories
 
 module:
   mounts:
