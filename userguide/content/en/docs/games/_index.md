@@ -7,22 +7,19 @@ weight: 200
 description: "If you cater to hobbyists or aspiring game developers, you could have a section dedicated to game development engines like Unity or Unreal Engine, as well as tutorials on game design, 2D/3D graphics, and game programming."
 ---
 
-# Welcome to Game Development Section!
+![](/images/image_01.webp)
 
-Some text i guess
-
-**Star Citizen
+**Star Citizen**
 * [Index](/docs/games/star-citizen)
 
 
-**GTA V
+**GTA V**
 * [alt:V](/docs/games/gta_v/alt)
 * [FiveM](/docs/games/gta_v/fivem)
 * [RAGE](/docs/games/gta_v/rage)
 
 
-
-**FiveM
+**FiveM**
 * [FiveM Installation](/docs/games/gta_v/fivem)
 * [Server Tutorials](/docs/games/gta_v/fivem/server)
   * [Installing a FiveM Server on CentOS](/docs/games/gta_v/fivem/server/centos-setup)
