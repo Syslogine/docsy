@@ -9,9 +9,16 @@ description: "If you cater to hobbyists or aspiring game developers, you could h
 
 # Welcome to Game Development Section!
 
+**Star Citizen**
+* [Index](/docs/games/star-citizen)
 
-## [Specialized Guides for StarCitizen](/docs/games/star-citizen/) and [GTA 5 FiveM](/docs/games/gta_v/fivem/)
 
-For those interested in specific games like StarCitizen and GTA 5 FiveM, we have curated specialized guides and insider information to accelerate your development journey. Dive deep into these immersive worlds and uncover the secrets to creating unforgettable gaming experiences.
-
-So, what are you waiting for? Embark on your game development journey today and unleash your creativity like never before!
+**GTA V**
+* [alt:V](/docs/games/gta_v/alt)
+* [FiveM](/docs/games/gta_v/fivem)
+  * [FiveM Installation](/docs/games/gta_v/fivem)
+  * [Server Tutorials](/docs/games/gta_v/fivem/server)
+    * [Installing a FiveM Server on CentOS](/docs/games/gta_v/fivem/server/centos-setup)
+    * [Setting Up a FiveM Server on Debian](/docs/games/gta_v/fivem/server/debian-setup)
+    * [Creating a FiveM Server on Windows](/docs/games/gta_v/fivem/server/windows-setup)
+* [RAGE](/docs/games/gta_v/rage)
