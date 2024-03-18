@@ -1,12 +1,17 @@
 ---
-title: "Games"
+title: "Game Development"
 weight: 1
 type: docs
 categories: ["Games"]
 weight: 200
-
-description: >
-  This category contains a list of game-related stuff, including reviews, tutorials, and insights into the latest in gaming technology and culture. Explore to find in-depth discussions, tips, and resources for gamers of all levels.
+description: "If you cater to hobbyists or aspiring game developers, you could have a section dedicated to game development engines like Unity or Unreal Engine, as well as tutorials on game design, 2D/3D graphics, and game programming."
 ---
 
-Welcome to our Games section! Here, you'll find everything from deep dives into the mechanics of the latest releases, to retrospectives on classic titles, and guides to help you dominate in your favorite games. Whether you're a casual player or a hardcore enthusiast, there's something here for everyone who loves games.
+# Welcome to Game Development Section!
+
+
+## [Specialized Guides for StarCitizen](/docs/games/star-citizen/) and [GTA 5 FiveM](/docs/games/gta_v/fivem/)
+
+For those interested in specific games like StarCitizen and GTA 5 FiveM, we have curated specialized guides and insider information to accelerate your development journey. Dive deep into these immersive worlds and uncover the secrets to creating unforgettable gaming experiences.
+
+So, what are you waiting for? Embark on your game development journey today and unleash your creativity like never before!
