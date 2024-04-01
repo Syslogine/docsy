@@ -5,6 +5,14 @@ weight: 999
 ---
 
 
+### Message Relay Agent
+- **Role**: Facilitates seamless communication and transfer of information between different crews and their respective agents.
+- **Functionality**: Receives notes, codes, and text from one crew's agents and efficiently delivers them to the appropriate agents in other crews.
+- **Responsibilities**:
+  - Ensuring timely and accurate transmission of information.
+  - Maintaining confidentiality and integrity of transferred data.
+  - Facilitating collaboration and coordination among crews.
+
 ### Research Crew
 - **Focus**: Gather in-depth knowledge and insights about the operating system. Identify key features, advancements, user needs, and common challenges.
 - **Agents**:
@@ -47,6 +55,9 @@ weight: 999
 
 1. **Research Phase**: Start with the Research Crew to establish a solid foundation of knowledge. This step sets the direction and scope of the tutorial.
 2. **Design Phase**: With insights from research, move to the Design Crew to structure the tutorial, plan content segments, and design interactive elements.
-3. **Coding Phase**: Develop and refine code examples or demos with the Coding Crew, ensuring they illustrate key concepts effectively.
-4. **Testing Phase**: Have the Testing Crew thoroughly test all code elements to ensure accuracy and reliability.
-5. **Documentation Phase**: Compile and refine the tutorial content with the Documentation Crew, integrating all elements into a cohesive, engaging educational resource.
+3. **Message Relay Agent**: Introduce the Message Relay Agent to facilitate seamless communication and transfer of information between crews. This ensures efficient collaboration and coordination throughout the project.
+4. **Coding Phase**: Develop and refine code examples or demos with the Coding Crew, ensuring they illustrate key concepts effectively.
+5. **Testing Phase**: Have the Testing Crew thoroughly test all code elements to ensure accuracy and reliability.
+6. **Documentation Phase**: Compile and refine the tutorial content with the Documentation Crew, integrating all elements into a cohesive, engaging educational resource.
+
+
