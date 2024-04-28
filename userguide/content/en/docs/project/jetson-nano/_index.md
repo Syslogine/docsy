@@ -86,7 +86,7 @@ sudo reboot now
 Here are some essential tools that are handy for almost every project:
 
 ```bash
-sudo apt install git nano curl wget
+sudo apt install git nano curl wget -y
 ```
 
 
@@ -153,7 +153,6 @@ jtop
 This will open the Jetson Stats interface, allowing you to monitor various aspects of your Jetson Nano's performance.
 
 You're now ready to utilize Jetson Stats for optimizing your Jetson Nano's performance!
-
 
 
 ## Configuring Jetson Fan to Start at Boot
@@ -225,23 +224,12 @@ Your Jetson Nano's fans will now start automatically at boot, ensuring optimal c
 
 
 
-### Updating and Upgrading
-
-So there seems to be an problem with updating the Jetson Nano as when u use the command `sudo apt upgrade` it will ask if wan to update the kernel but this give problems as it seems.
-
-When have new Iso from the official site of nvidia jetson nano image .zip it comes already with the latest kernel r32.7.4.
-So i dont understand when you choose for newer kernel it downgrade it... see for you self..
-
-```bash
-sudo apt update && sudo apt install nano
-```
-
-
+### Other
 
 ```bash
 sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
 ```
-this will say
+
 ```sh
 # SPDX-FileCopyrightText: Copyright (c) 2019-2021 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-License-Identifier: LicenseRef-NvidiaProprietary
@@ -259,28 +247,20 @@ deb https://repo.download.nvidia.com/jetson/t210 r32.7 main
 
 
 
-###
-after making an `.sh` it need cmod to be able to use
-
-```bash
-sudo chmod +x mytools.sh
-```
-
+### IMX298 CAM Arducam
 
 CSI Camera
 ```bash
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 ```
 
-
-
-
-edit th l4t botloader to new version
+pip tools needed
 ```bash
-sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+sudo pip3 install -U jetson-stats v4l2-fix
 ```
 
-This is nee
+
+### BootfromUSB
 
 ```bash
 
@@ -298,44 +278,5 @@ LABEL secondary
 
 
 
-```
-
-
-    from pip._internal import main as pipmain
-
-    print("Try to install jetson-stats...")
-    pipmain(['install', 'jetson-stats'])
-
-    print("Try to install v4l2-fix...")
-    pipmain(['install', 'v4l2-fix'])
-
-    from utils import ArducamUtils
-
-
-
-### other
-
-```
-update-initramfs: Generating /boot/initrd.img-4.9.253-tegra
-WARNING: missing /lib/modules/4.9.253-tegra
-Ensure all necessary drivers are built into the linux image!
-depmod: ERROR: could not open directory /lib/modules/4.9.253-tegra: No such file or directory
-depmod: FATAL: could not search modules: No such file or directory
-Warning: couldn't identify filesystem type for fsck hook, ignoring.
-I: The initramfs will attempt to resume from /dev/zram3
-I: (UUID=934497d3-9f49-4893-b36c-c9076140ffc6)
-I: Set the RESUME variable to override this.
-depmod: WARNING: could not open /var/tmp/mkinitramfs_IAJ4rp/lib/modules/4.9.253-tegra/modules.order: No such file or directory
-depmod: WARNING: could not open /var/tmp/mkinitramfs_IAJ4rp/lib/modules/4.9.253-tegra/modules.builtin: No such file or directory
-/sbin/ldconfig.real: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf.d/aarch64-linux-gnu_EGL.conf: No such file or directory
-/sbin/ldconfig.real: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf.d/aarch64-linux-gnu_GL.conf: No such file or directory
-Processing triggers for bamfdaemon (0.5.3+18.04.20180207.2-0ubuntu1) ...
-Rebuilding /usr/share/applications/bamf-2.index...
-Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
-Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
-Processing triggers for gnome-menus (3.13.3-11ubuntu1.1) ...
-Processing triggers for dbus (1.12.2-1ubuntu1.4) ...
-Processing triggers for hicolor-icon-theme (0.17-2) ...
-Processing triggers for mime-support (3.60ubuntu1) ..
 ```
 
