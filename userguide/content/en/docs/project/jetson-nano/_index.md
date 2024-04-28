@@ -39,37 +39,31 @@ Once your Jetson Nano board is up and running with Ubuntu Desktop, let's kicksta
 First, let's ensure your system is up to date:
 
 ```bash
-sudo apt update
+sudo apt update -y
 ```
+
+Next, upgrade your Jetson Nano:
+
+```bash
+sudo apt upgrade -y
+```
+
+During the upgrade process, you may encounter prompts for configuration files. For each prompt, such as '/etc/ld.so.conf.d/nvidia-tegra.conf' and '/etc/systemd/nv-oem-config-post.sh', select `Y` to install the package maintainer's version.
+
+Additionally, if prompted to restart Docker, select `YES`.
 
 Now, let's perform a distribution upgrade:
 
 ```bash
-sudo apt dist-upgrade
+sudo apt dist-upgrade -y
 ```
 
-### Step 2: Install Essential Tools
+### Step 2: Clean Up
 
-Next, let's equip your system with some essential tools:
-
-```bash
-sudo apt install curl git nano wget
-```
-
-### Step 3: Reboot
-
-After these installations, it's recommended to reboot your Jetson Nano for changes to take effect:
+Once the upgrade process is complete, let's tidy up by removing old packages:
 
 ```bash
-sudo reboot now
-```
-
-### Step 4: Clean Up
-
-Once your system is back online, let's tidy up by removing old packages:
-
-```bash
-sudo apt autoremove
+sudo apt autoremove -y
 ```
 
 And finally, let's clean up the cache:
@@ -78,7 +72,22 @@ And finally, let's clean up the cache:
 sudo apt clean
 ```
 
-Your Jetson Nano is now updated, equipped with essential tools, and ready for your projects!
+### Step 3: Reboot
+
+After these maintenance tasks, it's recommended to reboot your Jetson Nano for changes to take effect:
+
+```bash
+sudo reboot now
+```
+
+
+## Install Useful Tools
+
+Here are some essential tools that are handy for almost every project:
+
+```bash
+sudo apt install git nano curl wget
+```
 
 
 ## Uninstall LibreOffice
@@ -86,7 +95,7 @@ Your Jetson Nano is now updated, equipped with essential tools, and ready for yo
 If you no longer need LibreOffice and want to reclaim some disk space, follow these steps to remove it:
 
 ```bash
-sudo apt-get autoremove libreoffice* -y
+sudo apt autoremove libreoffice* -y
 ```
 
 This command will uninstall all LibreOffice packages from your system.
@@ -94,13 +103,12 @@ This command will uninstall all LibreOffice packages from your system.
 After removing LibreOffice, let's clean up the residual files:
 
 ```bash
-sudo apt-get clean
+sudo apt clean
 ```
 
 This command will clean the package cache, freeing up additional disk space.
 
 Your system is now free of LibreOffice and optimized for your needs.
-
 
 
 ## Installing pip and pip3
@@ -119,6 +127,10 @@ You're all set with pip and pip3 installed and ready to manage Python packages!
 ## Installing Jetson Stats
 
 To install Jetson Stats, a utility for monitoring and controlling NVIDIA Jetson devices, follow these steps:
+
+:::warning
+Before proceeding, ensure that you have pip3 installed on your system. If not, you can install it using `sudo apt install python3-pip`.
+:::
 
 ```bash
 sudo pip3 install -U jetson-stats
@@ -141,6 +153,7 @@ jtop
 This will open the Jetson Stats interface, allowing you to monitor various aspects of your Jetson Nano's performance.
 
 You're now ready to utilize Jetson Stats for optimizing your Jetson Nano's performance!
+
 
 
 ## Configuring Jetson Fan to Start at Boot
@@ -223,6 +236,8 @@ So i dont understand when you choose for newer kernel it downgrade it... see for
 sudo apt update && sudo apt install nano
 ```
 
+
+
 ```bash
 sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
 ```
@@ -243,39 +258,6 @@ deb https://repo.download.nvidia.com/jetson/t210 r32.7 main
 ```
 
 
-When this pops up use `N`
-```bash
-Setting up nvidia-l4t-core (32.7.4-20230608212426) ...
-
-Configuration file '/etc/ld.so.conf.d/nvidia-tegra.conf'
- ==> Modified (by you or by a script) since installation.
- ==> Package distributor has shipped an updated version.
-   What would you like to do about it ?  Your options are:
-    Y or I  : install the package maintainer's version
-    N or O  : keep your currently-installed version
-      D     : show the differences between the versions
-      Z     : start a shell to examine the situation
- The default action is to keep your current version.
-*** nvidia-tegra.conf (Y/I/N/O/D/Z) [default=N] ? n
-```
-
-and
-
-And then when this comes up u can select `Y`
-```sh
-Setting up nvidia-l4t-oem-config (32.7.4-20230608212426) ...
-
-Configuration file '/etc/systemd/nv-oem-config-post.sh'
- ==> Deleted (by you or by a script) since installation.
- ==> Package distributor has shipped an updated version.
-   What would you like to do about it ?  Your options are:
-    Y or I  : install the package maintainer's version
-    N or O  : keep your currently-installed version
-      D     : show the differences between the versions
-      Z     : start a shell to examine the situation
- The default action is to keep your current version.
-*** nv-oem-config-post.sh (Y/I/N/O/D/Z) [default=N] ? y
-```
 
 ###
 after making an `.sh` it need cmod to be able to use
