@@ -48,7 +48,7 @@ Next, upgrade your Jetson Nano:
 sudo apt upgrade -y
 ```
 
-During the upgrade process, you may encounter prompts for configuration files. For each prompt, such as '/etc/ld.so.conf.d/nvidia-tegra.conf' and '/etc/systemd/nv-oem-config-post.sh', select `Y` to install the package maintainer's version.
+During the upgrade process, you may encounter prompts for configuration files. For each prompt, such as `'/etc/ld.so.conf.d/nvidia-tegra.conf'` and `'/etc/systemd/nv-oem-config-post.sh'`, select `Y` to install the package maintainer's version.
 
 Additionally, if prompted to restart Docker, select `YES`.
 
@@ -128,9 +128,7 @@ You're all set with pip and pip3 installed and ready to manage Python packages!
 
 To install Jetson Stats, a utility for monitoring and controlling NVIDIA Jetson devices, follow these steps:
 
-:::warning
-Before proceeding, ensure that you have pip3 installed on your system. If not, you can install it using `sudo apt install python3-pip`.
-:::
+{{< alert color="warning" >}}efore proceeding, ensure that you have pip3 installed on your system. If not, you can install it using `sudo apt install python3-pip`.{{< /alert >}}
 
 ```bash
 sudo pip3 install -U jetson-stats
