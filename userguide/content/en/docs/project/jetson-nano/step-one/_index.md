@@ -90,7 +90,6 @@ Yes you read this right im gonna build an nice system with the jetson nano that 
 
 
 
-## [First install](step-one) 
 
 
 ## Items
