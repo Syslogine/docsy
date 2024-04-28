@@ -16,7 +16,10 @@ Yes you read this right im gonna build an nice system with the jetson nano that 
 ## [First install](step-one) 
 
 
-
+## Items
+*	[Samsung EVO microSDXC 64GB](https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-plus-adapter-microsdxc-64gb-mb-mc64sa-am/)
+*	[Noctua NF-A4x20 5V PWM](https://noctua.at/en/nf-a4x20-5v-pwm)
+*	[Wall power supply](https://www.adafruit.com/product/1466)
 
 
 
@@ -26,80 +29,218 @@ Yes you read this right im gonna build an nice system with the jetson nano that 
 *	https://www.arducam.com/faq/kernel-camera-driver/
 
 
-The four most improtant tool for your selever are
+
+## Fresh Install Setup Guide for Jetson Nano
+
+Once your Jetson Nano board is up and running with Ubuntu Desktop, let's kickstart the setup process by opening the terminal and following these steps:
+
+### Step 1: Update System
+
+First, let's ensure your system is up to date:
 
 ```bash
-sudo apt-get install curl git nano wget
+sudo apt update
 ```
 
-
-
-
-
-after making an `.sh` it need cmod to be able to use
+Now, let's perform a distribution upgrade:
 
 ```bash
-sudo chmod +x mytools.sh
+sudo apt dist-upgrade
 ```
 
+### Step 2: Install Essential Tools
 
-CSI Camera
+Next, let's equip your system with some essential tools:
+
 ```bash
-sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
+sudo apt install curl git nano wget
 ```
 
+### Step 3: Reboot
+
+After these installations, it's recommended to reboot your Jetson Nano for changes to take effect:
+
+```bash
+sudo reboot now
+```
+
+### Step 4: Clean Up
+
+Once your system is back online, let's tidy up by removing old packages:
+
+```bash
+sudo apt autoremove
+```
+
+And finally, let's clean up the cache:
+
+```bash
+sudo apt clean
+```
+
+Your Jetson Nano is now updated, equipped with essential tools, and ready for your projects!
 
 
-List to do
+## Uninstall LibreOffice
+
+If you no longer need LibreOffice and want to reclaim some disk space, follow these steps to remove it:
+
+```bash
+sudo apt-get autoremove libreoffice* -y
+```
+
+This command will uninstall all LibreOffice packages from your system.
+
+After removing LibreOffice, let's clean up the residual files:
+
+```bash
+sudo apt-get clean
+```
+
+This command will clean the package cache, freeing up additional disk space.
+
+Your system is now free of LibreOffice and optimized for your needs.
 
 
--	Windows Disk wiper
--	Linux/Mac Disk wiper
+
+## Installing pip and pip3
+
+To install both pip and pip3, which are package managers for Python 2 and Python 3 respectively, run the following command:
+
+```bash
+sudo apt install python-pip python3-pip
+```
+
+This command will install pip for Python 2 and pip3 for Python 3 on your system.
+
+You're all set with pip and pip3 installed and ready to manage Python packages!
+
+
+## Installing Jetson Stats
+
+To install Jetson Stats, a utility for monitoring and controlling NVIDIA Jetson devices, follow these steps:
+
+```bash
+sudo pip3 install -U jetson-stats
+```
+
+This command will install Jetson Stats and ensure that you have the latest version.
+
+After installation, reboot your Jetson Nano to enable the `jtop` command:
+
+```bash
+sudo reboot now
+```
+
+Once your device has rebooted, reopen the terminal and type the following command to launch Jetson Stats:
+
+```bash
+jtop
+```
+
+This will open the Jetson Stats interface, allowing you to monitor various aspects of your Jetson Nano's performance.
+
+You're now ready to utilize Jetson Stats for optimizing your Jetson Nano's performance!
+
+
+## Configuring Jetson Fan to Start at Boot
+
+To ensure your Jetson Nano's fans start automatically at boot, follow these steps:
+
+1. Open and edit the `rc.local` file using the Nano text editor:
+
+```bash
+sudo nano /etc/rc.local
+```
+
+Paste the following lines into the file:
+
+```sh
+#!/bin/bash
+sleep 10
+sudo /usr/bin/jetson_clocks
+sudo sh -c 'echo 255 > /sys/devices/pwm-fan/target_pwm'
+exit 0
+```
+
+2. Next, create and edit the `rc-local.service` file:
+
+```bash
+sudo nano /etc/systemd/system/rc-local.service
+```
+
+Insert the following content:
+
+```txt
+[Unit]
+Description=/etc/rc.local Compatibility
+ConditionPathExists=/etc/rc.local
+
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+StandardOutput=tty
+RemainAfterExit=yes
+SysVStartPriority=99
+
+[Install]
+WantedBy=multi-user.target
+```
+
+3. Ensure the `rc.local` file has execute permissions:
+
+```bash
+sudo chmod +x /etc/rc.local
+```
+
+4. Now, enable the `rc-local` service to run on system boot:
+
+```bash
+sudo systemctl enable rc-local
+```
+
+5. Start the `rc-local` service:
+
+```bash
+sudo systemctl start rc-local.service
+```
+
+Your Jetson Nano's fans will now start automatically at boot, ensuring optimal cooling performance.
 
 
 
-How i work
-
-1.	I use ChatGPT 3.5 for my normal converations of creating an basic script/code/text
-2.	After i have the basic script, code, text or anything else to Claude for improving.
 
 
-edit th l4t botloader to new version
+### Updating and Upgrading
+
+So there seems to be an problem with updating the Jetson Nano as when u use the command `sudo apt upgrade` it will ask if wan to update the kernel but this give problems as it seems.
+
+When have new Iso from the official site of nvidia jetson nano image .zip it comes already with the latest kernel r32.7.4.
+So i dont understand when you choose for newer kernel it downgrade it... see for you self..
+
+```bash
+sudo apt update && sudo apt install nano
+```
+
 ```bash
 sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
 ```
+this will say
+```sh
+# SPDX-FileCopyrightText: Copyright (c) 2019-2021 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+#
+# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+# property and proprietary rights in and to this material, related
+# documentation and any modifications thereto. Any use, reproduction,
+# disclosure or distribution of this material and related documentation
+# without an express license agreement from NVIDIA CORPORATION or
+# its affiliates is strictly prohibited.
 
-This is nee
-
-```bash
-
-LABEL primary
-      MENU LABEL primary kernel
-      LINUX /boot/Image
-      INITRD /boot/initrd
-      APPEND ${cbootargs} root=PARTUUID=b49df890-238c-4497-99a6-0644b9077530 rootwait rootfstype=ext4
-
-LABEL secondary
-      MENU LABEL secondary kernel
-      LINUX /boot/Image
-      INITRD /boot/initrd
-      APPEND ${cbootargs} quiet root=/dev/mmcblk0p1 rw rootwait rootfstype=ext4 console=ttyS0,115200n8 console=tty0 fbcon=map:0 net.ifnames=0
-
-
-
+deb https://repo.download.nvidia.com/jetson/common r32.7 main
+deb https://repo.download.nvidia.com/jetson/t210 r32.7 main
 ```
-
-
-    from pip._internal import main as pipmain
-
-    print("Try to install jetson-stats...")
-    pipmain(['install', 'jetson-stats'])
-
-    print("Try to install v4l2-fix...")
-    pipmain(['install', 'v4l2-fix'])
-
-    from utils import ArducamUtils
-
 
 
 When this pops up use `N`
@@ -136,89 +277,83 @@ Configuration file '/etc/systemd/nv-oem-config-post.sh'
 *** nv-oem-config-post.sh (Y/I/N/O/D/Z) [default=N] ? y
 ```
 
+###
+after making an `.sh` it need cmod to be able to use
 
-remove all libreoffice
 ```bash
-sudo apt-get autoremove libreoffice* -y
+sudo chmod +x mytools.sh
 ```
 
-then 
+
+CSI Camera
 ```bash
-sudo apt-get clean
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 ```
 
-### Install pip and pip3
+
+
+
+edit th l4t botloader to new version
 ```bash
-sudo apt install python-pip python3-pip
+sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
 ```
 
-### Install Jetson Stats
+This is nee
+
 ```bash
-sudo pip3 install -U jetson-stats
+
+LABEL primary
+      MENU LABEL primary kernel
+      LINUX /boot/Image
+      INITRD /boot/initrd
+      APPEND ${cbootargs} root=PARTUUID=b49df390-238c-4497-99a6-0643b9077530 rootwait rootfstype=ext4
+
+LABEL secondary
+      MENU LABEL secondary kernel
+      LINUX /boot/Image
+      INITRD /boot/initrd
+      APPEND ${cbootargs} quiet root=/dev/mmcblk0p1 rw rootwait rootfstype=ext4 console=ttyS0,115200n8 console=tty0 fbcon=map:0 net.ifnames=0
+
+
+
 ```
 
-Now reboot the jetson nano to use the `jtop` command
-```bash
-sudo reboot now
+
+    from pip._internal import main as pipmain
+
+    print("Try to install jetson-stats...")
+    pipmain(['install', 'jetson-stats'])
+
+    print("Try to install v4l2-fix...")
+    pipmain(['install', 'v4l2-fix'])
+
+    from utils import ArducamUtils
+
+
+
+### other
+
 ```
-
-Open terminal back open and type
-```bash
-jtop
+update-initramfs: Generating /boot/initrd.img-4.9.253-tegra
+WARNING: missing /lib/modules/4.9.253-tegra
+Ensure all necessary drivers are built into the linux image!
+depmod: ERROR: could not open directory /lib/modules/4.9.253-tegra: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
+Warning: couldn't identify filesystem type for fsck hook, ignoring.
+I: The initramfs will attempt to resume from /dev/zram3
+I: (UUID=934497d3-9f49-4893-b36c-c9076140ffc6)
+I: Set the RESUME variable to override this.
+depmod: WARNING: could not open /var/tmp/mkinitramfs_IAJ4rp/lib/modules/4.9.253-tegra/modules.order: No such file or directory
+depmod: WARNING: could not open /var/tmp/mkinitramfs_IAJ4rp/lib/modules/4.9.253-tegra/modules.builtin: No such file or directory
+/sbin/ldconfig.real: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf.d/aarch64-linux-gnu_EGL.conf: No such file or directory
+/sbin/ldconfig.real: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf.d/aarch64-linux-gnu_GL.conf: No such file or directory
+Processing triggers for bamfdaemon (0.5.3+18.04.20180207.2-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for libc-bin (2.27-3ubuntu1.6) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for gnome-menus (3.13.3-11ubuntu1.1) ...
+Processing triggers for dbus (1.12.2-1ubuntu1.4) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for mime-support (3.60ubuntu1) ..
 ```
-
-### Jetson Fan
-Now to make the fans start at boot we need
-
-1.	Open and edit `rc.local`
-	```bash
-	sudo nano /etc/rc.local
-	```
-
-	past this in 
-	```sh
-	#!/bin/bash
-	sleep 10
-	sudo /usr/bin/jetson_clocks
-	sudo sh -c ‘echo 255 > /sys/devices/pwm-fan/target_pwm’
-	exit 0
-	```
-
-2.	now we
-	```bash
-	sudo nano /etc/systemd/system/rc-local.service
-	```
-	past this in there
-	```txt
-	[Unit]
-	 Description=/etc/rc.local Compatibility
-	 ConditionPathExists=/etc/rc.local
-
-	[Service]
-	 Type=forking
-	 ExecStart=/etc/rc.local start
-	 TimeoutSec=0
-	 StandardOutput=tty
-	 RemainAfterExit=yes
-	 SysVStartPriority=99
-
-	[Install]
-	 WantedBy=multi-user.target
-	 ```
-
-3.	Then add execute permission to `/etc/rc.local` file.
-	```bash
-	sudo chmod +x /etc/rc.local
-	```
-
-4.	After that, enable the service on system boot:
-	```bash
-	sudo systemctl enable rc-local
-	```
-
-5.	Now start the service
-	```
-	sudo systemctl start rc-local.service
-	```
-
 
