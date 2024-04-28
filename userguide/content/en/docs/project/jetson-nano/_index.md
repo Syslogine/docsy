@@ -1,34 +1,8 @@
 ---
-title: "Jetson Nano"
-description: ""
+title: "Jetson Nano Setup Guide"
+description: "A comprehensive guide to setting up your Jetson Nano."
 weight: 1
 ---
-
-# Jetson Nano with CrewAI, Claude and OpenAI
-
-Yes you read this right im gonna build an nice system with the jetson nano that use ai and camera 
-
-* Face Reconiziion
-* Speeche Reconigzion 
-
-
-
-## [First install](step-one) 
-
-
-## Items
-*	[Samsung EVO microSDXC 64GB](https://www.samsung.com/us/computing/memory-storage/memory-cards/evo-plus-adapter-microsdxc-64gb-mb-mc64sa-am/)
-*	[Noctua NF-A4x20 5V PWM](https://noctua.at/en/nf-a4x20-5v-pwm)
-*	[Wall power supply](https://www.adafruit.com/product/1466)
-
-
-
-## useful links
-*	https://repo.download.nvidia.com/jetson/
-*	https://google.com
-*	https://www.arducam.com/faq/kernel-camera-driver/
-
-
 
 ## Fresh Install Setup Guide for Jetson Nano
 
@@ -128,7 +102,7 @@ You're all set with pip and pip3 installed and ready to manage Python packages!
 
 To install Jetson Stats, a utility for monitoring and controlling NVIDIA Jetson devices, follow these steps:
 
-{{< alert color="warning" >}}efore proceeding, ensure that you have pip3 installed on your system. If not, you can install it using `sudo apt install python3-pip`.{{< /alert >}}
+{{< alert color="warning" title="Warning" >}}Before proceeding, ensure that you have pip3 installed on your system. If not, you can install it using `sudo apt install python3-pip`.{{< /alert >}}
 
 ```bash
 sudo pip3 install -U jetson-stats
@@ -219,62 +193,4 @@ sudo systemctl start rc-local.service
 Your Jetson Nano's fans will now start automatically at boot, ensuring optimal cooling performance.
 
 
-
-
-
-### Other
-
-```bash
-sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
-```
-
-```sh
-# SPDX-FileCopyrightText: Copyright (c) 2019-2021 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
-# SPDX-License-Identifier: LicenseRef-NvidiaProprietary
-#
-# NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
-# property and proprietary rights in and to this material, related
-# documentation and any modifications thereto. Any use, reproduction,
-# disclosure or distribution of this material and related documentation
-# without an express license agreement from NVIDIA CORPORATION or
-# its affiliates is strictly prohibited.
-
-deb https://repo.download.nvidia.com/jetson/common r32.7 main
-deb https://repo.download.nvidia.com/jetson/t210 r32.7 main
-```
-
-
-
-### IMX298 CAM Arducam
-
-CSI Camera
-```bash
-sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
-```
-
-pip tools needed
-```bash
-sudo pip3 install -U jetson-stats v4l2-fix
-```
-
-
-### BootfromUSB
-
-```bash
-
-LABEL primary
-      MENU LABEL primary kernel
-      LINUX /boot/Image
-      INITRD /boot/initrd
-      APPEND ${cbootargs} root=PARTUUID=b49df390-238c-4497-99a6-0643b9077530 rootwait rootfstype=ext4
-
-LABEL secondary
-      MENU LABEL secondary kernel
-      LINUX /boot/Image
-      INITRD /boot/initrd
-      APPEND ${cbootargs} quiet root=/dev/mmcblk0p1 rw rootwait rootfstype=ext4 console=ttyS0,115200n8 console=tty0 fbcon=map:0 net.ifnames=0
-
-
-
-```
 
