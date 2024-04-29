@@ -4,6 +4,10 @@ description: "A comprehensive guide to setting up your Jetson Nano."
 weight: 1
 ---
 
+## Download the ISO for Nvidia jetson nano 4GB or 2GB
+-	[Jetson Nano 2GB](https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/jp_4.6.1_b110_sd_card/jetson_nano_2gb/jetson-nano-2gb-jp461-sd-card-image.zip)
+-	[Jetson Nano 4GB](https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/jp_4.6.1_b110_sd_card/jeston_nano/jetson-nano-jp461-sd-card-image.zip)
+
 ## Fresh Install Setup Guide for Jetson Nano
 
 Once your Jetson Nano board is up and running with Ubuntu Desktop, let's kickstart the setup process by opening the terminal and following these steps:
@@ -22,7 +26,37 @@ Next, upgrade your Jetson Nano:
 sudo apt upgrade -y
 ```
 
-During the upgrade process, you may encounter prompts for configuration files. For each prompt, such as `'/etc/ld.so.conf.d/nvidia-tegra.conf'` and `'/etc/systemd/nv-oem-config-post.sh'`, select `Y` to install the package maintainer's version.
+During the upgrade process, you may encounter prompts for configuration files. For each prompt, 
+
+```sh
+Configuration file '/etc/ld.so.conf.d/nvidia-tegra.conf'
+ ==> Modified (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** nvidia-tegra.conf (Y/I/N/O/D/Z) [default=N] ? Y
+```
+
+And
+
+```sh
+Configuration file '/etc/systemd/nv-oem-config-post.sh'
+ ==> Deleted (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** nv-oem-config-post.sh (Y/I/N/O/D/Z) [default=N] ? Y
+```
+
+Both select `Y` to install the package maintainer's version. 
 
 Additionally, if prompted to restart Docker, select `YES`.
 
