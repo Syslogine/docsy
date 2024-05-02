@@ -317,3 +317,56 @@ sudo rm -rf ~/opencv_contrib
 Congratulations! You've successfully installed OpenCV on your Jetson Nano.
 
 
+## Install Python 3 on Jetson Nano From Source
+
+To install Python 3 on your Jetson Nano from source, follow these steps:
+
+1. Update your system's package list:
+
+```bash
+sudo apt update
+```
+
+2. Install the necessary dependencies for building Python:
+
+```bash
+sudo apt install wget build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev -y
+```
+
+3. Create a directory for the Python source code and navigate to it:
+
+```bash
+mkdir ./python && cd ./python
+```
+
+4. Download the Python source code. Replace `3.12.0` with the desired Python version:
+
+```bash
+wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0b3.tgz
+```
+
+5. Extract the downloaded archive:
+
+```bash
+tar -xvf Python-3.12.0b3.tgz
+```
+
+6. Navigate to the extracted directory:
+
+```bash
+cd Python-3.12.0b3
+```
+
+7. Configure the build with optimizations enabled:
+
+```bash
+./configure --enable-optimizations
+```
+
+8. Compile and install Python:
+
+```bash
+sudo make install
+```
+
+After completing these steps, Python 3 will be installed on your Jetson Nano from the source code. You can verify the installation by running `python3 --version`.
