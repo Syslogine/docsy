@@ -15,6 +15,19 @@ Before you begin, you'll need to download the system image for your Jetson Nano 
 - [Jetson Nano 2GB](https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/jp_4.6.1_b110_sd_card/jetson_nano_2gb/jetson-nano-2gb-jp461-sd-card-image.zip)
 - [Jetson Nano 4GB](https://developer.nvidia.com/embedded/l4t/r32_release_v7.1/jp_4.6.1_b110_sd_card/jetson_nano/jetson-nano-jp461-sd-card-image.zip)
 
+
+## Setting up the MicroSD with Ubuntu using balenaEther
+
+1.	Go to this [website](https://developer.nvidia.com/embedded/downloads#?tx=$product,jetson_nano)
+2.	Find and download `Jetson Nano Developer Kit SD Card Image`
+3.	Download and install [balenaEtcher](https://etcher.balena.io/)
+4.	Open `balenaEthcer` 
+	1.	Select: `Flash from file`
+	2.	Select: `jetson-nano-jp461-sd-card-image.zip`
+	3.	Select the MicroSD card 
+	4.	Flash!
+5.	Place the MicroSD back into the jetson nano and start.
+
 ## Fresh Install Setup Guide for Jetson Nano
 
 Once your Jetson Nano board is up and running with Ubuntu Desktop, let's kickstart the setup process by opening the terminal and following these steps:
@@ -232,5 +245,75 @@ sudo systemctl start rc-local.service
 ```
 
 Your Jetson Nano's fans will now start automatically at boot, ensuring optimal cooling performance.
+
+
+## Increase Swap Space
+
+To increase the swap space on your Jetson Nano, follow these steps:
+
+1. Clone the `resizeSwapMemory` repository:
+
+```bash
+git clone https://github.com/JetsonHacksNano/resizeSwapMemory
+```
+
+2. Navigate to the cloned repository:
+
+```bash
+cd resizeSwapMemory
+```
+
+3. Set the entire swap memory size to 8GB:
+
+```bash
+./setSwapMemorySize.sh -g 8
+```
+
+This will ensure sufficient memory for the OpenCV installation.
+
+
+## OpenCV Installation Guide
+
+Before installing OpenCV on your Jetson Nano, ensure that your system has sufficient memory by following the steps above to increase swap space if needed.
+
+Next, download the OpenCV installation script:
+
+```bash
+wget https://github.com/Qengineering/Install-OpenCV-Jetson-Nano/raw/main/OpenCV-4-8-0.sh
+```
+
+Set the appropriate permissions for the script:
+
+```bash
+sudo chmod 755 ./OpenCV-4-8-0.sh
+```
+
+Run the installation script:
+
+```bash
+./OpenCV-4-8-0.sh
+```
+
+Once the installation is complete, you can remove the installation script:
+
+```bash
+rm OpenCV-4-8-0.sh
+```
+
+Finally, you can remove the `dphys-swapfile`:
+
+```bash
+sudo /etc/init.d/dphys-swapfile stop
+sudo apt-get remove --purge dphys-swapfile
+```
+
+As a tip to save additional space, you can remove the OpenCV and OpenCV_contrib directories:
+
+```bash
+sudo rm -rf ~/opencv
+sudo rm -rf ~/opencv_contrib
+```
+
+Congratulations! You've successfully installed OpenCV on your Jetson Nano.
 
 
