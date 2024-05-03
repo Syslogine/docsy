@@ -317,9 +317,12 @@ sudo rm -rf ~/opencv_contrib
 Congratulations! You've successfully installed OpenCV on your Jetson Nano.
 
 
-## Install Python 3 on Jetson Nano From Source
+## Install Python 3.12 on Jetson Nano From Source
 
-To install Python 3 on your Jetson Nano from source, follow these steps:
+Python 3.12 brings new features, improvements, and optimizations to the language, making it desirable for developers who want to leverage the latest capabilities. 
+
+To install Python 3.12 on your Jetson Nano from source, follow these steps:
+
 
 1. Update your system's package list:
 
@@ -369,4 +372,32 @@ cd Python-3.12.0b3
 sudo make install
 ```
 
-After completing these steps, Python 3 will be installed on your Jetson Nano from the source code. You can verify the installation by running `python3 --version`.
+9. After completing the installation, reboot your Jetson Nano:
+
+```bash
+sudo reboot now
+```
+
+After rebooting, Python 3 will be installed on your Jetson Nano from the source code. You can verify the installation by running `python3 --version`.
+
+
+## Install CrewAI on Jetson Nano
+
+CrewAI is a powerful AI platform designed to assist with a variety of tasks. To install CrewAI on your Jetson Nano, follow these steps:
+
+To install the main CrewAI package, which includes core functionalities, run the following command:
+
+```bash
+pip3 install crewai
+```
+
+If you also want to install the tools package, which includes a series of helpful tools for your agents, you can use the following command:
+
+```bash
+pip3 install 'crewai[tools]'
+```
+
+This command will install the main CrewAI package along with additional tools to enhance your CrewAI experience.
+
+Once installed, you can start using CrewAI to develop and deploy AI solutions on your Jetson Nano.
+
