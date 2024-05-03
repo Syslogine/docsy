@@ -345,19 +345,19 @@ mkdir ./python && cd ./python
 4. Download the Python source code. Replace `3.12.0` with the desired Python version:
 
 ```bash
-wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0b3.tgz
+wget https://www.python.org/ftp/python/3.12.0/Python-3.12.0.tgz
 ```
 
 5. Extract the downloaded archive:
 
 ```bash
-tar -xvf Python-3.12.0b3.tgz
+tar -xvf Python-3.12.0.tgz
 ```
 
 6. Navigate to the extracted directory:
 
 ```bash
-cd Python-3.12.0b3
+cd Python-3.12.0
 ```
 
 7. Configure the build with optimizations enabled:
@@ -381,6 +381,8 @@ sudo reboot now
 After rebooting, Python 3 will be installed on your Jetson Nano from the source code. You can verify the installation by running `python3 --version`.
 
 
+
+
 ## Install CrewAI on Jetson Nano
 
 CrewAI is a powerful AI platform designed to assist with a variety of tasks. To install CrewAI on your Jetson Nano, follow these steps:
@@ -400,4 +402,91 @@ pip3 install 'crewai[tools]'
 This command will install the main CrewAI package along with additional tools to enhance your CrewAI experience.
 
 Once installed, you can start using CrewAI to develop and deploy AI solutions on your Jetson Nano.
+
+
+## Make test script for crewAI (Testing)
+
+```bash
+mkdir test_ai && cd test_ai
+```
+
+```bash
+nano .env
+```
+
+and then add this
+```txt
+ANTHROPIC_API_KEY=your_anthropic_api_key
+```
+Now save and close nano
+
+now let's create our `main.py`
+```bash
+nano main.py
+```
+
+And then add this code below
+
+```python
+import os
+from dotenv import load_dotenv
+from crewai import Agent, Task, Crew
+from langchain.llms import Anthropic
+from textwrap import dedent
+
+# Load the API key from the .env file
+load_dotenv()
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+
+# Define a simple agent
+class SimpleAgent:
+    def __init__(self):
+        self.Claude = Anthropic(anthropic_api_key=ANTHROPIC_API_KEY, temperature=0.7)
+
+    def create_agent(self):
+        return Agent(
+            role="Simple Test Agent",
+            backstory=dedent("""You are a helpful assistant."""),
+            goal=dedent("""Your goal is to assist the user with their query."""),
+            allow_delegation=False,
+            verbose=True,
+            llm=self.Claude,
+        )
+
+# Define a simple task
+class SimpleTask:
+    def __init__(self, user_query):
+        self.user_query = user_query
+
+    def create_task(self, agent):
+        return Task(
+            description=dedent(
+                f"""
+            Please assist with the following query:
+            
+            {self.user_query}
+        """
+            ),
+            agent=agent,
+        )
+
+# Main function
+if __name__ == "__main__":
+    print("## Welcome to the Crew AI Test")
+    print("-------------------------------")
+
+    user_query = input(dedent("""Enter your query: """))
+
+    simple_agent = SimpleAgent().create_agent()
+    simple_task = SimpleTask(user_query).create_task(simple_agent)
+
+    crew = Crew(agents=[simple_agent], tasks=[simple_task], verbose=True)
+    result = crew.kickoff()
+
+    print("\n\n########################")
+    print("## Here is the result:")
+    print("########################\n")
+    print(result)
+```
+
 
