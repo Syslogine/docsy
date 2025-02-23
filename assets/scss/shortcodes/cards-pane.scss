@@ -12,13 +12,9 @@
     }
   }
 
-  .card-header.code {
-    background-color: $card-bg;
-  }
-
   .card-body {
     &.code {
-      background-color: $card-bg;
+      background-color: #f8f9fa;
       padding: 0 0 0 1ex;
     }
 

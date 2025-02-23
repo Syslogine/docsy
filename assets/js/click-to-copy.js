@@ -19,6 +19,7 @@ for (let index = 0; index < codeListings.length; index++) {
     'fas',
     'fa-copy',
     'btn',
+    'btn-dark',
     'btn-sm',
     'td-click-to-copy'
   );
@@ -42,5 +43,5 @@ for (let index = 0; index < codeListings.length; index++) {
 }
 
 const copyCode = (codeSample) => {
-  navigator.clipboard.writeText(codeSample.textContent.trim() + '\n');
+  navigator.clipboard.writeText(codeSample.textContent.trim());
 };

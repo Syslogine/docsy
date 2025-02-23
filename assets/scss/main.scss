@@ -1,6 +1,6 @@
 @import "../vendor/bootstrap/scss/functions";
 
-@import "variables_forward";
+@import "_variables_forward";
 @import "variables_project";
 @import "variables";
 @import "support/mixins";
@@ -11,8 +11,6 @@
 @import "../vendor/Font-Awesome/scss/fontawesome.scss";
 @import "../vendor/Font-Awesome/scss/solid.scss";
 @import "../vendor/Font-Awesome/scss/brands.scss";
-
-@import "variables_project_after_bs";
 
 @import "support/utilities";
 @import "colors";
@@ -35,7 +33,6 @@
 @import "drawio";
 @import "shortcodes";
 @import "swagger";
-@import "support/rtl";
 
 
 @if $td-enable-google-fonts {

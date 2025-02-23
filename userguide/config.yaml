@@ -1,0 +1,111 @@
+baseURL: https://syslogine.cloud
+title: Syslogine Cloud
+enableRobotsTXT: true
+theme: [docsy]
+enableGitInfo: true
+
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+pygmentsUseClassic: false
+pygmentsStyle: tango
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS, print]
+
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+
+menu:
+  main:
+    - name: Home
+      weight: 40
+      url: https://syslogine.com
+      
+services:
+  googleAnalytics:
+    id: G-BYVWHXRKRZ
+
+languages:
+  en:
+    title: Syslogine Docs
+    description: Small library with useful tips, tutorials and tools collected from the internet and hosted in one location.
+    languageName: English
+    weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+
+params:
+  copyright: Syslogine
+  privacy_policy: https://policies.google.com/privacy
+  version_menu: Releases
+  archived_version: false
+  version: 0.6.0
+  url_latest_version: https://syslogine.cloud
+  github_repo: https://github.com/syslogine/docsy
+  github_project_repo: https://github.com/Syslogine/docsy
+  github_subdir: userguide
+  time_format_blog: Monday, January 02, 2006
+  time_format_default: January 2, 2006
+  rss_sections: [blog] # TODO: drop since this is the default
+  gcs_engine_id: 011217106833237091527:la2vtv2emlw
+  algolia_docsearch: false
+  offlineSearch: false
+  offlineSearchSummaryLength: 70
+  offlineSearchMaxResults: 10
+  prism_syntax_highlighting: false
+  ui:
+    navbar_logo: true
+    sidebar_menu_compact: true
+    sidebar_menu_foldable: false
+    sidebar_cache_limit: 10
+    breadcrumb_disable: false
+    sidebar_search_disable: false
+    feedback:
+      enable: false
+      'yes': >-
+        Glad to hear it! Please <a
+        href="https://github.com/syslogine/docsy/issues/new">tell us how we can
+        improve</a>.
+      'no': >-
+        Sorry to hear that. Please <a
+        href="https://github.com/syslogine/docsy/issues/new">tell us how we can
+        improve</a>.
+    readingtime:
+      enable: false
+
+  plantuml:
+    enable: true
+    theme: default
+    svg_image_url: https://www.plantuml.com/plantuml/svg/
+    svg: true
+  katex:
+    enable: true
+    html_dom_element: document.body
+    mhchem:
+      enable: true
+  print:
+    disable_toc: false
+  markmap:
+    enable: true
+  mermaid:
+    theme: default
+    flowchart:
+      diagramPadding: 20
+
+taxonomies:
+  
+  category: categories
+
+module:
+  mounts:
+    - source: content/en
+      target: content

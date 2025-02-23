@@ -2,11 +2,7 @@
 
 .td-breadcrumbs {
   @media print {
-    display: none;
-  }
-
-  &__single {
-    display: none;
+    display: none !important;
   }
 
   .breadcrumb {

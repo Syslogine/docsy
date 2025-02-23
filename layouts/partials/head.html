@@ -24,10 +24,10 @@
 {{ template "_internal/opengraph.html" . -}}
 {{ template "_internal/schema.html" . -}}
 {{ template "_internal/twitter_cards.html" . -}}
-{{ partialCached "head-css.html" . "head-css-cache-key" -}}
+{{ partialCached "head-css.html" . "asdf" -}}
 <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
   crossorigin="anonymous"></script>
 {{ if .Site.Params.offlineSearch -}}
 <script defer
@@ -46,14 +46,19 @@
 
 {{/* To comply with GDPR, cookie consent scripts places in head-end must execute before Google Analytics is enabled */ -}}
 {{ if hugo.IsProduction -}}
-  {{ template "_internal/google_analytics.html" . -}}
+  {{ $enableGtagForUniversalAnalytics := not .Site.Params.disableGtagForUniversalAnalytics -}}
+  {{ if (or $enableGtagForUniversalAnalytics (hasPrefix .Site.GoogleAnalytics "G-")) -}}
+    {{ template "_internal/google_analytics_gtag.html" . -}}
+  {{ else -}}
+    {{ template "_internal/google_analytics_async.html" . -}}
+  {{ end -}}
 {{ end -}}
 
 {{ define "algolia/head" -}}
 
 {{ if and .Site.Params.search (isset .Site.Params.search "algolia") -}}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.8.2"
-  integrity="sha512-l7pkV1dOURFyHCeH8I4fK9lCkQKuqhlsTCqRl3zktifDlB8oTUJ+mJPgYkK9kHpUut8j1iPquTv32t6hvTPv3g=="
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.5.2"
+  integrity="sha512-TW5eKlwwg7OfQUVBqxjp94/uqtjJJbhkRE3++XGEQjAL1n3y//QVqS3acPkwqkzInaFRtj+w05uyxDbfDXiI1A=="
   crossorigin="anonymous" />
 {{ end -}}
 
