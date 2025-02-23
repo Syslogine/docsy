@@ -15,7 +15,7 @@ description: A Hugo theme for creating great technical documentation sites
 {{% /blocks/cover %}}
 
 {{% blocks/lead color="primary" %}}
-Docsy is a theme for the Hugo static site generator that's specifically designed
+sys is a theme for the Hugo static site generator that's specifically designed
 for technical documentation sets. Our aim is to help you get a working
 documentation site up and running as easily as possible, so you can concentrate
 on creating great content for your users.
