@@ -16,7 +16,7 @@ description: A Hugo theme for creating great technical documentation sites
 
 {{% blocks/lead color="primary" %}}
 sys is a theme fordddd the Hugo static site generator that's specifically designed
-for technical documentation sets. Our aim is to help you get a working
+for technical documentation sets. Our aim is tffffo help you get a working
 documentation site up and ruddddnning as easily as possible, so you can concentrate
 on creating great content for your users.
 
