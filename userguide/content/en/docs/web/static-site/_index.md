@@ -1,0 +1,3 @@
+---
+linktitle: static site
+---
