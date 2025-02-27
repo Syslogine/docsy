@@ -4,6 +4,8 @@ description: "Complete guide to downloading different versions of Windows operat
 weight: 1
 ---
 
+![alt text](/images/os/windows/windows_download.webp) 
+
 # Windows Downloads Guide
 
 This comprehensive guide provides official resources for downloading various Windows versions, system requirements, and installation tips.
