@@ -4,6 +4,8 @@ description: "Guide to installing and managing multiple Python versions on Windo
 weight: 1
 ---
 
+![alt text](images/os/windows/python.wepb) 
+
 ## Prerequisites
 - A Windows 11 machine with administrative privileges
 - A stable internet connection

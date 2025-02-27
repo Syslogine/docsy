@@ -4,6 +4,8 @@ description: "Complete guide to installing and configuring Nginx on Windows 11"
 weight: 1
 ---
 
+![alt text](images/os/windows/nginx.wepb) 
+
 ## Prerequisites
 - A Windows 11 machine with administrative privileges
 - A stable internet connection
