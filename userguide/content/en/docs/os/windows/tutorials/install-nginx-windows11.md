@@ -4,7 +4,7 @@ description: "Complete guide to installing and configuring Nginx on Windows 11"
 weight: 1
 ---
 
-![alt text](images/os/windows/nginx.webp) 
+![alt text](/images/os/windows/nginx.webp) 
 
 ## Prerequisites
 - A Windows 11 machine with administrative privileges
