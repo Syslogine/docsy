@@ -1,5 +1,5 @@
 ---
-title: "Nginx for windows"
+title: "Nginx"
 description: "Windows"
 weight: 1
 ---

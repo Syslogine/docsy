@@ -1,5 +1,5 @@
 ---
-title: "Python for windows"
+title: "Python"
 description: "Windows"
 weight: 1
 ---

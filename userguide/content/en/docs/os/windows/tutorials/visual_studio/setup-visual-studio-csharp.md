@@ -9,7 +9,7 @@ date: "2025-02-27"
 This guide will help you set up Visual Studio for C# development, ensuring you have all the necessary tools and configurations to start building applications.
 
 ## 📥 Step 1: Install Visual Studio
-If you haven’t installed Visual Studio yet, follow the [installation guide](install-visual-studio-windows.md).
+If you haven’t installed Visual Studio yet, follow the [installation guide](/docs/os/windows/tutorials/visual_studio/install-visual-studio-windows.md).
 
 ## ⚙️ Step 2: Install the Required Workloads
 1. Open **Visual Studio Installer**.
