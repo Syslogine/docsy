@@ -1,3 +1,9 @@
+---
+title: "Installing Nginx on Windows 11"
+description: "Complete guide to installing and configuring Nginx on Windows 11"
+weight: 1
+---
+
 # Complete Guide to Installing Nginx on Windows 11
 
 ## Prerequisites
