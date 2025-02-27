@@ -1,3 +1,5 @@
 ---
-litnktitle: downloads
+title: "Windows downloads"
+description: "Windows"
+weight: 1
 ---
