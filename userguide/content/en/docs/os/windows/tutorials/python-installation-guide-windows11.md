@@ -4,8 +4,6 @@ description: "Guide to installing and managing multiple Python versions on Windo
 weight: 1
 ---
 
-# Guide to Installing Python on Windows 11
-
 ## Prerequisites
 - A Windows 11 machine with administrative privileges
 - A stable internet connection
