@@ -131,11 +131,12 @@ For organizations that require continued Windows 7 support, Microsoft offers the
 
 ### Windows Server
 
-| Version | Description | Link |
-|---------|-------------|------|
-| Windows Server 2022 | Latest server OS with advanced security features | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) |
-| Windows Server 2019 | Long-term servicing channel server OS | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019) |
-| Windows Server 2016 | Previous generation server OS | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) |
+| Version            | Description                                  | Link                                                                 |
+|--------------------|----------------------------------------------|----------------------------------------------------------------------|
+| Windows Server 2025 | Latest server OS with cutting-edge features | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025) |
+| Windows Server 2022 | Advanced server OS with enhanced security   | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022) |
+| Windows Server 2019 | Long-term servicing channel server OS       | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019) |
+| Windows Server 2016 | Previous generation server OS               | [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) |
 
 ### Windows IoT
 
