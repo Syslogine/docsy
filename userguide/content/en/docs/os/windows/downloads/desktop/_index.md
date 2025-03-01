@@ -111,7 +111,7 @@ This comprehensive guide provides official resources for downloading various des
 
 ## Windows 7 (Extended Support Ended)
 
-![Windows 7 Logo](https://placeholder.com/windows7-logo.png)
+![Windows 7 Logo](/images/os/windows/windows7-logo.png)
 
 > **Warning**: Microsoft ended support for Windows 7 on January 14, 2020. We recommend upgrading to a newer version for security and performance reasons.
 
