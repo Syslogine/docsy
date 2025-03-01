@@ -12,7 +12,7 @@ This comprehensive guide provides official resources for downloading various des
 
 ## Windows 11
 
-![Windows 11 Logo](https://placeholder.com/windows11-logo.png)
+![Windows 11 Logo](/images/os/windows/windows11-logo.svg)
 
 ### Download Options
 
@@ -50,7 +50,7 @@ This comprehensive guide provides official resources for downloading various des
 
 ## Windows 10
 
-![Windows 10 Logo](https://placeholder.com/windows10-logo.png)
+![Windows 10 Logo](/images/os/windows/windows10-logo.png)
 
 ### Download Options
 
@@ -86,7 +86,7 @@ This comprehensive guide provides official resources for downloading various des
 
 ## Windows 8.1
 
-![Windows 8.1 Logo](https://placeholder.com/windows8-logo.png)
+![Windows 8.1 Logo](/images/os/windows/windows8-logo.svg)
 
 ### Download Options
 
