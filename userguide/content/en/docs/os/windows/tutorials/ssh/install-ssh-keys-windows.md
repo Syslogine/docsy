@@ -1,5 +1,6 @@
 ---
 title: "Installing SSH Keys on Windows"
+linkTitle: "Basic SSH"
 description: "A guide to setting up SSH keys on Windows desktops and servers"
 weight: 1
 ---

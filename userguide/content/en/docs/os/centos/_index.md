@@ -1,6 +1,6 @@
 ---
 linktitle: "CentOS"
-weight: 1
+weight: 2
 description: "Dive into our comprehensive CentOS tutorials covering everything from initial setup to advanced server management. Perfect for both beginners and experienced users looking to enhance their CentOS skills."
 ---
 

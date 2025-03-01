@@ -1,6 +1,6 @@
 ---
 linktitle: "Kali Linux"
-weight: 3
+weight: 6
 ---
 
 
