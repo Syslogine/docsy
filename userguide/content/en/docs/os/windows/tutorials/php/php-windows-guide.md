@@ -2221,9 +2221,3 @@ This comprehensive guide provides everything needed to set up and maintain PHP d
 The enterprise focus ensures compatibility with corporate security policies, Active Directory integration, proxy configurations, and deployment requirements that are common in large organizations.
 
 For additional support or questions specific to your environment, consult your IT department or visit the [syslogine.cloud](https://syslogine.cloud) documentation portal for updates and additional resources.
-
----
-
-*Last updated: September 15, 2025*  
-*Document version: 1.0*  
-*For updates and corrections, please visit: [https://syslogine.cloud/docs/os/windows/tutorials/php/php-windows-guide](https://syslogine.cloud/docs/os/windows/tutorials/php/php-windows-guide)*

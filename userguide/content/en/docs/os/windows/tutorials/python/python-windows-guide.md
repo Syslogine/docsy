@@ -1877,9 +1877,3 @@ database_password = azure_secrets.get_secret("database-password")
 This guide provides comprehensive coverage of Python development on Windows 11 Enterprise, from basic installation to advanced deployment strategies. The enterprise focus ensures compatibility with corporate security policies, proxy configurations, and deployment requirements.
 
 For additional support or questions specific to your environment, consult your IT department or visit the [syslogine.cloud](https://syslogine.cloud) documentation portal.
-
----
-
-*Last updated: September 15, 2025*  
-*Document version: 1.0*  
-*For updates and corrections, please visit: [https://syslogine.cloud/docs/os/windows/tutorials/python/python-windows-guide](https://syslogine.cloud/docs/os/windows/tutorials/python/python-windows-guide)*
