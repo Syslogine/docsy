@@ -1882,4 +1882,4 @@ For additional support or questions specific to your environment, consult your I
 
 *Last updated: September 15, 2025*  
 *Document version: 1.0*  
-*For updates and corrections, please visit: [https://syslogine.cloud/docs/os/windows/tutorials/php/python-windows-guide](https://syslogine.cloud/docs/os/windows/tutorials/php/python-windows-guide)*
+*For updates and corrections, please visit: [https://syslogine.cloud/docs/os/windows/tutorials/python/python-windows-guide](https://syslogine.cloud/docs/os/windows/tutorials/python/python-windows-guide)*
