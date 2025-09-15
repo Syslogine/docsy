@@ -2,12 +2,6 @@
 title: "PHP Development Documentation"
 linktitle: "PHP"
 description: "Comprehensive guides and resources for PHP development on various platforms and environments"
-date: 2025-09-15
-weight: 20
-draft: false
-cascade:
-  type: "docs"
-layout: "list"
 ---
 
 # PHP Development Documentation
