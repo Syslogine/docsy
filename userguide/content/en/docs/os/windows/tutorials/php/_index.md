@@ -2,6 +2,7 @@
 title: "PHP Development Documentation"
 linktitle: "PHP"
 description: "Comprehensive guides and resources for PHP development on various platforms and environments"
+weight: 10
 ---
 
 # PHP Development Documentation
