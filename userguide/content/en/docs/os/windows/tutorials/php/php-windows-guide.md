@@ -1,6 +1,3 @@
-I'll create a comprehensive Hugo-style PHP development guide for Windows 11 Enterprise, similar to the Python guide.
-
-```markdown
 ---
 title: "PHP Development Guide for Windows 11 Enterprise"
 description: "Complete guide for setting up and using PHP in Windows 11 Enterprise environments"
