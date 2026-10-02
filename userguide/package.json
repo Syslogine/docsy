@@ -1,9 +1,10 @@
 {
-  "name": "docsy-user-guide",
+  "name": "syslogine-docs",
   "scripts": {
     "_build": "npm run _hugo-dev",
     "_check:links": "make check-links",
-    "_hugo": "hugo --cleanDestinationDir --themesDir ../..",
+    "_env": "PATH=\"$PWD/../bin:$PATH\" DART_SASS_BINARY=sass",
+    "_hugo": "npm run _env -- hugo --cleanDestinationDir",
     "_hugo-dev": "npm run _hugo -- -e dev -DFE",
     "_serve": "npm run _hugo-dev -- --minify serve",
     "build:preview": "npm run _hugo-dev -- --minify --baseURL \"${DEPLOY_PRIME_URL:-/}\"",

@@ -1,24 +1,47 @@
 # Docsy config
 #
-# cSpell:ignore docsy fortawesome fontawesome webfonts
+# cSpell:ignore docsy fortawesome fontawesome github permalinkable twbs webfonts
 
 params:
   time_format_blog: Monday, January 02, 2006
   time_format_default: January 2, 2006
   rss_sections: [blog]
+  katex:
+    version: 0.18.4
+  markmap:
+    version: 0.18.12
+  mermaid:
+    version: 11.17.0
+  redoc:
+    version: 2.5.3
 
 outputFormats:
-  PRINT:
+  LLMS:
+    baseName: llms
+    isPlainText: true
+    mediaType: text/plain
+    notAlternative: true
+  print:
     baseName: index
-    isHTML: true
+    # FIXME: leave isHTML unset (i.e. false) until we get a Hugo fix for
+    # https://github.com/gohugoio/hugo/issues/14381
+    # isHTML: true
     mediaType: text/html
     path: _print
     permalinkable: false
 
+# Needed for KaTeX, possibly useful for others. see
+# https://github.com/google/docsy/pull/2465
+mediaTypes:
+  font/woff:
+    suffixes: [woff]
+  font/woff2:
+    suffixes: [woff2]
+
 module:
   hugoVersion:
     extended: true
-    min: 0.110.0
+    min: 0.160.1
   mounts:
     - source: assets
       target: assets
@@ -33,12 +56,4 @@ module:
     - source: static
       target: static
     - source: node_modules/@fortawesome/fontawesome-free/webfonts
-      target: static/webfonts
-    # Mounts for projects using Docsy as an NPM package. The source path prefix
-    # "../.." moves out of themes/docsy so that Docsy can find its dependencies.
-    - source: ../../node_modules/bootstrap
-      target: assets/vendor/bootstrap
-    - source: ../../node_modules/@fortawesome/fontawesome-free
-      target: assets/vendor/Font-Awesome
-    - source: ../../node_modules/@fortawesome/fontawesome-free/webfonts
       target: static/webfonts

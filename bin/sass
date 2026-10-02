@@ -1,0 +1,17 @@
+#!/bin/sh
+# Expose Dart Sass under the name Hugo looks for on PATH.
+#
+# Hugo applies its exec policy to the bare command name, so pointing it at a
+# path inside node_modules is rejected. The `sass` bin npm links resolves to the
+# pure-JS compiler, which refuses the `--embedded` flag Hugo passes, so forward
+# to the standalone Dart Sass distribution that ships with the `sass-embedded`
+# platform package instead.
+set -e
+here=$(dirname "$0")
+for candidate in "$here"/../node_modules/sass-embedded-*/dart-sass/sass; do
+  if [ -x "$candidate" ]; then
+    exec "$candidate" "$@"
+  fi
+done
+echo "sass: no standalone Dart Sass found; run 'npm install'" >&2
+exit 1

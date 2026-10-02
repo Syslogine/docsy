@@ -1,7 +1,6 @@
 baseURL: https://syslogine.cloud
 title: Syslogine Cloud
 enableRobotsTXT: true
-theme: [docsy]
 enableGitInfo: true
 
 pygmentsCodeFences: true
@@ -33,7 +32,7 @@ languages:
   en:
     title: Syslogine Docs
     description: Small library with useful tips, tutorials and tools collected from the internet and hosted in one location.
-    languageName: English
+    label: English
     weight: 1
 
 markup:
@@ -48,7 +47,7 @@ params:
   privacy_policy: https://policies.google.com/privacy
   version_menu: Releases
   archived_version: false
-  version: 0.6.0
+  version: 0.17.0
   url_latest_version: https://syslogine.cloud
   github_repo: https://github.com/syslogine/docsy
   github_project_repo: https://github.com/Syslogine/docsy
@@ -57,7 +56,6 @@ params:
   time_format_default: January 2, 2006
   rss_sections: [blog] # TODO: drop since this is the default
   gcs_engine_id: 011217106833237091527:la2vtv2emlw
-  algolia_docsearch: false
   offlineSearch: false
   offlineSearchSummaryLength: 70
   offlineSearchMaxResults: 10
@@ -106,6 +104,8 @@ taxonomies:
   category: categories
 
 module:
+  imports:
+    - path: github.com/Syslogine/docsy
   mounts:
     - source: content/en
       target: content

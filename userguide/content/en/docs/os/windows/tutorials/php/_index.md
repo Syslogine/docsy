@@ -70,7 +70,8 @@ Found an error or have suggestions for improvement? We welcome contributions to 
 2. **Submit Pull Requests** - Contribute directly to our documentation
 3. **Share Feedback** - Let us know what topics you'd like to see covered
 
-For more information about contributing, please visit our [contribution guidelines](/docs/contributing/).
+For more information about contributing, please see the
+[contribution guidelines](https://github.com/Syslogine/docsy/blob/main/CONTRIBUTING.md).
 
 ---
 

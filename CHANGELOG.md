@@ -13,6 +13,15 @@ Useful links:
 - [Releases][] & [tags][]. Jump to the [latest][] release.
 - [23Q4][] milestone
 
+## Syslogine fork
+
+This fork tracks upstream [Docsy][upstream]. The theme was stuck at upstream
+0.7.3 and has been resynchronized with upstream **v0.17.0** (theme 0.17.0),
+which spans upstream 0.8.0 through 0.17.0. Upstream publishes its detailed
+changelog online, so the entries below only cover what shipped up to 0.7.2:
+
+- Upstream changelog: <https://www.docsy.dev/project/about/changelog/>
+
 ## [0.8.0][0.x.y] - next major release (unpublished yet)
 
 For the full list of this release's changes, see the [release notes][0.x.y].
@@ -307,4 +316,5 @@ For the full list of this release's changes, see the [release notes][0.x.y].
 [latest]: https://github.com/google/docsy/releases/latest
 [releases]: https://github.com/google/docsy/releases
 [tags]: https://github.com/google/docsy/tags
+[upstream]: https://github.com/docsy/docsy
 [bs-announcement]: https://github.com/google/docsy/discussions/1308
