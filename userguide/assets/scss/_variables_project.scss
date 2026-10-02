@@ -20,5 +20,6 @@ $td-sidebar-border-color: $border-color;
 $td-sidebar-tree-root-color: $primary;
 
 // Navbar sits on the primary color, so its foreground needs to stay legible.
+$td-navbar-bg-color: $primary;
 $navbar-dark-color: rgba($white, 0.75);
 $navbar-dark-hover-color: rgba($white, 0.5);

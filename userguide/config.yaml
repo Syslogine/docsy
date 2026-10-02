@@ -62,6 +62,9 @@ params:
   prism_syntax_highlighting: false
   ui:
     navbar_logo: true
+    # The navbar sits on the primary color; the light foreground it needs comes
+    # from $navbar-dark-color in assets/scss/_variables_project.scss.
+    navbar_theme: dark
     sidebar_menu_compact: true
     sidebar_menu_foldable: false
     sidebar_cache_limit: 10
