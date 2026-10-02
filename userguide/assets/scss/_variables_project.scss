@@ -1,6 +1,24 @@
 /*
-Add styles or override variables from the theme here.
+Site look and feel overrides.
+
+This file is imported by the theme before Bootstrap and before the theme's own
+variables (assets/scss/td/_variables.scss), so anything defined here wins over
+the theme defaults. Bootstrap's greys and $white/$primary/$secondary are
+available here because the theme forwards them first.
+
+Element-level rules that consume these variables live in _styles_project.scss.
 */
 
-$primary:#293642;
-$secondary:#D95040;
+// Brand palette
+$primary: #293642;
+$secondary: #d95040;
+
+// UI element colors
+$border-color: $gray-300;
+$td-sidebar-bg-color: rgba($primary, 0.03);
+$td-sidebar-border-color: $border-color;
+$td-sidebar-tree-root-color: $primary;
+
+// Navbar sits on the primary color, so its foreground needs to stay legible.
+$navbar-dark-color: rgba($white, 0.75);
+$navbar-dark-hover-color: rgba($white, 0.5);

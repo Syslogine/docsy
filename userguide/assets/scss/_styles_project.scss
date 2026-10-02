@@ -1,10 +1,70 @@
+/*
+Site look and feel overrides: element-level rules.
+
+The matching color variables are in _variables_project.scss. Rules here are
+imported last, so they win over the theme.
+*/
+
 .td-navbar .navbar-brand__name {
-  display:none
+  display: none;
 }
 
 .logo {
-  max-width:100%;
-  max-height:46px;
-  margin-top:-4px;
-  margin-bottom:-4px
+  max-width: 100%;
+  max-height: 46px;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+
+// Tinted left sidebar, bounded by a lighter rule.
+.td-sidebar {
+  @include media-breakpoint-up(md) {
+    background-color: $td-sidebar-bg-color;
+    border-right: 1px solid $td-sidebar-border-color;
+  }
+}
+
+.td-sidebar-nav .td-sidebar-link.tree-root {
+  color: $td-sidebar-tree-root-color;
+  border-bottom: 1px solid $td-sidebar-tree-root-color;
+}
+
+// The search box sits on the dark navbar, so it needs light foreground text.
+.td-search__input {
+  .td-navbar & {
+    color: $navbar-dark-color;
+
+    &:focus,
+    &:hover {
+      color: $navbar-dark-hover-color;
+    }
+
+    @include placeholder {
+      color: $navbar-dark-color;
+    }
+  }
+}
+
+.td-content blockquote {
+  border-left: 6px solid $secondary;
+}
+
+.alert {
+  background: $white;
+}
+
+.pageinfo {
+  background: $gray-100;
+}
+
+// Branded hover: solid primary pill rather than the theme's subtle tint.
+.taxonomy-term {
+  &:hover {
+    background-color: $primary;
+    color: $white;
+
+    .taxonomy-count {
+      color: $white;
+    }
+  }
 }
